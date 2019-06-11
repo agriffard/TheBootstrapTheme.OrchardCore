@@ -1,0 +1,118 @@
+<section class="resume-section p-3 p-lg-5 d-flex d-column" id="about">
+  <div class="my-auto">
+    <h1 class="mb-0">
+      <span class="text-primary">{{ Model.ContentItem.Content.TitlePart.Title }}</span>
+    </h1>
+    <div class="subheading mb-5">{{ Model.ContentItem.Content.LandingPage.Subheading.Html | raw }}</div>
+    <p class="lead mb-5">{{ Model.ContentItem.Content.HtmlBodyPart.Html | raw }}</p>
+    {% if Model.ContentItem.Content.Experience.ContentItems.size > 0 %}
+    <div class="social-icons">
+      {% for link in Model.ContentItem.Content.Links.ContentItems %}
+      <a href="{{ link.Link.Url.Text }}">
+        <i class="fab fa-{{ link.Link.Icon.Text }}"></i>
+      </a>
+      {% endfor %}
+    </div>
+    {% endif %}
+  </div>
+</section>
+{% assign format = "MMMM yyyy" | t %}
+{% if Model.ContentItem.Content.Experience.ContentItems.size > 0 %}
+<section class="resume-section p-3 p-lg-5 d-flex flex-column" id="experience">
+  <div class="my-auto">
+    <h2 class="mb-5">Experience</h2>
+    {% for job in Model.ContentItem.Content.Experience.ContentItems %}
+    <div class="resume-item d-flex flex-column flex-md-row mb-5">
+      <div class="resume-content mr-auto">
+        <h3 class="mb-0">{{ job.TitlePart.Title }}</h3>
+        <div class="subheading mb-3">{{ job.Job.Company.Text }}</div>
+        <p>{{ job.HtmlBodyPart.Html | raw }}</p>
+      </div>
+      <div class="resume-date text-md-right">
+        {% assign dateStart = "DateTime" | shape_new: utc: job.Job.Start.Value, format: format | shape_stringify %}
+        {% assign dateEnd = "DateTime" | shape_new: utc: job.Job.End.Value, format: format | shape_stringify %}
+        <span class="text-primary">{{ "{0}" | t: dateStart | raw }} - {{ "{0}" | t: dateEnd | raw }}</span>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</section>
+{% endif %}
+
+{% if Model.ContentItem.Content.Education.ContentItems.size > 0 %}
+<section class="resume-section p-3 p-lg-5 d-flex flex-column" id="education">
+  <div class="my-auto">
+    <h2 class="mb-5">Education</h2>
+    {% for teaching in Model.ContentItem.Content.Education.ContentItems %}
+    <div class="resume-item d-flex flex-column flex-md-row mb-5">
+      <div class="resume-content mr-auto">
+        <h3 class="mb-0">{{ teaching.TitlePart.Title }}</h3>
+        <div class="subheading mb-3">{{ teaching.Teaching.Qualification.Text }}</div>
+        <p>{{ job.HtmlBodyPart.Html | raw }}</p>
+      </div>
+      <div class="resume-date text-md-right">
+        {% assign dateStart = "DateTime" | shape_new: utc: teaching.Teaching.Start.Value, format: format | shape_stringify %}
+        {% assign dateEnd = "DateTime" | shape_new: utc: teaching.Teaching.End.Value, format: format | shape_stringify %}
+        <span class="text-primary">{{ "{0}" | t: dateStart | raw }} - {{ "{0}" | t: dateEnd | raw }}</span>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</section>
+{% endif %}
+
+{% if Model.ContentItem.Content.Skills.ContentItems.size > 0 %}
+<section class="resume-section p-3 p-lg-5 d-flex flex-column" id="skills">
+  <div class="my-auto">
+    <h2 class="mb-5">Skills</h2>
+
+    <div class="subheading mb-3">Programming Languages &amp; Tools</div>
+    <ul class="list-inline dev-icons">
+      <li class="list-inline-item">
+        <i class="fab fa-html5"></i>
+      </li>
+      <li class="list-inline-item">
+        <i class="fab fa-css3-alt"></i>
+      </li>
+      <li class="list-inline-item">
+        <i class="fab fa-js-square"></i>
+      </li>
+    </ul>
+
+    <div class="subheading mb-3">Competencies</div>
+    <ul class="fa-ul mb-0">
+      {% for skill in Model.ContentItem.Content.Skills.ContentItems %}
+      <li>
+        <i class="fa-li fa fa-check"></i> {{ skill.TitlePart.Title }}
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
+{% endif %}
+
+{% if Model.ContentItem.Content.Interests.ContentItems.size > 0 %}
+<section class="resume-section p-3 p-lg-5 d-flex flex-column" id="interests">
+  <div class="my-auto">
+    <h2 class="mb-5">Interests</h2>
+    {% for interest in Model.ContentItem.Content.Interests.ContentItems %}
+    <p>{{ interest.HtmlBodyPart.Html | raw }}</p>
+    {% endfor %}
+  </div>
+</section>
+{% endif %}
+
+{% if Model.ContentItem.Content.Awards.ContentItems.size > 0 %}
+<section class="resume-section p-3 p-lg-5 d-flex flex-column" id="awards">
+  <div class="my-auto">
+    <h2 class="mb-5">Awards</h2>
+    <ul class="fa-ul mb-0">
+      {% for award in Model.ContentItem.Content.Awards.ContentItems %}
+      <li>
+        <i class="fa-li fa fa-trophy text-warning"></i> {{ award.TitlePart.Title }}
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
+{% endif %}

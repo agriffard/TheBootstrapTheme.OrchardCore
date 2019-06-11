@@ -1,0 +1,42 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{17D80984-B027-47CB-8F52-D2F0899C5057}"
+	ProjectSection(SolutionItems) = preProject
+		src\Common.props = src\Common.props
+		src\Directory.Build.props = src\Directory.Build.props
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{B67644D7-78C9-4431-8475-3569EEF0E24C}"
+	ProjectSection(SolutionItems) = preProject
+		appveyor.yml = appveyor.yml
+		LICENSE = LICENSE
+		NuGet.config = NuGet.config
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TheBootstrapTheme.OrchardCore", "src\TheBootstrapTheme.OrchardCore\TheBootstrapTheme.OrchardCore.csproj", "{4D9D4342-67E8-4D73-ACB3-C84DF7B1F7F6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4D9D4342-67E8-4D73-ACB3-C84DF7B1F7F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D9D4342-67E8-4D73-ACB3-C84DF7B1F7F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D9D4342-67E8-4D73-ACB3-C84DF7B1F7F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D9D4342-67E8-4D73-ACB3-C84DF7B1F7F6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{4D9D4342-67E8-4D73-ACB3-C84DF7B1F7F6} = {17D80984-B027-47CB-8F52-D2F0899C5057}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {04A4E193-A82A-4E1D-A3CC-1CCF069E1389}
+	EndGlobalSection
+EndGlobal

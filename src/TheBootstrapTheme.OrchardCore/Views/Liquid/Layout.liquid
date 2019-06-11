@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>{{ Site.SiteName }}</title>	
+    <link type="image/x-icon" rel="shortcut icon" href="{{ '~/TheBootstrapTheme.OrchardCore/favicon.ico' | href }}" />
+    {% render_section "Metas", required: false %}
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css" integrity="sha384-i1LQnF23gykqWXg6jxC2ZbCbUMxyw5gLZY6UiUS98LYV5unm8GWmfkIS6jqJfb4E" crossorigin="anonymous">    
+    {% resources type: "Meta" %}
+    {% resources type: "HeadLink" %}
+    {% resources type: "Stylesheet" %}
+    {% resources type: "HeadScript" %}
+  </head>
+  <body>
+  <header>
+    {% render_section "Header", required: false %}
+  </header>
+  <nav class="navbar navbar-expand-sm navbar-dark bg-primary"> <!--fixed-top-->
+  <a class="navbar-brand" href="{{ '~/' | href }}">{{ Site.SiteName }}</a>
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+	</button>
+	<div class="collapse navbar-collapse" id="collapsibleNavbar">
+        {% shape "menu", alias: "alias:main-menu", cache_id: "main-menu", cache_duration: "00:05:00", cache_tag: "alias:main-menu" %}
+    </div>
+	</nav>
+    {% render_section "BeforeContent", required: false %}
+	<div class="container mt-4">
+	  <div class="row">
+		<div class="col-lg-12">
+		  {% render_body %}
+		</div>
+	  </div>
+	  <div class="row">
+		<div class="col-sm-8">     
+		{% render_section "AsideFirst", required: false %}
+		</div>		  
+		<div class="col-sm-4">
+		{% render_section "AsideSecond", required: false %}
+		</div>
+	  </div>
+	</div>
+    {% render_section "AfterContent", required: false %}
+    {% render_section "Footer", required: false %}
+    {% script name:"bootstrap-bundle", use_cdn:"true", version:"4", at:"Foot" %}
+    {% resources type: "FootScript" %}
+  </body>
+</html>
