@@ -1,10 +1,14 @@
+@using OrchardCore.Entities
+@using OrchardCore.ContentManagement
 @{
     int level = (int)Model.Level;
     TagBuilder tag = Tag(Model, "li");
 
     if ((bool)Model.HasItems)
     {
-        tag.AddCssClass("dropdown");
+        var themeSettings = Site.As<ContentItem>("TheBootstrapThemeSettings");
+        var nav = themeSettings?.Content?.TheBootstrapThemeSettings?.Navigation.Text ?? string.Empty;
+        tag.AddCssClass(nav != "FixedBottom" ? "dropdown" : "dropup");
     }
 
     // Morphing the shape to keep Model untouched

@@ -1,0 +1,3256 @@
+{
+  "name": "TheBootstrapTheme",
+  "displayName": "Bootstrap",
+  "description": "Provides a Bootstrap theme.",
+  "author": "Antoine Griffard",
+  "website": "http://antoinegriffard.com",
+  "version": "1.0-rc2",
+  "issetuprecipe": true,
+  "categories": [
+    "default"
+  ],
+  "tags": [
+    "bootstrap"
+  ],
+  "steps": [
+    {
+      "name": "Feature",
+      "enable": [
+        "OrchardCore.Admin",
+        "OrchardCore.AdminMenu",
+        "OrchardCore.Contents",
+        "OrchardCore.Liquid",
+        "OrchardCore.Settings",
+        "OrchardCore.Templates",
+        "OrchardCore.ContentTypes",
+        "OrchardCore.Alias",
+        "OrchardCore.Apis.GraphQL",
+        "OrchardCore.Autoroute",
+        "OrchardCore.ContentFields",
+        "OrchardCore.Localization",
+        "OrchardCore.ContentLocalization",
+        "OrchardCore.ContentPreview",
+        "OrchardCore.Contents.FileContentDefinition",
+        "OrchardCore.CustomSettings",
+        "OrchardCore.Deployment",
+        "OrchardCore.Deployment.Remote",
+        "OrchardCore.Diagnostics",
+        "OrchardCore.DynamicCache",
+        "OrchardCore.Resources",
+        "OrchardCore.Widgets",
+        "OrchardCore.Features",
+        "OrchardCore.Feeds",
+        "OrchardCore.Flows",
+        "OrchardCore.Forms",
+        "OrchardCore.HomeRoute",
+        "OrchardCore.Html",
+        "OrchardCore.Indexing",
+        "OrchardCore.Scripting",
+        "OrchardCore.Layers",
+        "OrchardCore.Lists",
+        "OrchardCore.Lucene",
+        "OrchardCore.Markdown",
+        "OrchardCore.Media",
+        "OrchardCore.Title",
+        "OrchardCore.Menu",
+        "OrchardCore.Navigation",
+        "OrchardCore.OpenId",
+        "OrchardCore.OpenId.Management",
+        "OrchardCore.OpenId.Server",
+        "OrchardCore.Queries",
+        "OrchardCore.Queries.Sql",
+        "OrchardCore.Users",
+        "OrchardCore.Recipes",
+        "OrchardCore.Roles",
+        "OrchardCore.Tenants",
+        "OrchardCore.Themes",
+        "OrchardCore.Workflows",
+        "OrchardCore.Workflows.Http",
+        "ThemeSettings",
+        "TBST",
+        "TheAdmin"
+      ]
+    },
+    {
+      "name": "Content",
+      "data": [
+        {
+          "ContentItemId": "4chwn6kqvb49c2phc6hhzt71c6",
+          "ContentItemVersionId": "49hcfjqk4qfbxzj12v13s5y2c1",
+          "ContentType": "TeamMember",
+          "DisplayText": "Team Member 1",
+          "Latest": true,
+          "Published": true,
+          "ModifiedUtc": "2019-04-23T13:09:42.0006515Z",
+          "PublishedUtc": "2019-04-23T13:09:42.0846406Z",
+          "CreatedUtc": "2019-04-23T13:09:42.0846406Z",
+          "Owner": "admin",
+          "Author": "admin",
+          "TeamMember": {
+            "Position": {
+              "Text": "Position"
+            },
+            "Description": {
+              "Text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus aut mollitia eum ipsum fugiat odio officiis odit."
+            },
+            "Email": {
+              "Text": "name@example.com"
+            },
+            "ImageUrl": {
+              "Text": "http://placehold.it/750x450"
+            }
+          },
+          "TitlePart": {
+            "Title": "Team Member 1"
+          }
+        },
+        {
+          "ContentItemId": "421n57k9mvdh877tjcvem1rqwd",
+          "ContentItemVersionId": "4beewv8s16gwdvr7ch54wnmfdz",
+          "ContentType": "TeamMember",
+          "DisplayText": "Team Member 2",
+          "Latest": true,
+          "Published": true,
+          "ModifiedUtc": "2019-04-23T13:10:04.9021514Z",
+          "PublishedUtc": "2019-04-23T13:10:04.91082Z",
+          "CreatedUtc": "2019-04-23T13:10:04.91082Z",
+          "Owner": "admin",
+          "Author": "admin",
+          "TeamMember": {
+            "Position": {
+              "Text": "Position"
+            },
+            "Description": {
+              "Text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus aut mollitia eum ipsum fugiat odio officiis odit."
+            },
+            "Email": {
+              "Text": "name@example.com"
+            },
+            "ImageUrl": {
+              "Text": "http://placehold.it/750x450"
+            }
+          },
+          "TitlePart": {
+            "Title": "Team Member 2"
+          }
+        },
+        {
+          "ContentItemId": "4v1f9791gwzgys4w5e19rfbvx6",
+          "ContentItemVersionId": "44pp1y6j0jhz1xt0968cy2mgc6",
+          "ContentType": "TeamMember",
+          "DisplayText": "Team Member 3",
+          "Latest": true,
+          "Published": true,
+          "ModifiedUtc": "2019-04-23T13:10:34.6044136Z",
+          "PublishedUtc": "2019-04-23T13:10:34.6110092Z",
+          "CreatedUtc": "2019-04-23T13:10:34.6110092Z",
+          "Owner": "admin",
+          "Author": "admin",
+          "TeamMember": {
+            "Position": {
+              "Text": "Position"
+            },
+            "Description": {
+              "Text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus aut mollitia eum ipsum fugiat odio officiis odit."
+            },
+            "Email": {
+              "Text": "name@example.com"
+            },
+            "ImageUrl": {
+              "Text": "http://placehold.it/750x450"
+            }
+          },
+          "TitlePart": {
+            "Title": "Team Member 3"
+          }
+        },
+        {
+          "ContentItemId": "4nyecy7fvj4k05jcaaybepbdce",
+          "ContentItemVersionId": "4t8t5pc8xx6bn4446fesn93rw6",
+          "ContentType": "Card",
+          "DisplayText": "Card Title 1",
+          "Latest": true,
+          "Published": true,
+          "ModifiedUtc": "2019-04-23T13:33:20.7669312Z",
+          "PublishedUtc": "2019-04-23T13:33:20.776114Z",
+          "CreatedUtc": "2019-04-23T13:33:20.776114Z",
+          "Owner": "admin",
+          "Author": "admin",
+          "Card": {
+            "Description": {
+              "Text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque."
+            },
+            "Link": {
+              "Url": "https://localhost:44300/",
+              "Text": "Learn More"
+            }
+          },
+          "TitlePart": {
+            "Title": "Card Title 1"
+          },
+          "ContainedPart": {
+            "ListContentItemId": "4zmzzzaygxda814pp2x18gr3da",
+            "Order": 0
+          }
+        },
+        {
+          "ContentItemId": "4ny7y89tj3378zspe15zhmv9x7",
+          "ContentItemVersionId": "4e4r12zeqmkj46wjakzqcwkymk",
+          "ContentType": "Card",
+          "DisplayText": "Card Title 2",
+          "Latest": true,
+          "Published": true,
+          "ModifiedUtc": "2019-04-23T13:34:03.2536292Z",
+          "PublishedUtc": "2019-04-23T13:34:03.2629582Z",
+          "CreatedUtc": "2019-04-23T13:34:03.2629582Z",
+          "Owner": "admin",
+          "Author": "admin",
+          "Card": {
+            "Description": {
+              "Text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque."
+            },
+            "Link": {
+              "Url": "https://localhost:44300/",
+              "Text": "Learn More"
+            }
+          },
+          "TitlePart": {
+            "Title": "Card Title 2"
+          },
+          "ContainedPart": {
+            "ListContentItemId": "4zmzzzaygxda814pp2x18gr3da",
+            "Order": 0
+          }
+        },
+        {
+          "ContentItemId": "4n13eykqxmrwqt2v6dqjfm6vcd",
+          "ContentItemVersionId": "4qx6c6xdyqb1p1cprdn86epn55",
+          "ContentType": "Card",
+          "DisplayText": "Card Title 3",
+          "Latest": true,
+          "Published": true,
+          "ModifiedUtc": "2019-04-23T13:34:40.8000203Z",
+          "PublishedUtc": "2019-04-23T13:34:40.8063296Z",
+          "CreatedUtc": "2019-04-23T13:34:40.8063296Z",
+          "Owner": "admin",
+          "Author": "admin",
+          "Card": {
+            "Description": {
+              "Text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque."
+            },
+            "Link": {
+              "Url": "https://localhost:44300/",
+              "Text": "Learn More"
+            }
+          },
+          "TitlePart": {
+            "Title": "Card Title 3"
+          },
+          "ContainedPart": {
+            "ListContentItemId": "4zmzzzaygxda814pp2x18gr3da",
+            "Order": 0
+          }
+        },
+        {
+          "ContentItemId": "40e9kz790pvhc7dkz1g2gnnh5x",
+          "ContentItemVersionId": "40crts499k5jy41sdnp28cnv5z",
+          "ContentType": "Portfolio",
+          "DisplayText": "Portfolio 1",
+          "Latest": true,
+          "Published": true,
+          "ModifiedUtc": "2019-04-23T13:54:23.3006388Z",
+          "PublishedUtc": "2019-04-23T13:54:23.3045483Z",
+          "CreatedUtc": "2019-04-23T13:54:23.3045483Z",
+          "Owner": "admin",
+          "Author": "admin",
+          "Portfolio": {},
+          "AutoroutePart": {
+            "Path": "portfolio-1",
+            "SetHomepage": false
+          },
+          "ListPart": {
+            "FeedProxyUrl": null,
+            "FeedItemsCount": 20
+          },
+          "TitlePart": {
+            "Title": "Portfolio 1"
+          }
+        },
+        {
+          "ContentItemId": "476seqpyyqc7hskr35bx615nx8",
+          "ContentItemVersionId": "44acnbf300s1rxg603pmjqy7cf",
+          "ContentType": "Project",
+          "DisplayText": "Project One",
+          "Latest": true,
+          "Published": true,
+          "ModifiedUtc": "2019-04-23T13:59:14.0748363Z",
+          "PublishedUtc": "2019-04-23T13:59:14.0824394Z",
+          "CreatedUtc": "2019-04-23T13:59:14.0824394Z",
+          "Owner": "admin",
+          "Author": "admin",
+          "Project": {
+            "Description": {
+              "Text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium veniam exercitationem expedita laborum at voluptate. Labore, voluptates totam at aut nemo deserunt rem magni pariatur quos perspiciatis atque eveniet unde."
+            },
+            "Picture": {
+              "Paths": [
+                "750x500.png"
+              ]
+            }
+          },
+          "AutoroutePart": {
+            "Path": "project-one",
+            "SetHomepage": false
+          },
+          "TitlePart": {
+            "Title": "Project One"
+          },
+          "HtmlBodyPart": {
+            "Html": "<ul style=\"font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, Arial, &quot;Noto Sans&quot;, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;, &quot;Noto Color Emoji&quot;;\"><li>Lorem Ipsum</li><li>Dolor Sit Amet</li><li>Consectetur</li><li>Adipiscing Elit</li></ul>"
+          },
+          "ContainedPart": {
+            "ListContentItemId": "40e9kz790pvhc7dkz1g2gnnh5x",
+            "Order": 0
+          }
+        },
+        {
+          "ContentItemId": "4zxr16v6pddd83cna28d4q8s5k",
+          "ContentItemVersionId": "49xqgx9w2xvhp5wrf8w8xkn2df",
+          "ContentType": "Project",
+          "DisplayText": "Project Two",
+          "Latest": true,
+          "Published": true,
+          "ModifiedUtc": "2019-04-23T14:36:50.8986141Z",
+          "PublishedUtc": "2019-04-23T14:36:50.9148472Z",
+          "CreatedUtc": "2019-04-23T14:36:28.9685487Z",
+          "Owner": "admin",
+          "Author": "admin",
+          "Project": {
+            "Description": {
+              "Text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium veniam exercitationem expedita laborum at voluptate. Labore, voluptates totam at aut nemo deserunt rem magni pariatur quos perspiciatis atque eveniet unde."
+            },
+            "Picture": {
+              "Paths": [
+                "700x300.png"
+              ]
+            }
+          },
+          "AutoroutePart": {
+            "Path": "project-two",
+            "SetHomepage": false
+          },
+          "TitlePart": {
+            "Title": "Project Two"
+          },
+          "HtmlBodyPart": {
+            "Html": "<ul style=\"font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, Arial, &quot;Noto Sans&quot;, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;, &quot;Noto Color Emoji&quot;;\"><li>Lorem Ipsum</li><li>Dolor Sit Amet</li><li>Consectetur</li><li>Adipiscing Elit</li></ul>"
+          },
+          "ContainedPart": {
+            "ListContentItemId": "40e9kz790pvhc7dkz1g2gnnh5x",
+            "Order": 0
+          }
+        },
+        {
+          "ContentItemId": "4h2jcf88nm1wkxzrwmvtk24pw3",
+          "ContentItemVersionId": "4jy6nrtybryrrzy4hbk17qaqmk",
+          "ContentType": "Project",
+          "DisplayText": "Project Three",
+          "Latest": true,
+          "Published": true,
+          "ModifiedUtc": "2019-04-23T14:42:40.4575158Z",
+          "PublishedUtc": "2019-04-23T14:42:40.463293Z",
+          "CreatedUtc": "2019-04-23T14:42:40.463293Z",
+          "Owner": "admin",
+          "Author": "admin",
+          "Project": {
+            "Description": {
+              "Text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium veniam exercitationem expedita laborum at voluptate. Labore, voluptates totam at aut nemo deserunt rem magni pariatur quos perspiciatis atque eveniet unde."
+            },
+            "Picture": {
+              "Paths": [
+                "700x300.png"
+              ]
+            }
+          },
+          "AutoroutePart": {
+            "Path": "project-three",
+            "SetHomepage": false
+          },
+          "TitlePart": {
+            "Title": "Project Three"
+          },
+          "HtmlBodyPart": {
+            "Html": "<ul style=\"font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, Arial, &quot;Noto Sans&quot;, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;, &quot;Noto Color Emoji&quot;;\"><li>Lorem Ipsum</li><li>Dolor Sit Amet</li><li>Consectetur</li><li>Adipiscing Elit</li></ul>"
+          },
+          "ContainedPart": {
+            "ListContentItemId": "40e9kz790pvhc7dkz1g2gnnh5x",
+            "Order": 0
+          }
+        },
+        {
+          "ContentItemId": "48f7p1njvyrz125zx0dgf98jm3",
+          "ContentItemVersionId": "4wr1fmpac1769xxhra64nxmzm9",
+          "ContentType": "Project",
+          "DisplayText": "Project Four",
+          "Latest": true,
+          "Published": true,
+          "ModifiedUtc": "2019-04-23T14:43:08.0563174Z",
+          "PublishedUtc": "2019-04-23T14:43:08.061719Z",
+          "CreatedUtc": "2019-04-23T14:43:08.061719Z",
+          "Owner": "admin",
+          "Author": "admin",
+          "Project": {
+            "Description": {
+              "Text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium veniam exercitationem expedita laborum at voluptate. Labore, voluptates totam at aut nemo deserunt rem magni pariatur quos perspiciatis atque eveniet unde."
+            },
+            "Picture": {
+              "Paths": [
+                "700x300.png"
+              ]
+            }
+          },
+          "AutoroutePart": {
+            "Path": "project-four",
+            "SetHomepage": false
+          },
+          "TitlePart": {
+            "Title": "Project Four"
+          },
+          "HtmlBodyPart": {
+            "Html": "<ul style=\"font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, Arial, &quot;Noto Sans&quot;, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;, &quot;Noto Color Emoji&quot;;\"><li>Lorem Ipsum</li><li>Dolor Sit Amet</li><li>Consectetur</li><li>Adipiscing Elit</li></ul>"
+          },
+          "ContainedPart": {
+            "ListContentItemId": "40e9kz790pvhc7dkz1g2gnnh5x",
+            "Order": 0
+          }
+        },
+        {
+          "ContentItemId": "45khs7d9aat6405x2qxwbtfecx",
+          "ContentItemVersionId": "46td071w48vdszdjcpgmh3nzdy",
+          "ContentType": "Project",
+          "DisplayText": "Project Five",
+          "Latest": true,
+          "Published": true,
+          "ModifiedUtc": "2019-04-23T14:43:57.5438127Z",
+          "PublishedUtc": "2019-04-23T14:43:57.5497293Z",
+          "CreatedUtc": "2019-04-23T14:43:57.5497293Z",
+          "Owner": "admin",
+          "Author": "admin",
+          "Project": {
+            "Description": {
+              "Text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium veniam exercitationem expedita laborum at voluptate. Labore, voluptates totam at aut nemo deserunt rem magni pariatur quos perspiciatis atque eveniet unde."
+            },
+            "Picture": {
+              "Paths": [
+                "700x300.png"
+              ]
+            }
+          },
+          "AutoroutePart": {
+            "Path": "project-five",
+            "SetHomepage": false
+          },
+          "TitlePart": {
+            "Title": "Project Five"
+          },
+          "HtmlBodyPart": {
+            "Html": "<ul style=\"font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, Arial, &quot;Noto Sans&quot;, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;, &quot;Noto Color Emoji&quot;;\"><li>Lorem Ipsum</li><li>Dolor Sit Amet</li><li>Consectetur</li><li>Adipiscing Elit</li></ul>"
+          },
+          "ContainedPart": {
+            "ListContentItemId": "40e9kz790pvhc7dkz1g2gnnh5x",
+            "Order": 0
+          }
+        },
+        {
+          "ContentItemId": "4f146gcrxjvn3v5qqq86mcs2dm",
+          "ContentItemVersionId": "4kgy7jwxgee5gypsshh102ncn3",
+          "ContentType": "FAQ",
+          "DisplayText": "FAQ",
+          "Latest": true,
+          "Published": true,
+          "ModifiedUtc": "2019-04-23T15:26:59.0550029Z",
+          "PublishedUtc": "2019-04-23T15:26:59.0781842Z",
+          "CreatedUtc": "2019-04-23T15:12:52.2445746Z",
+          "Owner": "admin",
+          "Author": "admin",
+          "FAQ": {},
+          "BagPart": {
+            "ContentItems": [
+              {
+                "ContentItemId": "420gr9zd1mgs4xrb51bsdbdf4m",
+                "ContentItemVersionId": null,
+                "ContentType": "Item",
+                "DisplayText": "Collapsible Group Item #1",
+                "Latest": false,
+                "Published": false,
+                "ModifiedUtc": "2019-04-23T15:24:43.8664901Z",
+                "PublishedUtc": null,
+                "CreatedUtc": null,
+                "Owner": null,
+                "Author": "admin",
+                "Item": {},
+                "HtmlBodyPart": {
+                  "Html": "Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS."
+                },
+                "TitlePart": {
+                  "Title": "Collapsible Group Item #1"
+                }
+              },
+              {
+                "ContentItemId": "477kq5tkwz37wrjak39e75stmy",
+                "ContentItemVersionId": null,
+                "ContentType": "Item",
+                "DisplayText": "Collapsible Group Item #2",
+                "Latest": false,
+                "Published": false,
+                "ModifiedUtc": "2019-04-23T15:24:43.8721479Z",
+                "PublishedUtc": null,
+                "CreatedUtc": null,
+                "Owner": null,
+                "Author": "admin",
+                "Item": {},
+                "HtmlBodyPart": {
+                  "Html": "Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS."
+                },
+                "TitlePart": {
+                  "Title": "Collapsible Group Item #2"
+                }
+              },
+              {
+                "ContentItemId": "4nw2x8vqa9yp8xqqj667e7d05w",
+                "ContentItemVersionId": null,
+                "ContentType": "Item",
+                "DisplayText": "Collapsible Group Item #3",
+                "Latest": false,
+                "Published": false,
+                "ModifiedUtc": "2019-04-23T15:24:43.8769064Z",
+                "PublishedUtc": null,
+                "CreatedUtc": null,
+                "Owner": null,
+                "Author": "admin",
+                "Item": {},
+                "HtmlBodyPart": {
+                  "Html": "Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS."
+                },
+                "TitlePart": {
+                  "Title": "Collapsible Group Item #3"
+                }
+              }
+            ]
+          },
+          "TitlePart": {
+            "Title": "FAQ"
+          },
+          "AutoroutePart": {
+            "Path": "faq",
+            "SetHomepage": false
+          },
+          "Items": {
+            "ContentItems": [
+              {
+                "ContentItemId": "4j6rh28r12aavy45gh1mb36wms",
+                "ContentItemVersionId": null,
+                "ContentType": "Item",
+                "DisplayText": "Collapsible Group Item #1",
+                "Latest": false,
+                "Published": false,
+                "ModifiedUtc": "2019-04-23T15:26:59.0680877Z",
+                "PublishedUtc": null,
+                "CreatedUtc": null,
+                "Owner": null,
+                "Author": "admin",
+                "Item": {},
+                "HtmlBodyPart": {
+                  "Html": "Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS."
+                },
+                "TitlePart": {
+                  "Title": "Collapsible Group Item #1"
+                }
+              },
+              {
+                "ContentItemId": "4vgyjyvtg37n14jggm8zwxz04e",
+                "ContentItemVersionId": null,
+                "ContentType": "Item",
+                "DisplayText": "Collapsible Group Item #2",
+                "Latest": false,
+                "Published": false,
+                "ModifiedUtc": "2019-04-23T15:26:59.0707038Z",
+                "PublishedUtc": null,
+                "CreatedUtc": null,
+                "Owner": null,
+                "Author": "admin",
+                "Item": {},
+                "HtmlBodyPart": {
+                  "Html": "Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS."
+                },
+                "TitlePart": {
+                  "Title": "Collapsible Group Item #2"
+                }
+              },
+              {
+                "ContentItemId": "4vntye5fk6cb46nbr2ahy789md",
+                "ContentItemVersionId": null,
+                "ContentType": "Item",
+                "DisplayText": "Collapsible Group Item #3",
+                "Latest": false,
+                "Published": false,
+                "ModifiedUtc": "2019-04-23T15:26:59.0734828Z",
+                "PublishedUtc": null,
+                "CreatedUtc": null,
+                "Owner": null,
+                "Author": "admin",
+                "Item": {},
+                "HtmlBodyPart": {
+                  "Html": "Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS."
+                },
+                "TitlePart": {
+                  "Title": "Collapsible Group Item #3"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "ContentItemId": "4h44aa08kqegq3z7br9qvq5dmc",
+          "ContentItemVersionId": "44q0k0z8216vf7hayxtw0rbm42",
+          "ContentType": "Blog",
+          "DisplayText": "Blog",
+          "Latest": true,
+          "Published": true,
+          "ModifiedUtc": "2019-04-23T15:40:06.9347593Z",
+          "PublishedUtc": "2019-04-23T15:40:06.9400425Z",
+          "CreatedUtc": "2019-04-23T15:40:06.9400425Z",
+          "Owner": "admin",
+          "Author": "admin",
+          "Blog": {},
+          "AutoroutePart": {
+            "Path": "blog",
+            "SetHomepage": false
+          },
+          "ListPart": {
+            "FeedProxyUrl": null,
+            "FeedItemsCount": 20
+          },
+          "TitlePart": {
+            "Title": "Blog"
+          }
+        },
+        {
+          "ContentItemId": "4z117003sqdhz1ave6ynfex64e",
+          "ContentItemVersionId": "477sezcgbf0v96587k01gnvs5z",
+          "ContentType": "Project",
+          "DisplayText": "Project Six",
+          "Latest": true,
+          "Published": true,
+          "ModifiedUtc": "2019-05-01T14:09:11.6196708Z",
+          "PublishedUtc": "2019-05-01T14:09:11.6311189Z",
+          "CreatedUtc": "2019-05-01T14:09:11.6311189Z",
+          "Owner": "admin",
+          "Author": "admin",
+          "Project": {
+            "Description": {
+              "Text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae."
+            },
+            "Picture": {
+              "Paths": [
+                "700x400.png"
+              ]
+            }
+          },
+          "AutoroutePart": {
+            "Path": "project-six",
+            "SetHomepage": false
+          },
+          "TitlePart": {
+            "Title": "Project Six"
+          },
+          "HtmlBodyPart": {
+            "Html": "<ul style=\"font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, Arial, &quot;Noto Sans&quot;, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;, &quot;Noto Color Emoji&quot;;\"><li>Lorem Ipsum</li><li>Dolor Sit Amet</li><li>Consectetur</li><li>Adipiscing Elit</li></ul>"
+          },
+          "ContainedPart": {
+            "ListContentItemId": "40e9kz790pvhc7dkz1g2gnnh5x",
+            "Order": 0
+          }
+        },
+        {
+          "ContentItemId": "4nmzqrehq4dkc0p2thm29pm057",
+          "ContentItemVersionId": "4mzrmh4tebzfqvm3ws1tgfzj4q",
+          "ContentType": "Page",
+          "DisplayText": "About",
+          "Latest": true,
+          "Published": true,
+          "ModifiedUtc": "2019-05-01T15:03:33.9546776Z",
+          "PublishedUtc": "2019-05-01T15:03:33.9821991Z",
+          "CreatedUtc": "2019-04-23T12:53:44.7290613Z",
+          "Owner": "admin",
+          "Author": "admin",
+          "Page": {},
+          "AutoroutePart": {
+            "Path": "about",
+            "SetHomepage": false
+          },
+          "FlowPart": {
+            "Widgets": [
+              {
+                "ContentItemId": "437dpdkgs7wmy1jax3645vjvwa",
+                "ContentItemVersionId": null,
+                "ContentType": "RawHtml",
+                "DisplayText": null,
+                "Latest": false,
+                "Published": false,
+                "ModifiedUtc": "2019-05-01T15:03:33.9668326Z",
+                "PublishedUtc": null,
+                "CreatedUtc": null,
+                "Owner": null,
+                "Author": "admin",
+                "RawHtml": {
+                  "Content": {
+                    "Html": "<ol class=\"breadcrumb\">\r\n      <li class=\"breadcrumb-item\">\r\n        <a href=\"/\">Home</a>\r\n      </li>\r\n      <li class=\"breadcrumb-item active\">About</li>\r\n    </ol>"
+                  }
+                },
+                "FlowMetadata": {
+                  "Alignment": 3,
+                  "Size": 100
+                }
+              },
+              {
+                "ContentItemId": "4zm0s51n8pdv15b86fxm2amrmy",
+                "ContentItemVersionId": null,
+                "ContentType": "RawHtml",
+                "DisplayText": null,
+                "Latest": false,
+                "Published": false,
+                "ModifiedUtc": "2019-05-01T15:03:33.9681593Z",
+                "PublishedUtc": null,
+                "CreatedUtc": null,
+                "Owner": null,
+                "Author": "admin",
+                "RawHtml": {
+                  "Content": {
+                    "Html": "<img class=\"img-fluid rounded mb-4\" src=\"http://placehold.it/750x450\" alt=\"\">"
+                  }
+                },
+                "FlowMetadata": {
+                  "Alignment": 3,
+                  "Size": 50
+                }
+              },
+              {
+                "ContentItemId": "4kbcr5rf9zvq1r3abzdc9abhd7",
+                "ContentItemVersionId": null,
+                "ContentType": "RawHtml",
+                "DisplayText": null,
+                "Latest": false,
+                "Published": false,
+                "ModifiedUtc": "2019-05-01T15:03:33.9696799Z",
+                "PublishedUtc": null,
+                "CreatedUtc": null,
+                "Owner": null,
+                "Author": "admin",
+                "RawHtml": {
+                  "Content": {
+                    "Html": "<h2>About Modern Business</h2>\r\n<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed voluptate nihil eum consectetur similique? Consectetur, quod, incidunt, harum nisi dolores delectus reprehenderit voluptatem perferendis dicta dolorem non blanditiis ex fugiat.</p>"
+                  }
+                },
+                "FlowMetadata": {
+                  "Alignment": 3,
+                  "Size": 50
+                }
+              },
+              {
+                "ContentItemId": "45sc0bb6c87wxy0zddscrsa8d9",
+                "ContentItemVersionId": null,
+                "ContentType": "LiquidWidget",
+                "DisplayText": null,
+                "Latest": false,
+                "Published": false,
+                "ModifiedUtc": "2019-05-01T15:03:33.9720761Z",
+                "PublishedUtc": null,
+                "CreatedUtc": null,
+                "Owner": null,
+                "Author": "admin",
+                "LiquidWidget": {},
+                "LiquidPart": {
+                  "Liquid": "<h2>Our Team</h2>\r\n<div class=\"row\">\r\n{% assign teamMembers = Queries.Contents | query: type:'TeamMember' %}\r\n{% for item in teamMembers %}\r\n{% assign content = item.Content[item.ContentType] %}\r\n  <div class=\"col-lg-4 mb-4\">\r\n    <div class=\"card h-100 text-center\">\r\n      <img class=\"card-img-top\" src=\"{{ content.ImageUrl.Text }}\" alt=\"\">\r\n      <div class=\"card-body\">\r\n        <h4 class=\"card-title\">{{ item | display_text }}</h4>\r\n        <h6 class=\"card-subtitle mb-2 text-muted\">{{ content.Position.Text }}</h6>\r\n        <p class=\"card-text\">{{ content.Description.Text }}</p>\r\n      </div>\r\n      <div class=\"card-footer\">\r\n        <a href=\"{{ content.Email.Text }}\">{{ content.Email.Text }}</a>\r\n      </div>\r\n    </div>\r\n  </div>\r\n{% endfor %}\r\n</div>"
+                },
+                "FlowMetadata": {
+                  "Alignment": 3,
+                  "Size": 100
+                }
+              },
+              {
+                "ContentItemId": "4gkrzn5hkd0sr6wkpndy83ttw6",
+                "ContentItemVersionId": null,
+                "ContentType": "RawHtml",
+                "DisplayText": null,
+                "Latest": false,
+                "Published": false,
+                "ModifiedUtc": "2019-05-01T15:03:33.9744823Z",
+                "PublishedUtc": null,
+                "CreatedUtc": null,
+                "Owner": null,
+                "Author": "admin",
+                "RawHtml": {
+                  "Content": {
+                    "Html": "<h2>Our Customers</h2>\r\n<div class=\"row\">\r\n      <div class=\"col-lg-2 col-sm-4 mb-4\">\r\n        <img class=\"img-fluid\" src=\"http://placehold.it/500x300\" alt=\"\">\r\n      </div>\r\n      <div class=\"col-lg-2 col-sm-4 mb-4\">\r\n        <img class=\"img-fluid\" src=\"http://placehold.it/500x300\" alt=\"\">\r\n      </div>\r\n      <div class=\"col-lg-2 col-sm-4 mb-4\">\r\n        <img class=\"img-fluid\" src=\"http://placehold.it/500x300\" alt=\"\">\r\n      </div>\r\n      <div class=\"col-lg-2 col-sm-4 mb-4\">\r\n        <img class=\"img-fluid\" src=\"http://placehold.it/500x300\" alt=\"\">\r\n      </div>\r\n      <div class=\"col-lg-2 col-sm-4 mb-4\">\r\n        <img class=\"img-fluid\" src=\"http://placehold.it/500x300\" alt=\"\">\r\n      </div>\r\n      <div class=\"col-lg-2 col-sm-4 mb-4\">\r\n        <img class=\"img-fluid\" src=\"http://placehold.it/500x300\" alt=\"\">\r\n      </div>\r\n    </div>"
+                  }
+                },
+                "FlowMetadata": {
+                  "Alignment": 3,
+                  "Size": 100
+                }
+              }
+            ]
+          },
+          "TitlePart": {
+            "Title": "About"
+          }
+        },
+        {
+          "ContentItemId": "4zmzzzaygxda814pp2x18gr3da",
+          "ContentItemVersionId": "43hg5xvjn44hx5x8kd6js2jzny",
+          "ContentType": "CardList",
+          "DisplayText": "Services",
+          "Latest": true,
+          "Published": true,
+          "ModifiedUtc": "2019-05-01T15:03:57.4434529Z",
+          "PublishedUtc": "2019-05-01T15:03:57.4552102Z",
+          "CreatedUtc": "2019-04-23T13:32:05.9803169Z",
+          "Owner": "admin",
+          "Author": "admin",
+          "CardList": {},
+          "HtmlBodyPart": {
+            "Html": "<ol class=\"breadcrumb\">\r\n      <li class=\"breadcrumb-item\">\r\n        <a href=\"/\">Home</a>\r\n      </li>\r\n      <li class=\"breadcrumb-item active\">Services</li>\r\n    </ol>\r\n<img class=\"img-fluid rounded mb-4\" src=\"http://placehold.it/1200x300\" alt=\"\">"
+          },
+          "ListPart": {
+            "FeedProxyUrl": null,
+            "FeedItemsCount": 20
+          },
+          "TitlePart": {
+            "Title": "Services"
+          },
+          "AutoroutePart": {
+            "Path": "services",
+            "SetHomepage": false
+          }
+        },
+        {
+          "ContentItemId": "47vqp7d4etqp16ab85cvby43my",
+          "ContentItemVersionId": "4aq1thtrnx7a0x6xb5597dadxm",
+          "ContentType": "Menu",
+          "DisplayText": "Main Menu",
+          "Latest": true,
+          "Published": true,
+          "ModifiedUtc": "2019-05-01T15:24:22.5290731Z",
+          "PublishedUtc": "2019-05-01T15:24:22.5430078Z",
+          "CreatedUtc": "2017-08-16T00:32:59.1287452Z",
+          "Owner": "admin",
+          "Author": "admin",
+          "MenuPart": {},
+          "TitlePart": {
+            "Title": "Main Menu"
+          },
+          "MenuItemsListPart": {
+            "MenuItems": [
+              {
+                "ContentItemId": "4y4qrhfev2ce56wz6jz9cqyydw",
+                "ContentItemVersionId": null,
+                "ContentType": "LinkMenuItem",
+                "DisplayText": null,
+                "Latest": false,
+                "Published": false,
+                "ModifiedUtc": "2019-04-23T13:22:24.7221096Z",
+                "PublishedUtc": null,
+                "CreatedUtc": null,
+                "Owner": null,
+                "Author": "admin",
+                "LinkMenuItemPart": {
+                  "Name": "About",
+                  "Url": "~/about"
+                },
+                "LinkMenuItem": {}
+              },
+              {
+                "ContentItemId": "4dsbwd2txw02764vdmtw6h09wm",
+                "ContentItemVersionId": null,
+                "ContentType": "LinkMenuItem",
+                "DisplayText": null,
+                "Latest": false,
+                "Published": false,
+                "ModifiedUtc": "2019-04-23T13:51:59.5831357Z",
+                "PublishedUtc": null,
+                "CreatedUtc": null,
+                "Owner": null,
+                "Author": "admin",
+                "LinkMenuItemPart": {
+                  "Name": "Services",
+                  "Url": "~/services"
+                },
+                "LinkMenuItem": {}
+              },
+              {
+                "ContentItemId": "48ywd9hvtm8jt21j140430hzwz",
+                "ContentItemVersionId": null,
+                "ContentType": "LinkMenuItem",
+                "DisplayText": null,
+                "Latest": false,
+                "Published": false,
+                "ModifiedUtc": "2019-04-23T14:34:38.2889627Z",
+                "PublishedUtc": null,
+                "CreatedUtc": null,
+                "Owner": null,
+                "Author": "admin",
+                "LinkMenuItemPart": {
+                  "Name": "Portfolio",
+                  "Url": "~/portfolio-1"
+                },
+                "LinkMenuItem": {}
+              },
+              {
+                "ContentItemId": "4tpsnv94363ne6crggwf129rw6",
+                "ContentItemVersionId": null,
+                "ContentType": "LinkMenuItem",
+                "DisplayText": null,
+                "Latest": false,
+                "Published": false,
+                "ModifiedUtc": "2019-04-23T15:45:31.3939356Z",
+                "PublishedUtc": null,
+                "CreatedUtc": null,
+                "Owner": null,
+                "Author": "admin",
+                "LinkMenuItemPart": {
+                  "Name": "Blog",
+                  "Url": "~/blog"
+                },
+                "LinkMenuItem": {}
+              },
+              {
+                "ContentItemId": "46y2m2y3vb8dbzbpbj2144vdm5",
+                "ContentItemVersionId": null,
+                "ContentType": "LinkMenuItem",
+                "DisplayText": null,
+                "Latest": false,
+                "Published": false,
+                "ModifiedUtc": "2019-04-23T15:45:58.4141196Z",
+                "PublishedUtc": null,
+                "CreatedUtc": null,
+                "Owner": null,
+                "Author": "admin",
+                "LinkMenuItemPart": {
+                  "Name": "Pages",
+                  "Url": "#"
+                },
+                "LinkMenuItem": {},
+                "MenuItemsListPart": {
+                  "MenuItems": [
+                    {
+                      "ContentItemId": "4xmb5dh7m9weesry5rgx58y7w4",
+                      "ContentItemVersionId": null,
+                      "ContentType": "LinkMenuItem",
+                      "DisplayText": null,
+                      "Latest": false,
+                      "Published": false,
+                      "ModifiedUtc": "2019-04-23T15:31:41.8001809Z",
+                      "PublishedUtc": null,
+                      "CreatedUtc": null,
+                      "Owner": null,
+                      "Author": "admin",
+                      "LinkMenuItemPart": {
+                        "Name": "FAQ",
+                        "Url": "~/faq"
+                      },
+                      "LinkMenuItem": {}
+                    },
+                    {
+                      "ContentItemId": "44t1fnejmsnkd0vhcj37f4znch",
+                      "ContentItemVersionId": null,
+                      "ContentType": "LinkMenuItem",
+                      "DisplayText": null,
+                      "Latest": false,
+                      "Published": false,
+                      "ModifiedUtc": "2019-05-01T14:59:01.0854807Z",
+                      "PublishedUtc": null,
+                      "CreatedUtc": null,
+                      "Owner": null,
+                      "Author": "admin",
+                      "LinkMenuItemPart": {
+                        "Name": "Pricing",
+                        "Url": "~/pricing"
+                      },
+                      "LinkMenuItem": {}
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          "AliasPart": {
+            "Alias": "main-menu"
+          }
+        },
+        {
+          "ContentItemId": "4fcrkd3zh4kkg1n8xa75hysxmh",
+          "ContentItemVersionId": "4b68fqg98j95r7c32z0y93964y",
+          "ContentType": "Page",
+          "DisplayText": "Pricing",
+          "Latest": true,
+          "Published": true,
+          "ModifiedUtc": "2019-05-11T14:01:16.3826905Z",
+          "PublishedUtc": "2019-05-11T14:01:16.4029695Z",
+          "CreatedUtc": "2019-05-01T14:58:26.5248339Z",
+          "Owner": "admin",
+          "Author": "admin",
+          "Page": {},
+          "AutoroutePart": {
+            "Path": "pricing",
+            "SetHomepage": false
+          },
+          "FlowPart": {
+            "Widgets": [
+              {
+                "ContentItemId": "4374x46xtx5h87d86cahsdz7n9",
+                "ContentItemVersionId": null,
+                "ContentType": "RawHtml",
+                "DisplayText": null,
+                "Latest": false,
+                "Published": false,
+                "ModifiedUtc": "2019-05-11T14:01:16.396043Z",
+                "PublishedUtc": null,
+                "CreatedUtc": null,
+                "Owner": null,
+                "Author": "admin",
+                "RawHtml": {
+                  "Content": {
+                    "Html": "<ol class=\"breadcrumb\">\r\n      <li class=\"breadcrumb-item\">\r\n        <a href=\"/\">Home</a>\r\n      </li>\r\n      <li class=\"breadcrumb-item active\">Pricing</li>\r\n    </ol>\r\n<div class=\"row\">\r\n      <div class=\"col-lg-4 mb-4\">\r\n        <div class=\"card h-100\">\r\n          <h3 class=\"card-header\">Basic</h3>\r\n          <div class=\"card-body\">\r\n            <div class=\"display-4\">$19.99</div>\r\n            <div class=\"font-italic\">per month</div>\r\n          </div>\r\n          <ul class=\"list-group list-group-flush\">\r\n            <li class=\"list-group-item\">Cras justo odio</li>\r\n            <li class=\"list-group-item\">Dapibus ac facilisis in</li>\r\n            <li class=\"list-group-item\">Vestibulum at eros</li>\r\n            <li class=\"list-group-item\">\r\n              <a href=\"#\" class=\"btn btn-primary\">Sign Up!</a>\r\n            </li>\r\n          </ul>\r\n        </div>\r\n      </div>\r\n      <div class=\"col-lg-4 mb-4\">\r\n        <div class=\"card card-outline-primary h-100\">\r\n          <h3 class=\"card-header bg-primary text-white\">Plus</h3>\r\n          <div class=\"card-body\">\r\n            <div class=\"display-4\">$39.99</div>\r\n            <div class=\"font-italic\">per month</div>\r\n          </div>\r\n          <ul class=\"list-group list-group-flush\">\r\n            <li class=\"list-group-item\">Cras justo odio</li>\r\n            <li class=\"list-group-item\">Dapibus ac facilisis in</li>\r\n            <li class=\"list-group-item\">Vestibulum at eros</li>\r\n            <li class=\"list-group-item\">\r\n              <a href=\"#\" class=\"btn btn-primary\">Sign Up!</a>\r\n            </li>\r\n          </ul>\r\n        </div>\r\n      </div>\r\n      <div class=\"col-lg-4 mb-4\">\r\n        <div class=\"card h-100\">\r\n          <h3 class=\"card-header\">Ultra</h3>\r\n          <div class=\"card-body\">\r\n            <div class=\"display-4\">$159.99</div>\r\n            <div class=\"font-italic\">per month</div>\r\n          </div>\r\n          <ul class=\"list-group list-group-flush\">\r\n            <li class=\"list-group-item\">Cras justo odio</li>\r\n            <li class=\"list-group-item\">Dapibus ac facilisis in</li>\r\n            <li class=\"list-group-item\">Vestibulum at eros</li>\r\n            <li class=\"list-group-item\">\r\n              <a href=\"#\" class=\"btn btn-primary\">Sign Up!</a>\r\n            </li>\r\n          </ul>\r\n        </div>\r\n      </div>\r\n    </div>"
+                  }
+                },
+                "FlowMetadata": {
+                  "Alignment": 3,
+                  "Size": 100
+                }
+              }
+            ]
+          },
+          "TitlePart": {
+            "Title": "Pricing"
+          }
+        },
+        {
+          "ContentItemId": "4s8kbhsv0gvw518ysq6hzc745b",
+          "ContentItemVersionId": "4tjn5mgg4cmvyvgcnrr7k62j5s",
+          "ContentType": "Page",
+          "DisplayText": "Welcome to Modern Business",
+          "Latest": true,
+          "Published": true,
+          "ModifiedUtc": "2019-06-11T12:29:47.9814867Z",
+          "PublishedUtc": "2019-06-11T12:29:48.1743064Z",
+          "CreatedUtc": "2019-04-18T18:26:54.4740587Z",
+          "Owner": "admin",
+          "Author": "admin",
+          "Page": {},
+          "AutoroutePart": {
+            "Path": "home",
+            "SetHomepage": true
+          },
+          "FlowPart": {
+            "Widgets": [
+              {
+                "ContentItemId": "4v9v5q5mwhq522gdsvgm2dqvwy",
+                "ContentItemVersionId": null,
+                "ContentType": "LiquidWidget",
+                "DisplayText": null,
+                "Latest": false,
+                "Published": false,
+                "ModifiedUtc": "2019-06-11T12:29:48.1295238Z",
+                "PublishedUtc": null,
+                "CreatedUtc": null,
+                "Owner": null,
+                "Author": "admin",
+                "LiquidWidget": {},
+                "LiquidPart": {
+                  "Liquid": "{% assign cards = Queries.Contents | query: type: \"Card\", limit: 3 %}\r\n<div class=\"row\">\r\n{% for card in cards %}\r\n{{ card | shape_build_display: \"Summary\" | shape_render }}\r\n{% endfor %}\r\n</div>"
+                },
+                "FlowMetadata": {
+                  "Alignment": 3,
+                  "Size": 100
+                }
+              },
+              {
+                "ContentItemId": "47k639xd47eq63hv12ge1c2mmc",
+                "ContentItemVersionId": null,
+                "ContentType": "LiquidWidget",
+                "DisplayText": null,
+                "Latest": false,
+                "Published": false,
+                "ModifiedUtc": "2019-06-11T12:29:48.1516552Z",
+                "PublishedUtc": null,
+                "CreatedUtc": null,
+                "Owner": null,
+                "Author": "admin",
+                "LiquidWidget": {},
+                "LiquidPart": {
+                  "Liquid": "<h2>Portfolio Heading</h2>\r\n{% assign projects = Queries.Contents | query: type: \"Project\", limit: 3 %}\r\n<div class=\"row\">\r\n{% for project in projects %}\r\n{{ project | shape_build_display: \"Summary\" | shape_render }}\r\n{% endfor %}\r\n</div>"
+                },
+                "FlowMetadata": {
+                  "Alignment": 3,
+                  "Size": 100
+                }
+              },
+              {
+                "ContentItemId": "41bgx46s9q1r15ratwy0j87v4a",
+                "ContentItemVersionId": null,
+                "ContentType": "RawHtml",
+                "DisplayText": null,
+                "Latest": false,
+                "Published": false,
+                "ModifiedUtc": "2019-06-11T12:29:48.1533977Z",
+                "PublishedUtc": null,
+                "CreatedUtc": null,
+                "Owner": null,
+                "Author": "admin",
+                "RawHtml": {
+                  "Content": {
+                    "Html": "<div class=\"row\">\r\n      <div class=\"col-lg-6\">\r\n        <h2>Modern Business Features</h2>\r\n        <p>The Modern Business template by Start Bootstrap includes:</p>\r\n        <ul>\r\n          <li>\r\n            <strong>Bootstrap v4</strong>\r\n          </li>\r\n          <li>jQuery</li>\r\n          <li>Font Awesome</li>\r\n          <li>Working contact form with validation</li>\r\n          <li>Unstyled page elements for easy customization</li>\r\n        </ul>\r\n        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, omnis doloremque non cum id reprehenderit, quisquam totam aspernatur tempora minima unde aliquid ea culpa sunt. Reiciendis quia dolorum ducimus unde.</p>\r\n      </div>\r\n      <div class=\"col-lg-6\">\r\n        <img class=\"img-fluid rounded\" src=\"https://placehold.it/700x450\" alt=\"\">\r\n      </div>\r\n    </div>"
+                  }
+                },
+                "FlowMetadata": {
+                  "Alignment": 3,
+                  "Size": 100
+                }
+              },
+              {
+                "ContentItemId": "4hs8ss7whwm3s59sxjq1vb54nm",
+                "ContentItemVersionId": null,
+                "ContentType": "RawHtml",
+                "DisplayText": null,
+                "Latest": false,
+                "Published": false,
+                "ModifiedUtc": "2019-06-11T12:29:48.1547488Z",
+                "PublishedUtc": null,
+                "CreatedUtc": null,
+                "Owner": null,
+                "Author": "admin",
+                "RawHtml": {
+                  "Content": {
+                    "Html": "\r\n<hr/>\r\n<div class=\"row mb-4\">\r\n      <div class=\"col-md-8\">\r\n        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, expedita, saepe, vero rerum deleniti beatae veniam harum neque nemo praesentium cum alias asperiores commodi.</p>\r\n      </div>\r\n      <div class=\"col-md-4\">\r\n        <a class=\"btn btn-lg btn-secondary btn-block\" href=\"#\">Call to Action</a>\r\n      </div>\r\n    </div>"
+                  }
+                },
+                "FlowMetadata": {
+                  "Alignment": 3,
+                  "Size": 100
+                }
+              }
+            ]
+          },
+          "TitlePart": {
+            "Title": "Welcome to Modern Business"
+          }
+        },
+        {
+          "ContentItemId": "4fbd4w9z5sgv67rnavdajk9n4m",
+          "ContentItemVersionId": "4b0ks2vjtax34wq0r82svhp1nf",
+          "ContentType": "BlogPost",
+          "DisplayText": "Post Title 2",
+          "Latest": true,
+          "Published": true,
+          "ModifiedUtc": "2019-06-11T12:49:44.8235065Z",
+          "PublishedUtc": "2019-06-11T12:49:44.8480389Z",
+          "CreatedUtc": "2019-04-23T15:59:17.216Z",
+          "Owner": "admin",
+          "Author": "admin",
+          "BlogPost": {
+            "Picture": {
+              "Paths": [
+                "750x300.png"
+              ]
+            }
+          },
+          "AutoroutePart": {
+            "Path": "blog/post-title-2",
+            "SetHomepage": false
+          },
+          "HtmlBodyPart": {
+            "Html": "<p><span style=\"font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, Arial, &quot;Noto Sans&quot;, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;, &quot;Noto Color Emoji&quot;;\">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!</span></p>"
+          },
+          "TitlePart": {
+            "Title": "Post Title 2"
+          },
+          "CommonPart": {},
+          "ContainedPart": {
+            "ListContentItemId": "4h44aa08kqegq3z7br9qvq5dmc",
+            "Order": 0
+          }
+        },
+        {
+          "ContentItemId": "4t1r6p49631jys9kjdskfrz9wv",
+          "ContentItemVersionId": "43yemb8mmp3gfy3ewscp9ye44h",
+          "ContentType": "BlogPost",
+          "DisplayText": "Post Title 1",
+          "Latest": true,
+          "Published": true,
+          "ModifiedUtc": "2019-06-11T12:49:53.1668834Z",
+          "PublishedUtc": "2019-06-11T12:49:53.1841739Z",
+          "CreatedUtc": "2019-04-23T15:42:38.154Z",
+          "Owner": "admin",
+          "Author": "admin",
+          "BlogPost": {
+            "Picture": {
+              "Paths": [
+                "750x300.png"
+              ]
+            }
+          },
+          "AutoroutePart": {
+            "Path": "blog/post-title-1",
+            "SetHomepage": false
+          },
+          "HtmlBodyPart": {
+            "Html": "<p><span style=\"font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, Arial, &quot;Noto Sans&quot;, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;, &quot;Noto Color Emoji&quot;;\">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!</span></p>"
+          },
+          "TitlePart": {
+            "Title": "Post Title 1"
+          },
+          "ContainedPart": {
+            "ListContentItemId": "4h44aa08kqegq3z7br9qvq5dmc",
+            "Order": 0
+          },
+          "CommonPart": {}
+        },
+        {
+          "ContentItemId": "4gk0c8dgyrt0zy58gc3azpvjnj",
+          "ContentItemVersionId": "4vqpc9gkbp5j10r8spzk865pw9",
+          "ContentType": "RawHtml",
+          "DisplayText": "Header",
+          "Latest": true,
+          "Published": true,
+          "ModifiedUtc": "2019-06-14T14:07:06.4761378Z",
+          "PublishedUtc": "2019-06-14T14:07:06.4842867Z",
+          "CreatedUtc": "2019-06-11T13:06:57.6294886Z",
+          "Owner": "admin",
+          "Author": "admin",
+          "RawHtml": {
+            "Content": {
+              "Html": "<div class=\"jumbotron text-center mb-0\">\r\n\t  <h1>WebSite</h1>\r\n</div>"
+            }
+          },
+          "LayerMetadata": {
+            "Position": 2.0,
+            "Zone": "Header",
+            "Layer": "Never",
+            "RenderTitle": false
+          }
+        },
+        {
+          "ContentItemId": "4thz85a47pbp4v7mj3e54dmdd8",
+          "ContentItemVersionId": "418mxmd75bc90w7j8xmsnq5e4s",
+          "ContentType": "LiquidWidget",
+          "DisplayText": "Title",
+          "Latest": true,
+          "Published": true,
+          "ModifiedUtc": "2019-06-14T14:12:45.31511Z",
+          "PublishedUtc": "2019-06-14T14:12:45.3233169Z",
+          "CreatedUtc": "2019-06-14T14:07:27.2364682Z",
+          "Owner": "admin",
+          "Author": "admin",
+          "LiquidWidget": {},
+          "LiquidPart": {
+            "Liquid": "<div class=\"jumbotron text-center mb-0\">\r\n\t  <h1>{{ Model.ContentItem.DisplayText }}</h1>\r\n</div>\r\n\r\n{% shape_remove_item Model.Content \"TitlePart\" %}"
+          },
+          "LayerMetadata": {
+            "Position": 3.0,
+            "Zone": "Header",
+            "Layer": "Never",
+            "RenderTitle": false
+          }
+        },
+        {
+          "ContentItemId": "4f4y3r3dykqwbrza3n7awptjmq",
+          "ContentItemVersionId": "4a9q4bvqc377s4q3vnxfb3dnnz",
+          "ContentType": "Blog",
+          "DisplayText": "Blog",
+          "Latest": true,
+          "Published": true,
+          "ModifiedUtc": "2019-10-15T09:58:37.6017101Z",
+          "PublishedUtc": "2019-10-15T09:58:37.9042194Z",
+          "CreatedUtc": "2018-09-29T16:23:41.6943304Z",
+          "Owner": "admin",
+          "Author": "admin",
+          "TitlePart": {
+            "Title": "Blog"
+          },
+          "HtmlBodyPart": {
+            "Html": null
+          },
+          "AutoroutePart": {
+            "Path": "blog",
+            "SetHomepage": false
+          },
+          "ListPart": {
+            "FeedProxyUrl": "",
+            "FeedItemsCount": 20
+          },
+          "Blog": {}
+        },
+        {
+          "ContentItemId": "43bvpm7y0gkfczsch6dh10j4w7",
+          "ContentItemVersionId": "4vp7acnyb4c7zvqyyqw2gyfqxd",
+          "ContentType": "BlogPost",
+          "DisplayText": "Orchard Core Beta",
+          "Latest": true,
+          "Published": true,
+          "ModifiedUtc": "2019-03-21T18:17:01.2259891Z",
+          "PublishedUtc": "2019-03-21T18:17:01.2588879Z",
+          "CreatedUtc": "2017-11-21T21:16:17.668Z",
+          "Owner": "admin",
+          "Author": "admin",
+          "Number": 4,
+          "BlogPost": {
+            "Tags": {
+              "Text": "Orchard Core"
+            }
+          },
+          "AutoroutePart": {
+            "Path": "blog/orchard-core-beta",
+            "SetHomepage": false
+          },
+          "HtmlBodyPart": {
+            "Html": "<p>Today, we are really proud to announce that the first version of <strong>Orchard Core</strong> has been released in Beta.</p><p><span style=\"color: inherit; font-family: inherit; font-size: 2rem;\">What is Orchard Core and Orchard Core CMS?</span><br></p><br><p><strong>Orchard Core</strong> is a Modular and Extensible Application Framework developped on the .NET Core ecosystem.<br><span style=\"font-size: 1rem;\">It allows you to create Multi tenant SaaS applications and host multiple sites with only one instance.<br></span><span style=\"font-size: 1rem;\"><strong>Orchard Core CMS</strong> is a full featured Content Management System that provides many useful modules.<br></span><span style=\"font-size: 1rem;\">With it, you can easily enable existing features or add your own modules to extend your application.</span></p><p>{{ \"Orchard/OrchardCore-Logo.png\" | asset_url | img_tag }}</p><h2>What features are available?</h2><p>These features are available out of the box:</p><ul><li><strong style=\"font-size: 1rem;\">Nuget Packages</strong><span style=\"font-size: 1rem;\">: Add reference in your application to Orchard Core Nuget packages.</span><br></li><li><strong style=\"font-size: 1rem;\">Performance</strong><span style=\"font-size: 1rem;\">: Handle many requests per second by default and even more with Response Cache.</span><br></li><li><strong style=\"font-size: 1rem;\">Portable </strong><span style=\"font-size: 1rem;\">: You can develop and deploy on multiple platforms : Windows, Mac and Linux.</span><br></li><li><strong style=\"font-size: 1rem;\">Deployment</strong><span style=\"font-size: 1rem;\">: Import/Export the data and the structure of your site with deployment plans.</span><br></li><li><strong style=\"font-size: 1rem;\">Setup</strong><span style=\"font-size: 1rem;\">: Use different recipes to setup your site with initial features and content types using configurable steps and dynamic parameters.&nbsp;</span><br></li><li><strong style=\"font-size: 1rem;\">Storage</strong><span style=\"font-size: 1rem;\">: YesSQL allows you to store your contents in SQL Server, SQLite, MySQL or PostgreSQL as if it was a document database.</span><br></li></ul><p>Many other modules can allow you to create a CMS:</p><ul><li>Create your <strong>Content Types</strong> adding out of the box predefined Parts and Fields.<br></li><li>Customize your site using <strong>Themes </strong>with ASP.NET Razor or Liquid syntax files.<br></li><li>Define different <strong>Zones</strong> on the site and add <strong>Widgets </strong>anywhere in your pages.<br></li><li>Declare <strong>Templates </strong>in admin that overrides the rendering of your content types.<br></li><li>Edit your content with <strong>Wysiwyg </strong>or <strong>Mardown </strong>editors that can use <strong>Liquid filters</strong>.<br></li><li>Get a <strong>Live Preview</strong> of your content in separate window while editing it from the admin.<br></li><li>Manage the <strong>Users, Roles and Permissions</strong> to give access to the Admin dashboard pages.<br></li><li>Manage your Assets and Media folders, upload files and add link to dynamically resized pictures.<br></li><li>Organize your <strong>Contents </strong>and navigate in the site: Lists, Menus, Taxonomies, Urls, ...<br></li><li>Search: <strong>Index</strong> your data and <strong>Query </strong>them in <strong>Sql </strong>or <strong>Lucene </strong>using Liquid syntax.<br></li></ul><br><h2>What is the current Status?</h2><p>Orchard Core is currently in <strong>Beta</strong>. See the <a href=\"https://github.com/OrchardCMS/OrchardCore/wiki/Roadmap\" target=\"_blank\">Roadmap</a>&nbsp;for more details. <br><span style=\"font-size: 1rem;\">This is an <strong>Open Source</strong> project so everyone can contribute and help in many ways to make it grows.</span></p><br><h2>How do I get started?</h2><p>Create an application using Orchard Core is as easy as adding a Nuget package reference to your <strong>ASP.NET Core project</strong> and configure two lines in the startup.cs file.<br><span style=\"font-size: 1rem;\">You can have a running instance in less than 5 minutes following this <a href=\"http://www.ideliverable.com/blog/getting-started-with-orchard-core-as-a-nuget-package\" target=\"_blank\">tutorial</a>.</span></p><br><h2>Useful links:</h2><p>GitHub repository : <a href=\"https://github.com/OrchardCMS/OrchardCore\" target=\"_blank\">https://github.com/OrchardCMS/OrchardCore</a><br><span style=\"font-size: 1rem;\">Gitter chat room : </span><a href=\"https://gitter.im/OrchardCMS/OrchardCore\" target=\"_blank\" style=\"background-color: rgb(255, 255, 255); font-size: 1rem;\">https://gitter.im/OrchardCMS/OrchardCore</a><br><span style=\"font-size: 1rem;\">Orchard Project site : </span><a href=\"http://orchardproject.net/\" target=\"_blank\" style=\"background-color: rgb(255, 255, 255); font-size: 1rem;\">http://orchardproject.net</a><br><span style=\"font-size: 1rem;\">Orchard Core documentation : </span><a href=\"http://orchardcore.readthedocs.io\" target=\"_blank\" style=\"background-color: rgb(255, 255, 255); font-size: 1rem;\">http://orchardcore.readthedocs.io</a></p><br>"
+          },
+          "TitlePart": {
+            "Title": "Orchard Core Beta"
+          },
+          "ContainedPart": {
+            "ListContentItemId": "4f4y3r3dykqwbrza3n7awptjmq",
+            "Order": 0
+          },
+          "CommonPart": {}
+        },
+        {
+          "ContentItemId": "49x1pn2ypegxc36bxbe45bnc5c",
+          "ContentItemVersionId": "4r0qwb5a53x7yxckay5gdwp248",
+          "ContentType": "BlogPost",
+          "DisplayText": "Orchard Core Beta 2",
+          "Latest": true,
+          "Published": true,
+          "ModifiedUtc": "2019-06-26T18:17:26.4397538Z",
+          "PublishedUtc": "2019-06-26T18:17:26.4668634Z",
+          "CreatedUtc": "2019-06-26T13:01:32.604Z",
+          "Owner": "admin",
+          "Author": "admin",
+          "BlogPost": {
+            "Tags": {
+              "Text": "Orchard Core"
+            }
+          },
+          "AutoroutePart": {
+            "Path": "blog/orchard-core-beta-2",
+            "SetHomepage": false
+          },
+          "HtmlBodyPart": {
+            "Html": "<p>Orchard Core is available in Beta 2:&nbsp;<a href=\"https://github.com/OrchardCMS/OrchardCore/releases\">https://github.com/OrchardCMS/OrchardCore/releases</a>&nbsp;</p><p>   {{ \"Orchard/OrchardCore-Logo.png\" | asset_url | img_tag }}</p><p style=\"line-height: 24px; margin-right: 0px; margin-bottom: 24px; margin-left: 0px; color: rgb(64, 64, 64); font-family: Lato, proxima-nova, &quot;Helvetica Neue&quot;, Arial, sans-serif; background-color: rgb(252, 252, 252);\">Orchard Core consists of two different targets:&nbsp;</p><ul style=\"margin-right: 0px; margin-bottom: 24px; margin-left: 0px; padding: 0px; list-style-position: initial; list-style-image: initial; line-height: 24px; color: rgb(64, 64, 64); font-family: Lato, proxima-nova, &quot;Helvetica Neue&quot;, Arial, sans-serif; background-color: rgb(252, 252, 252);\"><li style=\"list-style: disc; margin-left: 24px;\"><strong style=\"font-weight: bold;\">Orchard Core Framework</strong>: An application framework for building&nbsp;<strong style=\"font-weight: bold;\">modular</strong>,&nbsp;<strong style=\"font-weight: bold;\">multi-tenant&nbsp;</strong>applications on ASP.NET Core.&nbsp;</li><li style=\"list-style: disc; margin-left: 24px;\"><strong style=\"font-weight: bold;\">Orchard Core CMS</strong>: A Web Content Management System (CMS) built on top of the Orchard Core Framework.&nbsp;</li></ul><p></p><p>Here is a list of the new features implemented in this release:&nbsp;</p><ul style=\"padding-left: 2em; color: rgb(36, 41, 46); font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; margin-bottom: 0px !important;\"><li>Update to ASP.NET Core 2.1&nbsp;<ul style=\"padding-left: 2em;\"><li>Precompiled Razor Views&nbsp;</li><li style=\"margin-top: 0.25em;\">Razor Pages&nbsp;</li></ul></li><li style=\"margin-top: 0.25em;\">Updated to Bootstrap 4.1&nbsp;</li><li style=\"margin-top: 0.25em;\">Admin responsive menu&nbsp;</li><li style=\"margin-top: 0.25em;\">Assets user interface improvements&nbsp;</li><li style=\"margin-top: 0.25em;\">Fragment caching&nbsp;</li><li style=\"margin-top: 0.25em;\">Content and Query tag helpers&nbsp;</li><li style=\"margin-top: 0.25em;\">Code based manifest files&nbsp;</li><li style=\"margin-top: 0.25em;\">Updated OpenId&nbsp;</li><li style=\"margin-top: 0.25em;\">Social login support&nbsp;</li><li style=\"margin-top: 0.25em;\">Email module&nbsp;</li><li style=\"margin-top: 0.25em;\">Password reset&nbsp;</li><li style=\"margin-top: 0.25em;\">Email confirmation&nbsp;</li><li style=\"margin-top: 0.25em;\">Site and User timezones&nbsp;</li><li style=\"margin-top: 0.25em;\">Date Time (with timezone), Date and Time fields&nbsp;</li><li style=\"margin-top: 0.25em;\">Workflows module&nbsp;</li><li style=\"margin-top: 0.25em;\">Forms module&nbsp;</li><li style=\"margin-top: 0.25em;\">Azure Blob Storage&nbsp;<ul style=\"padding-left: 2em;\"><li>Assets&nbsp;</li><li style=\"margin-top: 0.25em;\">Data Protection&nbsp;</li></ul></li><li style=\"margin-top: 0.25em;\"><code style=\"font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, Courier, monospace; font-size: 13.6px; padding: 0.2em 0.4em; margin: 0px; background-color: rgba(27, 31, 35, 0.05); border-radius: 3px;\">dotnet new</code>&nbsp;templates&nbsp;</li></ul><p></p>"
+          },
+          "TitlePart": {
+            "Title": "Orchard Core Beta 2"
+          },
+          "CommonPart": {},
+          "ContainedPart": {
+            "ListContentItemId": "4f4y3r3dykqwbrza3n7awptjmq",
+            "Order": 0
+          }
+        },
+        {
+          "ContentItemId": "461hnn716pnaxwwcgp73zq1ymj",
+          "ContentItemVersionId": "44fz9s7mkgzcbz6y6tqh3cmbmt",
+          "ContentType": "BlogPost",
+          "DisplayText": "Orchard Core Beta 3",
+          "Latest": true,
+          "Published": true,
+          "ModifiedUtc": "2019-04-04T09:36:10.8510515Z",
+          "PublishedUtc": "2019-04-04T09:36:10.9264083Z",
+          "CreatedUtc": "2019-04-04T09:31:19.744Z",
+          "Owner": "admin",
+          "Author": "admin",
+          "BlogPost": {
+            "Tags": {
+              "Text": "Orchard Core"
+            }
+          },
+          "AutoroutePart": {
+            "Path": "blog/orchard-core-beta-3",
+            "SetHomepage": false
+          },
+          "HtmlBodyPart": {
+            "Html": "<p>Orchard Core is available in Beta 3:&nbsp;<a href=\"https://github.com/OrchardCMS/OrchardCore/releases/tag/1.0.0-beta3\">https://github.com/OrchardCMS/OrchardCore/releases/tag/1.0.0-beta3</a> </p><h2>Open-source, modular, multi-tenant application framework and CMS for ASP.NET Core</h2><br><p>{{ \"Orchard/OrchardCore-Logo.png\" | asset_url | img_tag }}</p><h3>Flexible content management&nbsp;</h3><p>Define custom content types dynamically and reuse content fields. Define roles and permissions for all your users.&nbsp;<br><br></p><h3>Full, decoupled, or headless cms&nbsp;</h3><p>You can separate the content management from the front-end by using GraphQL, and create SPA applications or even static websites.&nbsp;</p><br><h3>Modular&nbsp;</h3><p>Every feature is a module which ships as a Nuget package, can be enabled, disabled or replaced. Create your own ecosystem of modules, or reuse existing ones to bootstrap your applications.</p><br><h3>Multi-tenant</h3><p>A single installation lets you manage multiple sites. The notion of Recipe lets you write reusable websites templates.&nbsp;</p><br><h3>Speed&nbsp;</h3><p>Between the fast performance of ASP.NET Core and the architectural choices of Orchard Core CMS, you get one of the fastest CMS solutions you have ever tried, on any OS (Windows, Linux, MacOS).&nbsp;</p><br><h3>Workflows&nbsp;</h3><p>Create content validation workflows, and define Web Hooks to trigger external processes or react to external events&nbsp;</p><br><h2 style=\"font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;, &quot;Noto Color Emoji&quot;; color: rgb(33, 37, 41);\">List of changes for this release</h2><ul><li>Update to ASP.NET Core 2.2</li><li style=\"margin-top: 0.25em;\">GraphQL for all Content</li><li style=\"margin-top: 0.25em;\">Facebook, Microsoft Account, Google and Twitter authentication</li><li style=\"margin-top: 0.25em;\">ASP.NET Configuration support</li><li style=\"margin-top: 0.25em;\">Decoupled and headless CMS support</li><li style=\"margin-top: 0.25em;\">Improved performance</li><li style=\"margin-top: 0.25em;\">Background tasks management</li><li style=\"margin-top: 0.25em;\">Taxonomies module</li><li style=\"margin-top: 0.25em;\">Custom navigation</li><li style=\"margin-top: 0.25em;\">ReCaptcha module</li><li style=\"margin-top: 0.25em;\">Mini Profiler module</li><li style=\"margin-top: 0.25em;\">Recipe migrations</li><li style=\"margin-top: 0.25em;\">File based Content Definition</li><li style=\"margin-top: 0.25em;\">The Coming Soon theme</li><li style=\"margin-top: 0.25em;\">Edit and Display modes</li></ul>"
+          },
+          "TitlePart": {
+            "Title": "Orchard Core Beta 3"
+          },
+          "CommonPart": {},
+          "ContainedPart": {
+            "ListContentItemId": "4f4y3r3dykqwbrza3n7awptjmq",
+            "Order": 0
+          }
+        },
+        {
+          "ContentItemId": "42yss79jxc8h32tvt1hzrdac51",
+          "ContentItemVersionId": "42zr50080cywxw1eask9hf7vd9",
+          "ContentType": "BlogPost",
+          "DisplayText": "Orchard Core RC 1",
+          "Latest": true,
+          "Published": true,
+          "ModifiedUtc": "2019-12-29T10:49:39.9970021Z",
+          "PublishedUtc": "2019-12-29T10:49:40.1242346Z",
+          "CreatedUtc": "2019-09-24T10:01:45.596Z",
+          "Owner": "admin",
+          "Author": "admin",
+          "BlogPost": {
+            "Tags": {
+              "Text": "Orchard Core"
+            },
+            "Picture": {
+              "Paths": []
+            }
+          },
+          "AutoroutePart": {
+            "Path": "blog/orchard-core-rc-1",
+            "SetHomepage": false
+          },
+          "HtmlBodyPart": {
+            "Html": "<p>Orchard Core is available in RC 1<span style=\"font-size: 1rem;\">:&nbsp;</span><a href=\"https://github.com/OrchardCMS/OrchardCore/releases/tag/1.0.0-rc1\">https://github.com/OrchardCMS/OrchardCore/releases/tag/1.0.0-rc1</a></p><h2>Open-source, modular, multi-tenant application framework and CMS for ASP.NET Core</h2><br><p>{{ \"Orchard/OrchardCore-Logo.png\" | asset_url | img_tag }}</p><h3>Flexible content management&nbsp;</h3><p>Define custom content types dynamically and reuse content fields. Define roles and permissions for all your users.&nbsp;<br><br></p><h3>Full, decoupled, or headless cms&nbsp;</h3><p>You can separate the content management from the front-end by using GraphQL, and create SPA applications or even static websites.&nbsp;</p><br><h3>Modular&nbsp;</h3><p>Every feature is a module which ships as a Nuget package, can be enabled, disabled or replaced. Create your own ecosystem of modules, or reuse existing ones to bootstrap your applications.</p><br><h3>Multi-tenant</h3><p>A single installation lets you manage multiple sites. The notion of Recipe lets you write reusable websites templates.&nbsp;</p><br><h3>Speed&nbsp;</h3><p>Between the fast performance of ASP.NET Core and the architectural choices of Orchard Core CMS, you get one of the fastest CMS solutions you have ever tried, on any OS (Windows, Linux, MacOS).&nbsp;</p><br><h3>Workflows&nbsp;</h3><p>Create content validation workflows, and define Web Hooks to trigger external processes or react to external events&nbsp;</p><br><h2 style=\"font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;, &quot;Noto Color Emoji&quot;; color: rgb(33, 37, 41);\">List of changes for this release</h2><ul style=\"padding-left: 2em; color: rgb(36, 41, 46); font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;; margin-bottom: 0px !important;\"><li>Update to ASP.NET Core 3.0</li><li style=\"margin-top: 0.25em;\">Content Localization</li><li style=\"margin-top: 0.25em;\">RTL admin theme</li><li style=\"margin-top: 0.25em;\">Resources CDN</li><li style=\"margin-top: 0.25em;\">Media CDN support</li><li style=\"margin-top: 0.25em;\">GitHub authentication</li><li style=\"margin-top: 0.25em;\">Facebook applications</li><li style=\"margin-top: 0.25em;\">.NET Core 3.0</li><li style=\"margin-top: 0.25em;\">Localization NuGet packages</li><li style=\"margin-top: 0.25em;\">Azure Media resizing</li><li style=\"margin-top: 0.25em;\">SQL fields indexing</li><li style=\"margin-top: 0.25em;\">Full Text aspect</li></ul>"
+          },
+          "TitlePart": {
+            "Title": "Orchard Core RC 1"
+          },
+          "CommonPart": {},
+          "ContainedPart": {
+            "ListContentItemId": "4f4y3r3dykqwbrza3n7awptjmq",
+            "Order": 0
+          },
+          "DisqusPart": {
+            "ShowComments": true
+          }
+        },
+        {
+          "ContentItemId": "4a1tnzzvhz29tzsxr333rwzcdf",
+          "ContentItemVersionId": "48ca399ppzqzr1882d111k51w7",
+          "ContentType": "RawHtml",
+          "DisplayText": "Footer",
+          "Latest": true,
+          "Published": true,
+          "ModifiedUtc": "2020-01-06T12:43:50.4879209Z",
+          "PublishedUtc": "2020-01-06T12:43:50.5080116Z",
+          "CreatedUtc": "2019-04-18T18:28:01.3853258Z",
+          "Owner": "admin",
+          "Author": "admin",
+          "DisplayName": "Footer",
+          "Number": 4,
+          "RawHtml": {
+            "Content": {
+              "Html": "<div class=\"container py-5\">\r\n  <p class=\"m-0 text-center text-white\">Copyright © Your Website 2019</p>\r\n</div>"
+            }
+          },
+          "LayerMetadata": {
+            "RenderTitle": false,
+            "Position": 1.0,
+            "Zone": "Footer",
+            "Layer": "Always",
+            "Title": "Footer"
+          }
+        },
+        {
+          "ContentItemId": "4zvmnj3n27hxey6710q7bsmp5g",
+          "ContentItemVersionId": "4brxakeghwkfjtgc94cmfkb6cg",
+          "ContentType": "BlogPost",
+          "DisplayText": "Post Title 3",
+          "Latest": true,
+          "Published": true,
+          "ModifiedUtc": "2020-02-14T23:09:20.0907651Z",
+          "PublishedUtc": "2020-02-14T23:09:20.0999108Z",
+          "CreatedUtc": "2019-04-23T16:06:58.146Z",
+          "Owner": "admin",
+          "Author": "admin",
+          "BlogPost": {
+            "Picture": {
+              "Paths": [
+                "750x300.png"
+              ]
+            },
+            "Tags": {
+              "Text": null
+            }
+          },
+          "AutoroutePart": {
+            "Path": "blog/post-title-3",
+            "SetHomepage": false
+          },
+          "HtmlBodyPart": {
+            "Html": "<p class=\"lead\" style=\"font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, Arial, &quot;Noto Sans&quot;, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;, &quot;Noto Color Emoji&quot;;\">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, vero, obcaecati, aut, error quam sapiente nemo saepe quibusdam sit excepturi nam quia corporis eligendi eos magni recusandae laborum minus inventore?</p><p style=\"font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, Arial, &quot;Noto Sans&quot;, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;, &quot;Noto Color Emoji&quot;;\">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, tenetur natus doloremque laborum quos iste ipsum rerum obcaecati impedit odit illo dolorum ab tempora nihil dicta earum fugiat. Temporibus, voluptatibus.</p><p style=\"font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, Arial, &quot;Noto Sans&quot;, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;, &quot;Noto Color Emoji&quot;;\">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, doloribus, dolorem iusto blanditiis unde eius illum consequuntur neque dicta incidunt ullam ea hic porro optio ratione repellat perspiciatis. Enim, iure!</p><blockquote class=\"blockquote\" style=\"font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, Arial, &quot;Noto Sans&quot;, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;, &quot;Noto Color Emoji&quot;;\"><p class=\"mb-0\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p><footer class=\"blockquote-footer\" style=\"font-size: 16px;\">Someone famous in&nbsp;<cite title=\"Source Title\">Source Title</cite></footer></blockquote><p style=\"font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, Arial, &quot;Noto Sans&quot;, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;, &quot;Noto Color Emoji&quot;;\">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, nostrum, aliquid, animi, ut quas placeat totam sunt tempora commodi nihil ullam alias modi dicta saepe minima ab quo voluptatem obcaecati?</p><p style=\"font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, Arial, &quot;Noto Sans&quot;, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;, &quot;Noto Color Emoji&quot;;\">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, dolor quis. Sunt, ut, explicabo, aliquam tenetur ratione tempore quidem voluptates cupiditate voluptas illo saepe quaerat numquam recusandae? Qui, necessitatibus, est!</p>"
+          },
+          "TitlePart": {
+            "Title": "Post Title 3"
+          },
+          "CommonPart": {},
+          "ContainedPart": {
+            "ListContentItemId": "4h44aa08kqegq3z7br9qvq5dmc",
+            "Order": 0
+          },
+          "DisqusPart": {
+            "ShowComments": false
+          }
+        },
+        {
+          "ContentItemId": "44r2c40x6w2bntd2kd4rnkpcdc",
+          "ContentItemVersionId": "4wf5f136jmmh3vvcsx93pfqvnb",
+          "ContentType": "RichHtml",
+          "DisplayText": null,
+          "Latest": true,
+          "Published": true,
+          "ModifiedUtc": "2020-04-23T13:30:39.1187923Z",
+          "PublishedUtc": "2020-04-23T13:30:39.2723896Z",
+          "CreatedUtc": "2020-01-06T14:01:26.0916079Z",
+          "Owner": "admin",
+          "Author": "admin",
+          "RichHtml": {
+            "Content": {
+              "Html": "<pre><code class=\"language-markup\">\r\n            &lt;p class=\"red\"&gt;red text &lt;/p&gt;\r\n        </code></pre>\r\n<pre class=\"line-numbers language-css\"><code>\r\np { color: red; }\r\n</code></pre>\r\n<pre><code class=\"language-javascript\">\r\n\tvar _self = (typeof window !== 'undefined')\r\n\t? window   // if in browser\r\n\t: (\r\n\t\t(typeof WorkerGlobalScope !== 'undefined' &amp;&amp; self instanceof WorkerGlobalScope)\r\n\t\t? self // if in worker\r\n\t\t: {}   // if in node js\r\n\t);\r\n</code></pre>"
+            },
+            "a": {
+              "Text": null
+            }
+          },
+          "LayerMetadata": {
+            "Position": 1.0,
+            "Zone": "Content",
+            "Layer": "Never",
+            "RenderTitle": false
+          }
+        },
+        {
+          "ContentItemId": "434f5hzrp807wspqtw5cypgq5e",
+          "ContentItemVersionId": "4ht1bnt58pwj55kdt8z2mrx9mz",
+          "ContentType": "RawHtml",
+          "DisplayText": "Search",
+          "Latest": true,
+          "Published": true,
+          "ModifiedUtc": "2020-04-23T14:04:55.367251Z",
+          "PublishedUtc": "2020-04-23T14:04:55.3945436Z",
+          "CreatedUtc": "2019-06-11T15:19:14.1459291Z",
+          "Owner": "admin",
+          "Author": "admin",
+          "RawHtml": {
+            "Content": {
+              "Html": "<form class=\"navbar-left navbar-form nav-search\" action=\"/search\">\r\n\t\t<div class=\"input-group\">\r\n\t\t\t<input type=\"text\" name=\"q\" placeholder=\"Search ...\" class=\"form-control\">\r\n\t\t\t<div class=\"input-group-append\">\r\n\t\t\t\t<span class=\"input-group-text\">\r\n\t\t\t\t\t<i class=\"fa fa-search search-icon\">Go</i>\r\n\t\t\t\t</span>\r\n\t\t\t</div>\r\n\t\t</div>\r\n\t</form>"
+            }
+          },
+          "LayerMetadata": {
+            "Position": 1.0,
+            "Zone": "Navbar",
+            "Layer": "Always",
+            "RenderTitle": false
+          }
+        },
+        {
+          "ContentItemId": "4ke200mj3d0fnxmvk9xgxbpkwy",
+          "ContentItemVersionId": "4z3ff8474r4bq4cwmmqw7w904n",
+          "ContentType": "RichHtml",
+          "DisplayText": "Search",
+          "Latest": true,
+          "Published": true,
+          "ModifiedUtc": "2020-04-23T14:05:18.5230208Z",
+          "PublishedUtc": "2020-04-23T14:05:18.5327635Z",
+          "CreatedUtc": "2019-06-11T12:44:51.0839695Z",
+          "Owner": "admin",
+          "Author": "admin",
+          "RichHtml": {
+            "Content": {
+              "Html": "<form class=\"navbar-left navbar-form nav-search\" action=\"/search\">\r\n<div class=\"card mb-4\">\r\n          <h5 class=\"card-header\">Search</h5>\r\n          <div class=\"card-body\">\r\n            <div class=\"input-group\">\r\n              <input type=\"text\" name=\"q\" class=\"form-control\" placeholder=\"Search for...\">\r\n              <span class=\"input-group-btn\">\r\n                <button class=\"btn btn-secondary\" type=\"submit\">Go!</button>\r\n              </span>\r\n            </div>\r\n</form>\r\n          </div>\r\n        </div>"
+            }
+          },
+          "LayerMetadata": {
+            "Position": 1.0,
+            "Zone": "AsideSecond",
+            "Layer": "Blog",
+            "RenderTitle": false
+          }
+        }
+      ]
+    },
+    {
+      "name": "ContentDefinition",
+      "ContentTypes": [
+        {
+          "Name": "Menu",
+          "DisplayName": "Menu",
+          "Settings": {
+            "ContentTypeSettings": {
+              "Creatable": true,
+              "Listable": true,
+              "Draftable": true,
+              "Versionable": true
+            }
+          },
+          "ContentTypePartDefinitionRecords": [
+            {
+              "PartName": "TitlePart",
+              "Name": "TitlePart",
+              "Settings": {
+                "ContentTypePartSettings": {
+                  "Position": "1"
+                }
+              }
+            },
+            {
+              "PartName": "AliasPart",
+              "Name": "AliasPart",
+              "Settings": {
+                "AliasPartSettings": {
+                  "Pattern": "{{ ContentItem | display_text | slugify }}"
+                },
+                "ContentTypePartSettings": {
+                  "Position": "2"
+                }
+              }
+            },
+            {
+              "PartName": "MenuPart",
+              "Name": "MenuPart",
+              "Settings": {
+                "ContentTypePartSettings": {
+                  "Position": "3"
+                }
+              }
+            },
+            {
+              "PartName": "MenuItemsListPart",
+              "Name": "MenuItemsListPart",
+              "Settings": {
+                "ContentTypePartSettings": {
+                  "Position": "4"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "Name": "LinkMenuItem",
+          "DisplayName": "Link Menu Item",
+          "Settings": {
+            "ContentTypeSettings": {
+              "Stereotype": "MenuItem"
+            }
+          },
+          "ContentTypePartDefinitionRecords": [
+            {
+              "PartName": "LinkMenuItemPart",
+              "Name": "LinkMenuItemPart",
+              "Settings": {
+                "ContentTypePartSettings": {
+                  "Position": "0"
+                }
+              }
+            },
+            {
+              "PartName": "LinkMenuItem",
+              "Name": "LinkMenuItem",
+              "Settings": {
+                "ContentTypePartSettings": {
+                  "Position": "1"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "Name": "Page",
+          "DisplayName": "Page",
+          "Settings": {
+            "ContentTypeSettings": {
+              "Creatable": true,
+              "Listable": true,
+              "Draftable": true,
+              "Securable": true
+            }
+          },
+          "ContentTypePartDefinitionRecords": [
+            {
+              "PartName": "Page",
+              "Name": "Page",
+              "Settings": {
+                "ContentTypePartSettings": {
+                  "Position": "3"
+                }
+              }
+            },
+            {
+              "PartName": "AutoroutePart",
+              "Name": "AutoroutePart",
+              "Settings": {
+                "ContentIndexSettings": {
+                  "Included": false,
+                  "Stored": false,
+                  "Analyzed": false,
+                  "Sanitized": false,
+                  "Tokenized": false,
+                  "Template": null
+                },
+                "ContentTypePartSettings": {
+                  "Position": "1"
+                },
+                "AutoroutePartSettings": {
+                  "AllowCustomPath": true,
+                  "Pattern": "{{ ContentItem | display_text | slugify }}",
+                  "ShowHomepageOption": true
+                }
+              }
+            },
+            {
+              "PartName": "FlowPart",
+              "Name": "FlowPart",
+              "Settings": {
+                "ContentTypePartSettings": {
+                  "Position": "2"
+                }
+              }
+            },
+            {
+              "PartName": "TitlePart",
+              "Name": "TitlePart",
+              "Settings": {
+                "ContentTypePartSettings": {
+                  "Position": "0"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "Name": "RichHtml",
+          "DisplayName": "Rich Html",
+          "Settings": {
+            "ContentTypeSettings": {
+              "Draftable": true,
+              "Stereotype": "Widget",
+              "Securable": true
+            }
+          },
+          "ContentTypePartDefinitionRecords": [
+            {
+              "PartName": "RichHtml",
+              "Name": "RichHtml",
+              "Settings": {
+                "ContentTypePartSettings": {
+                  "Position": "0"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "Name": "LiquidPage",
+          "DisplayName": "Liquid Page",
+          "Settings": {
+            "ContentTypeSettings": {
+              "Creatable": true,
+              "Listable": true,
+              "Draftable": true,
+              "Versionable": true,
+              "Securable": true
+            }
+          },
+          "ContentTypePartDefinitionRecords": [
+            {
+              "PartName": "LiquidPage",
+              "Name": "LiquidPage",
+              "Settings": {
+                "ContentTypePartSettings": {
+                  "Position": "3"
+                }
+              }
+            },
+            {
+              "PartName": "AutoroutePart",
+              "Name": "AutoroutePart",
+              "Settings": {
+                "ContentIndexSettings": {},
+                "ContentTypePartSettings": {
+                  "Position": "1"
+                },
+                "AutoroutePartSettings": {
+                  "AllowCustomPath": true,
+                  "Pattern": "{{ ContentItem | display_text | slugify }}"
+                }
+              }
+            },
+            {
+              "PartName": "LiquidPart",
+              "Name": "LiquidPart",
+              "Settings": {
+                "ContentTypePartSettings": {
+                  "Position": "2"
+                }
+              }
+            },
+            {
+              "PartName": "TitlePart",
+              "Name": "TitlePart",
+              "Settings": {
+                "ContentTypePartSettings": {
+                  "Position": "0"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "Name": "MenuItem",
+          "DisplayName": "Menu Item",
+          "Settings": {
+            "ContentTypeSettings": {}
+          },
+          "ContentTypePartDefinitionRecords": []
+        },
+        {
+          "Name": "RawHtml",
+          "DisplayName": "Raw Html",
+          "Settings": {
+            "ContentTypeSettings": {
+              "Draftable": true,
+              "Stereotype": "Widget",
+              "Securable": true
+            }
+          },
+          "ContentTypePartDefinitionRecords": [
+            {
+              "PartName": "RawHtml",
+              "Name": "RawHtml",
+              "Settings": {
+                "ContentTypePartSettings": {
+                  "Position": "0"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "Name": "LiquidWidget",
+          "DisplayName": "Liquid",
+          "Settings": {
+            "ContentTypeSettings": {
+              "Draftable": true,
+              "Stereotype": "Widget",
+              "Securable": true
+            }
+          },
+          "ContentTypePartDefinitionRecords": [
+            {
+              "PartName": "LiquidWidget",
+              "Name": "LiquidWidget",
+              "Settings": {
+                "ContentTypePartSettings": {
+                  "Position": "1"
+                }
+              }
+            },
+            {
+              "PartName": "LiquidPart",
+              "Name": "LiquidPart",
+              "Settings": {
+                "ContentTypePartSettings": {
+                  "Position": "0"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "Name": "TeamMember",
+          "DisplayName": "Team Member",
+          "Settings": {
+            "ContentTypeSettings": {
+              "Creatable": true,
+              "Listable": true,
+              "Draftable": true,
+              "Versionable": true,
+              "Securable": true
+            }
+          },
+          "ContentTypePartDefinitionRecords": [
+            {
+              "PartName": "TeamMember",
+              "Name": "TeamMember",
+              "Settings": {
+                "ContentTypePartSettings": {
+                  "Position": "1"
+                }
+              }
+            },
+            {
+              "PartName": "TitlePart",
+              "Name": "TitlePart",
+              "Settings": {
+                "ContentTypePartSettings": {
+                  "Position": "0"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "Name": "Card",
+          "DisplayName": "Card",
+          "Settings": {
+            "ContentTypeSettings": {}
+          },
+          "ContentTypePartDefinitionRecords": [
+            {
+              "PartName": "Card",
+              "Name": "Card",
+              "Settings": {
+                "ContentTypePartSettings": {
+                  "Position": "1"
+                }
+              }
+            },
+            {
+              "PartName": "TitlePart",
+              "Name": "TitlePart",
+              "Settings": {
+                "ContentTypePartSettings": {
+                  "Position": "0"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "Name": "CardList",
+          "DisplayName": "Card List",
+          "Settings": {
+            "ContentTypeSettings": {
+              "Creatable": true,
+              "Listable": true,
+              "Draftable": true,
+              "Versionable": true,
+              "Securable": true
+            }
+          },
+          "ContentTypePartDefinitionRecords": [
+            {
+              "PartName": "CardList",
+              "Name": "CardList",
+              "Settings": {
+                "ContentTypePartSettings": {
+                  "Position": "4"
+                }
+              }
+            },
+            {
+              "PartName": "HtmlBodyPart",
+              "Name": "HtmlBodyPart",
+              "Settings": {
+                "ContentTypePartSettings": {
+                  "Position": "2"
+                }
+              }
+            },
+            {
+              "PartName": "ListPart",
+              "Name": "ListPart",
+              "Settings": {
+                "ContentIndexSettings": {},
+                "ContentTypePartSettings": {
+                  "Position": "3"
+                },
+                "ListPartSettings": {
+                  "PageSize": 10,
+                  "ContainedContentTypes": [
+                    "Card"
+                  ]
+                }
+              }
+            },
+            {
+              "PartName": "TitlePart",
+              "Name": "TitlePart",
+              "Settings": {
+                "ContentTypePartSettings": {
+                  "Position": "0"
+                }
+              }
+            },
+            {
+              "PartName": "AutoroutePart",
+              "Name": "AutoroutePart",
+              "Settings": {
+                "ContentIndexSettings": {},
+                "ContentTypePartSettings": {
+                  "Position": "1"
+                },
+                "AutoroutePartSettings": {
+                  "AllowCustomPath": true,
+                  "Pattern": "{{ ContentItem | display_text | slugify }}"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "Name": "Project",
+          "DisplayName": "Project",
+          "Settings": {
+            "ContentTypeSettings": {}
+          },
+          "ContentTypePartDefinitionRecords": [
+            {
+              "PartName": "Project",
+              "Name": "Project",
+              "Settings": {
+                "ContentTypePartSettings": {
+                  "Position": "3"
+                }
+              }
+            },
+            {
+              "PartName": "AutoroutePart",
+              "Name": "AutoroutePart",
+              "Settings": {
+                "ContentIndexSettings": {},
+                "ContentTypePartSettings": {
+                  "Position": "1"
+                },
+                "AutoroutePartSettings": {
+                  "AllowCustomPath": true,
+                  "Pattern": "{{ ContentItem | display_text | slugify }}"
+                }
+              }
+            },
+            {
+              "PartName": "TitlePart",
+              "Name": "TitlePart",
+              "Settings": {
+                "ContentTypePartSettings": {
+                  "Position": "0"
+                }
+              }
+            },
+            {
+              "PartName": "HtmlBodyPart",
+              "Name": "HtmlBodyPart",
+              "Settings": {
+                "HtmlBodyPartSettings": {},
+                "ContentIndexSettings": {},
+                "ContentTypePartSettings": {
+                  "Position": "2",
+                  "Editor": "Wysiwyg"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "Name": "Portfolio",
+          "DisplayName": "Portfolio",
+          "Settings": {
+            "ContentTypeSettings": {
+              "Creatable": true,
+              "Listable": true,
+              "Draftable": true,
+              "Versionable": true,
+              "Securable": true
+            }
+          },
+          "ContentTypePartDefinitionRecords": [
+            {
+              "PartName": "Portfolio",
+              "Name": "Portfolio",
+              "Settings": {
+                "ContentTypePartSettings": {
+                  "Position": "3"
+                }
+              }
+            },
+            {
+              "PartName": "AutoroutePart",
+              "Name": "AutoroutePart",
+              "Settings": {
+                "ContentIndexSettings": {},
+                "ContentTypePartSettings": {
+                  "Position": "1"
+                },
+                "AutoroutePartSettings": {
+                  "AllowCustomPath": true,
+                  "Pattern": "{{ ContentItem | display_text | slugify }}"
+                }
+              }
+            },
+            {
+              "PartName": "ListPart",
+              "Name": "ListPart",
+              "Settings": {
+                "ContentIndexSettings": {},
+                "ContentTypePartSettings": {
+                  "Position": "2"
+                },
+                "ListPartSettings": {
+                  "PageSize": 4,
+                  "ContainedContentTypes": [
+                    "Project",
+                    "Website"
+                  ]
+                }
+              }
+            },
+            {
+              "PartName": "TitlePart",
+              "Name": "TitlePart",
+              "Settings": {
+                "ContentTypePartSettings": {
+                  "Position": "0"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "Name": "Item",
+          "DisplayName": "Item",
+          "Settings": {
+            "ContentTypeSettings": {}
+          },
+          "ContentTypePartDefinitionRecords": [
+            {
+              "PartName": "Item",
+              "Name": "Item",
+              "Settings": {
+                "ContentTypePartSettings": {
+                  "Position": "1"
+                }
+              }
+            },
+            {
+              "PartName": "HtmlBodyPart",
+              "Name": "HtmlBodyPart",
+              "Settings": {
+                "ContentTypePartSettings": {
+                  "Position": "2"
+                }
+              }
+            },
+            {
+              "PartName": "TitlePart",
+              "Name": "TitlePart",
+              "Settings": {
+                "ContentTypePartSettings": {
+                  "Position": "0"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "Name": "FAQ",
+          "DisplayName": "FAQ",
+          "Settings": {
+            "ContentTypeSettings": {
+              "Creatable": true,
+              "Listable": true,
+              "Draftable": true,
+              "Versionable": true,
+              "Securable": true
+            }
+          },
+          "ContentTypePartDefinitionRecords": [
+            {
+              "PartName": "FAQ",
+              "Name": "FAQ",
+              "Settings": {
+                "ContentTypePartSettings": {
+                  "Position": "3"
+                }
+              }
+            },
+            {
+              "PartName": "TitlePart",
+              "Name": "TitlePart",
+              "Settings": {
+                "ContentTypePartSettings": {
+                  "Position": "0"
+                }
+              }
+            },
+            {
+              "PartName": "AutoroutePart",
+              "Name": "AutoroutePart",
+              "Settings": {
+                "ContentIndexSettings": {},
+                "ContentTypePartSettings": {
+                  "Position": "1"
+                },
+                "AutoroutePartSettings": {
+                  "AllowCustomPath": true,
+                  "Pattern": "{{ ContentItem | display_text | slugify }}"
+                }
+              }
+            },
+            {
+              "PartName": "BagPart",
+              "Name": "Items",
+              "Settings": {
+                "ContentIndexSettings": {},
+                "ContentTypePartSettings": {
+                  "DisplayName": "Items",
+                  "Description": "Provides a collection behavior for your content item.",
+                  "Position": "2"
+                },
+                "BagPartSettings": {
+                  "ContainedContentTypes": [
+                    "Item"
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "Name": "BlogPost",
+          "DisplayName": "Blog Post",
+          "Settings": {
+            "ContentTypeSettings": {
+              "Draftable": true,
+              "Securable": true
+            }
+          },
+          "ContentTypePartDefinitionRecords": [
+            {
+              "PartName": "BlogPost",
+              "Name": "BlogPost",
+              "Settings": {
+                "ContentTypePartSettings": {
+                  "Position": "3"
+                }
+              }
+            },
+            {
+              "PartName": "AutoroutePart",
+              "Name": "AutoroutePart",
+              "Settings": {
+                "ContentIndexSettings": {},
+                "ContentTypePartSettings": {
+                  "Position": "1"
+                },
+                "AutoroutePartSettings": {
+                  "AllowCustomPath": true,
+                  "Pattern": "{{ ContentItem | container | display_text | slugify }}/{{ ContentItem | display_text | slugify }}",
+                  "AllowUpdatePath": true
+                }
+              }
+            },
+            {
+              "PartName": "HtmlBodyPart",
+              "Name": "HtmlBodyPart",
+              "Settings": {
+                "HtmlBodyPartSettings": {},
+                "ContentIndexSettings": {
+                  "Included": true,
+                  "Stored": true,
+                  "Analyzed": true,
+                  "Sanitized": true,
+                  "Tokenized": true
+                },
+                "ContentTypePartSettings": {
+                  "Position": "2",
+                  "Editor": "Trumbowyg"
+                },
+                "HtmlBodyPartTrumbowygEditorSettings": {
+                  "Options": "{\r\n    autogrow: true,\r\n    btns: [\r\n        [\"viewHTML\"],\r\n        [\"undo\", \"redo\"],\r\n        [\"formatting\"],\r\n        ['fontsize'],\r\n        [\"strong\", \"em\", \"del\"],\r\n        [\"foreColor\", \"backColor\"],\r\n        [\"superscript\", \"subscript\"],\r\n        [\"link\"],\r\n        [\"image\"],\r\n        [\"align\"],\r\n        [\"unorderedList\", \"orderedList\"],\r\n        [\"horizontalRule\"],\r\n        [\"removeformat\"],\r\n        [\"fullscreen\"]\r\n    ],\r\n    btnsDef: {\r\n        align: {\r\n            dropdown: [\"justifyLeft\", \"justifyCenter\", \"justifyRight\", \"justifyFull\"],\r\n            ico: \"justifyLeft\"\r\n        },\r\n        image: {\r\n            dropdown: [\"insertImage\", \"base64\", \"noembed\"],\r\n            ico: \"insertImage\"\r\n        }\r\n    }\r\n}"
+                }
+              }
+            },
+            {
+              "PartName": "TitlePart",
+              "Name": "TitlePart",
+              "Settings": {
+                "ContentIndexSettings": {
+                  "Included": true,
+                  "Stored": true,
+                  "Analyzed": true,
+                  "Sanitized": true,
+                  "Tokenized": true
+                },
+                "ContentTypePartSettings": {
+                  "Position": "0"
+                }
+              }
+            },
+            {
+              "PartName": "CommonPart",
+              "Name": "CommonPart",
+              "Settings": {
+                "CommonPartSettings": {
+                  "DisplayDateEditor": true,
+                  "DisplayOwnerEditor": true
+                },
+                "ContentIndexSettings": {},
+                "ContentTypePartSettings": {
+                  "Position": "5"
+                }
+              }
+            },
+            {
+              "PartName": "DisqusPart",
+              "Name": "DisqusPart",
+              "Settings": {
+                "ContentTypePartSettings": {},
+                "DisqusPartSettings": {
+                  "ShortName": "orchardcore"
+                },
+                "ContentIndexSettings": {}
+              }
+            }
+          ]
+        },
+        {
+          "Name": "Blog",
+          "DisplayName": "Blog",
+          "Settings": {
+            "ContentTypeSettings": {
+              "Creatable": true,
+              "Listable": true,
+              "Draftable": true,
+              "Versionable": true,
+              "Securable": true
+            }
+          },
+          "ContentTypePartDefinitionRecords": [
+            {
+              "PartName": "Blog",
+              "Name": "Blog",
+              "Settings": {
+                "ContentTypePartSettings": {
+                  "Position": "4"
+                }
+              }
+            },
+            {
+              "PartName": "AutoroutePart",
+              "Name": "AutoroutePart",
+              "Settings": {
+                "ContentIndexSettings": {
+                  "Included": false,
+                  "Stored": false,
+                  "Analyzed": false,
+                  "Sanitized": false,
+                  "Tokenized": false,
+                  "Template": null
+                },
+                "ContentTypePartSettings": {
+                  "Position": "2"
+                },
+                "AutoroutePartSettings": {
+                  "AllowCustomPath": true,
+                  "Pattern": "{{ ContentItem | display_text | slugify }}",
+                  "ShowHomepageOption": true
+                }
+              }
+            },
+            {
+              "PartName": "ListPart",
+              "Name": "ListPart",
+              "Settings": {
+                "ContentIndexSettings": {
+                  "Included": false,
+                  "Stored": false,
+                  "Analyzed": false,
+                  "Sanitized": false,
+                  "Tokenized": false,
+                  "Template": null
+                },
+                "ContentTypePartSettings": {
+                  "Position": "4"
+                },
+                "ListPartSettings": {
+                  "PageSize": 10,
+                  "ContainedContentTypes": [
+                    "BlogPost"
+                  ]
+                }
+              }
+            },
+            {
+              "PartName": "TitlePart",
+              "Name": "TitlePart",
+              "Settings": {
+                "ContentTypePartSettings": {
+                  "Position": "1"
+                }
+              }
+            },
+            {
+              "PartName": "HtmlBodyPart",
+              "Name": "HtmlBodyPart",
+              "Settings": {
+                "ContentTypePartSettings": {
+                  "Position": "3"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "Name": "Website",
+          "DisplayName": "Website",
+          "Settings": {
+            "ContentTypeSettings": {
+              "Creatable": true,
+              "Listable": true,
+              "Draftable": true,
+              "Versionable": true,
+              "Securable": true
+            },
+            "FullTextAspectSettings": {}
+          },
+          "ContentTypePartDefinitionRecords": [
+            {
+              "PartName": "Website",
+              "Name": "Website",
+              "Settings": {
+                "ContentTypePartSettings": {
+                  "Position": "1"
+                }
+              }
+            },
+            {
+              "PartName": "TitlePart",
+              "Name": "TitlePart",
+              "Settings": {
+                "ContentTypePartSettings": {
+                  "Position": "0"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "Name": "Form",
+          "DisplayName": "Form",
+          "Settings": {
+            "ContentTypeSettings": {
+              "Stereotype": "Widget"
+            }
+          },
+          "ContentTypePartDefinitionRecords": [
+            {
+              "PartName": "TitlePart",
+              "Name": "TitlePart",
+              "Settings": {}
+            },
+            {
+              "PartName": "FormPart",
+              "Name": "FormPart",
+              "Settings": {}
+            },
+            {
+              "PartName": "FlowPart",
+              "Name": "FlowPart",
+              "Settings": {}
+            }
+          ]
+        },
+        {
+          "Name": "Label",
+          "DisplayName": "Label",
+          "Settings": {
+            "ContentTypeSettings": {
+              "Stereotype": "Widget"
+            }
+          },
+          "ContentTypePartDefinitionRecords": [
+            {
+              "PartName": "TitlePart",
+              "Name": "TitlePart",
+              "Settings": {}
+            },
+            {
+              "PartName": "FormElementPart",
+              "Name": "FormElementPart",
+              "Settings": {}
+            },
+            {
+              "PartName": "LabelPart",
+              "Name": "LabelPart",
+              "Settings": {}
+            }
+          ]
+        },
+        {
+          "Name": "Input",
+          "DisplayName": "Input",
+          "Settings": {
+            "ContentTypeSettings": {
+              "Stereotype": "Widget"
+            }
+          },
+          "ContentTypePartDefinitionRecords": [
+            {
+              "PartName": "FormInputElementPart",
+              "Name": "FormInputElementPart",
+              "Settings": {}
+            },
+            {
+              "PartName": "FormElementPart",
+              "Name": "FormElementPart",
+              "Settings": {}
+            },
+            {
+              "PartName": "InputPart",
+              "Name": "InputPart",
+              "Settings": {}
+            }
+          ]
+        },
+        {
+          "Name": "TextArea",
+          "DisplayName": "Text Area",
+          "Settings": {
+            "ContentTypeSettings": {
+              "Stereotype": "Widget"
+            }
+          },
+          "ContentTypePartDefinitionRecords": [
+            {
+              "PartName": "FormInputElementPart",
+              "Name": "FormInputElementPart",
+              "Settings": {}
+            },
+            {
+              "PartName": "FormElementPart",
+              "Name": "FormElementPart",
+              "Settings": {}
+            },
+            {
+              "PartName": "TextAreaPart",
+              "Name": "TextAreaPart",
+              "Settings": {}
+            }
+          ]
+        },
+        {
+          "Name": "Select",
+          "DisplayName": "Select",
+          "Settings": {
+            "ContentTypeSettings": {
+              "Stereotype": "Widget"
+            }
+          },
+          "ContentTypePartDefinitionRecords": [
+            {
+              "PartName": "FormInputElementPart",
+              "Name": "FormInputElementPart",
+              "Settings": {}
+            },
+            {
+              "PartName": "FormElementPart",
+              "Name": "FormElementPart",
+              "Settings": {}
+            },
+            {
+              "PartName": "SelectPart",
+              "Name": "SelectPart",
+              "Settings": {}
+            }
+          ]
+        },
+        {
+          "Name": "Button",
+          "DisplayName": "Button",
+          "Settings": {
+            "ContentTypeSettings": {
+              "Stereotype": "Widget"
+            }
+          },
+          "ContentTypePartDefinitionRecords": [
+            {
+              "PartName": "FormInputElementPart",
+              "Name": "FormInputElementPart",
+              "Settings": {}
+            },
+            {
+              "PartName": "FormElementPart",
+              "Name": "FormElementPart",
+              "Settings": {}
+            },
+            {
+              "PartName": "ButtonPart",
+              "Name": "ButtonPart",
+              "Settings": {}
+            }
+          ]
+        },
+        {
+          "Name": "ValidationSummary",
+          "DisplayName": "Validation Summary",
+          "Settings": {
+            "ContentTypeSettings": {
+              "Stereotype": "Widget"
+            }
+          },
+          "ContentTypePartDefinitionRecords": [
+            {
+              "PartName": "ValidationSummaryPart",
+              "Name": "ValidationSummaryPart",
+              "Settings": {}
+            }
+          ]
+        },
+        {
+          "Name": "Validation",
+          "DisplayName": "Validation",
+          "Settings": {
+            "ContentTypeSettings": {
+              "Stereotype": "Widget"
+            }
+          },
+          "ContentTypePartDefinitionRecords": [
+            {
+              "PartName": "ValidationPart",
+              "Name": "ValidationPart",
+              "Settings": {}
+            }
+          ]
+        }
+      ],
+      "ContentParts": [
+        {
+          "Name": "CommonPart",
+          "Settings": {
+            "ContentPartSettings": {
+              "Attachable": true,
+              "Description": "Provides an editor for the common properties of a content item."
+            }
+          },
+          "ContentPartFieldDefinitionRecords": []
+        },
+        {
+          "Name": "LiquidPart",
+          "Settings": {
+            "ContentPartSettings": {
+              "Attachable": true,
+              "Description": "Provides a Liquid formatted body for your content item."
+            }
+          },
+          "ContentPartFieldDefinitionRecords": []
+        },
+        {
+          "Name": "AliasPart",
+          "Settings": {
+            "ContentPartSettings": {
+              "Attachable": true,
+              "Description": "Provides a way to define custom aliases for content items."
+            }
+          },
+          "ContentPartFieldDefinitionRecords": []
+        },
+        {
+          "Name": "AutoroutePart",
+          "Settings": {
+            "ContentPartSettings": {
+              "Attachable": true,
+              "Description": "Provides a custom url for your content item."
+            }
+          },
+          "ContentPartFieldDefinitionRecords": []
+        },
+        {
+          "Name": "WidgetsListPart",
+          "Settings": {
+            "ContentPartSettings": {
+              "Attachable": true,
+              "Description": "Provides a way to add widgets per content items."
+            }
+          },
+          "ContentPartFieldDefinitionRecords": []
+        },
+        {
+          "Name": "FlowPart",
+          "Settings": {
+            "ContentPartSettings": {
+              "Attachable": true,
+              "Description": "Provides a customizable body for your content item."
+            }
+          },
+          "ContentPartFieldDefinitionRecords": []
+        },
+        {
+          "Name": "BagPart",
+          "Settings": {
+            "ContentPartSettings": {
+              "Attachable": true,
+              "Reusable": true,
+              "Description": "Provides a collection behavior for your content item."
+            }
+          },
+          "ContentPartFieldDefinitionRecords": []
+        },
+        {
+          "Name": "HtmlBodyPart",
+          "Settings": {
+            "ContentPartSettings": {
+              "Attachable": true,
+              "Description": "Provides an HTML Body for your content item."
+            }
+          },
+          "ContentPartFieldDefinitionRecords": []
+        },
+        {
+          "Name": "ListPart",
+          "Settings": {
+            "ContentPartSettings": {
+              "Attachable": true,
+              "Description": "Add a list behavior."
+            }
+          },
+          "ContentPartFieldDefinitionRecords": []
+        },
+        {
+          "Name": "MarkdownBodyPart",
+          "Settings": {
+            "ContentPartSettings": {
+              "Attachable": true,
+              "Description": "Provides a Markdown formatted body for your content item."
+            }
+          },
+          "ContentPartFieldDefinitionRecords": []
+        },
+        {
+          "Name": "TitlePart",
+          "Settings": {
+            "ContentPartSettings": {
+              "Attachable": true,
+              "Description": "Provides a Title for your content item.",
+              "DefaultPosition": "0"
+            }
+          },
+          "ContentPartFieldDefinitionRecords": []
+        },
+        {
+          "Name": "MenuPart",
+          "Settings": {
+            "ContentPartSettings": {}
+          },
+          "ContentPartFieldDefinitionRecords": []
+        },
+        {
+          "Name": "MenuItemPart",
+          "Settings": {
+            "ContentPartSettings": {}
+          },
+          "ContentPartFieldDefinitionRecords": []
+        },
+        {
+          "Name": "LinkMenuItemPart",
+          "Settings": {
+            "ContentPartSettings": {
+              "Attachable": true,
+              "Description": "Provides a menu link behavior for your content item."
+            }
+          },
+          "ContentPartFieldDefinitionRecords": []
+        },
+        {
+          "Name": "RichHtml",
+          "Settings": {
+            "ContentPartSettings": {}
+          },
+          "ContentPartFieldDefinitionRecords": [
+            {
+              "FieldName": "HtmlField",
+              "Name": "Content",
+              "Settings": {
+                "ContentIndexSettings": {},
+                "ContentPartFieldSettings": {
+                  "DisplayName": "Content",
+                  "Editor": "Multiline",
+                  "DisplayMode": "Prism",
+                  "Position": "0"
+                },
+                "HtmlFieldSettings": {},
+                "HtmlFieldTrumbowygEditorSettings": {
+                  "Options": "{\r\n    autogrow: true,\r\n    btns: [\r\n        [\"viewHTML\"],\r\n        [\"undo\", \"redo\"],\r\n        [\"formatting\"],\r\n        [\"strong\", \"em\", \"del\"],\r\n        [\"foreColor\", \"backColor\"],\r\n        [\"superscript\", \"subscript\"],\r\n        [\"link\"],\r\n        [\"image\"],\r\n        [\"align\"],\r\n        [\"unorderedList\", \"orderedList\"],\r\n        [\"horizontalRule\"],\r\n        [\"removeformat\"],\r\n        [\"fullscreen\"]\r\n    ],\r\n    btnsDef: {\r\n        align: {\r\n            dropdown: [\"justifyLeft\", \"justifyCenter\", \"justifyRight\", \"justifyFull\"],\r\n            ico: \"justifyLeft\"\r\n        },\r\n        image: {\r\n            dropdown: [\"insertImage\", \"base64\", \"noembed\"],\r\n            ico: \"insertImage\"\r\n        }\r\n    }\r\n}",
+                  "InsertMediaWithUrl": true
+                },
+                "HtmlFieldPrismDisplaySettings": {
+                  "Language": "html"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "Name": "RawHtml",
+          "Settings": {
+            "ContentPartSettings": {}
+          },
+          "ContentPartFieldDefinitionRecords": [
+            {
+              "FieldName": "HtmlField",
+              "Name": "Content",
+              "Settings": {
+                "ContentIndexSettings": {
+                  "Included": false,
+                  "Stored": false,
+                  "Analyzed": false,
+                  "Sanitized": false,
+                  "Tokenized": false
+                },
+                "ContentPartFieldSettings": {
+                  "DisplayName": "Content",
+                  "Editor": "Multiline",
+                  "Position": "0"
+                },
+                "HtmlFieldSettings": {}
+              }
+            }
+          ]
+        },
+        {
+          "Name": "TeamMember",
+          "Settings": {
+            "ContentPartSettings": {}
+          },
+          "ContentPartFieldDefinitionRecords": [
+            {
+              "FieldName": "TextField",
+              "Name": "Position",
+              "Settings": {
+                "ContentPartFieldSettings": {
+                  "DisplayName": "Position",
+                  "Position": "0"
+                }
+              }
+            },
+            {
+              "FieldName": "TextField",
+              "Name": "Description",
+              "Settings": {
+                "ContentIndexSettings": {
+                  "Included": false,
+                  "Stored": false,
+                  "Analyzed": false,
+                  "Sanitized": false,
+                  "Tokenized": false,
+                  "Template": null
+                },
+                "ContentPartFieldSettings": {
+                  "DisplayName": "Description",
+                  "Editor": "TextArea",
+                  "Position": "1"
+                },
+                "TextFieldSettings": {}
+              }
+            },
+            {
+              "FieldName": "TextField",
+              "Name": "Email",
+              "Settings": {
+                "ContentIndexSettings": {
+                  "Included": false,
+                  "Stored": false,
+                  "Analyzed": false,
+                  "Sanitized": false,
+                  "Tokenized": false,
+                  "Template": null
+                },
+                "ContentPartFieldSettings": {
+                  "DisplayName": "Email",
+                  "Editor": "Email",
+                  "Position": "2"
+                },
+                "TextFieldSettings": {}
+              }
+            },
+            {
+              "FieldName": "TextField",
+              "Name": "ImageUrl",
+              "Settings": {
+                "ContentIndexSettings": {
+                  "Included": false,
+                  "Stored": false,
+                  "Analyzed": false,
+                  "Sanitized": false,
+                  "Tokenized": false,
+                  "Template": null
+                },
+                "ContentPartFieldSettings": {
+                  "DisplayName": "ImageUrl",
+                  "Editor": "Url",
+                  "Position": "3"
+                },
+                "TextFieldSettings": {}
+              }
+            }
+          ]
+        },
+        {
+          "Name": "Card",
+          "Settings": {
+            "ContentPartSettings": {}
+          },
+          "ContentPartFieldDefinitionRecords": [
+            {
+              "FieldName": "TextField",
+              "Name": "Description",
+              "Settings": {
+                "ContentIndexSettings": {
+                  "Included": false,
+                  "Stored": false,
+                  "Analyzed": false,
+                  "Sanitized": false,
+                  "Tokenized": false,
+                  "Template": null
+                },
+                "ContentPartFieldSettings": {
+                  "DisplayName": "Description",
+                  "Editor": "TextArea"
+                },
+                "TextFieldSettings": {}
+              }
+            },
+            {
+              "FieldName": "LinkField",
+              "Name": "Link",
+              "Settings": {
+                "ContentPartFieldSettings": {
+                  "DisplayName": "Link"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "Name": "Project",
+          "Settings": {
+            "ContentPartSettings": {}
+          },
+          "ContentPartFieldDefinitionRecords": [
+            {
+              "FieldName": "TextField",
+              "Name": "Description",
+              "Settings": {
+                "ContentIndexSettings": {
+                  "Included": false,
+                  "Stored": false,
+                  "Analyzed": false,
+                  "Sanitized": false,
+                  "Tokenized": false,
+                  "Template": null
+                },
+                "ContentPartFieldSettings": {
+                  "DisplayName": "Description",
+                  "Editor": "TextArea",
+                  "Position": "0"
+                },
+                "TextFieldSettings": {}
+              }
+            },
+            {
+              "FieldName": "MediaField",
+              "Name": "Picture",
+              "Settings": {
+                "ContentPartFieldSettings": {
+                  "DisplayName": "Picture",
+                  "Position": "1"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "Name": "BlogPost",
+          "Settings": {
+            "ContentPartSettings": {}
+          },
+          "ContentPartFieldDefinitionRecords": [
+            {
+              "FieldName": "MediaField",
+              "Name": "Picture",
+              "Settings": {
+                "ContentPartFieldSettings": {
+                  "DisplayName": "Picture",
+                  "Position": "0"
+                }
+              }
+            },
+            {
+              "FieldName": "TextField",
+              "Name": "Tags",
+              "Settings": {
+                "ContentPartFieldSettings": {
+                  "DisplayName": "Tags",
+                  "Position": "0"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "Name": "LocalizationPart",
+          "Settings": {
+            "ContentPartSettings": {
+              "Attachable": true,
+              "Description": "Provides a way to create localized version of content."
+            }
+          },
+          "ContentPartFieldDefinitionRecords": []
+        },
+        {
+          "Name": "Website",
+          "Settings": {},
+          "ContentPartFieldDefinitionRecords": [
+            {
+              "FieldName": "TextField",
+              "Name": "Category",
+              "Settings": {
+                "ContentPartFieldSettings": {
+                  "DisplayName": "Category",
+                  "Position": "0"
+                }
+              }
+            },
+            {
+              "FieldName": "LinkField",
+              "Name": "Link",
+              "Settings": {
+                "ContentPartFieldSettings": {
+                  "DisplayName": "Link",
+                  "Position": "1"
+                },
+                "LinkFieldSettings": {
+                  "Required": true,
+                  "LinkTextMode": 3
+                },
+                "ContentIndexSettings": {}
+              }
+            },
+            {
+              "FieldName": "TextField",
+              "Name": "ImageUrl",
+              "Settings": {
+                "ContentPartFieldSettings": {
+                  "DisplayName": "ImageUrl",
+                  "Position": "2"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "Name": "FormPart",
+          "Settings": {
+            "ContentPartSettings": {
+              "Attachable": true,
+              "Description": "Turns your content item into a form."
+            }
+          },
+          "ContentPartFieldDefinitionRecords": []
+        },
+        {
+          "Name": "FormElementPart",
+          "Settings": {
+            "ContentPartSettings": {
+              "Description": "Provides attributes common to all form elements."
+            }
+          },
+          "ContentPartFieldDefinitionRecords": []
+        },
+        {
+          "Name": "FormInputElementPart",
+          "Settings": {
+            "ContentPartSettings": {
+              "Description": "Provides attributes common to all input form elements."
+            }
+          },
+          "ContentPartFieldDefinitionRecords": []
+        },
+        {
+          "Name": "LabelPart",
+          "Settings": {
+            "ContentPartSettings": {
+              "Description": "Provides label properties."
+            }
+          },
+          "ContentPartFieldDefinitionRecords": []
+        },
+        {
+          "Name": "InputPart",
+          "Settings": {
+            "ContentPartSettings": {
+              "Description": "Provides input field properties."
+            }
+          },
+          "ContentPartFieldDefinitionRecords": []
+        },
+        {
+          "Name": "TextAreaPart",
+          "Settings": {
+            "ContentPartSettings": {
+              "Description": "Provides text area properties."
+            }
+          },
+          "ContentPartFieldDefinitionRecords": []
+        },
+        {
+          "Name": "SelectPart",
+          "Settings": {
+            "ContentPartSettings": {
+              "Description": "Provides select field properties."
+            }
+          },
+          "ContentPartFieldDefinitionRecords": []
+        },
+        {
+          "Name": "ButtonPart",
+          "Settings": {
+            "ContentPartSettings": {
+              "Description": "Provides button properties."
+            }
+          },
+          "ContentPartFieldDefinitionRecords": []
+        },
+        {
+          "Name": "ValidationSummaryPart",
+          "Settings": {
+            "ContentPartSettings": {
+              "Description": "Displays a validation summary."
+            }
+          },
+          "ContentPartFieldDefinitionRecords": []
+        },
+        {
+          "Name": "ValidationPart",
+          "Settings": {
+            "ContentPartSettings": {
+              "Description": "Displays a field validation error."
+            }
+          },
+          "ContentPartFieldDefinitionRecords": []
+        },
+        {
+          "Name": "PreviewPart",
+          "Settings": {
+            "ContentPartSettings": {
+              "Attachable": true,
+              "Description": "Provides a way to define the url that is used to render your content item."
+            }
+          },
+          "ContentPartFieldDefinitionRecords": []
+        },
+        {
+          "Name": "DisqusPart",
+          "Settings": {
+            "ContentPartSettings": {
+              "Attachable": true,
+              "Description": "Provides a Disqus comment section for your content item."
+            }
+          },
+          "ContentPartFieldDefinitionRecords": []
+        }
+      ]
+    },
+    {
+      "name": "Queries",
+      "Queries": [
+        {
+          "Template": "SELECT DocumentId \r\nFROM ContentItemIndex \r\nWHERE Published = true AND ContentType = @type\r\nORDER BY PublishedUtc DESC",
+          "ReturnDocuments": true,
+          "Name": "Contents",
+          "Source": "Sql",
+          "Schema": null
+        },
+        {
+          "Template": "SELECT DocumentId \r\nFROM ContentItemIndex \r\nWHERE Published = true AND ContentType = 'TeamMember'\r\nORDER BY PublishedUtc",
+          "ReturnDocuments": true,
+          "Name": "TeamMembers",
+          "Source": "Sql",
+          "Schema": null
+        }
+      ]
+    },
+    {
+      "name": "Templates",
+      "Templates": {
+        "Portfolio__ListPart": {
+          "Content": "{% for item in Model.ContentItems %}\r\n<div class=\"row\">\r\n{% assign project = item.Content[item.ContentType] %}\r\n  <div class=\"col-md-7\">\r\n    <a href=\"#\">\r\n      <img class=\"img-fluid rounded mb-3 mb-md-0\" src=\"{{ project.Picture.Paths.first | asset_url | resize_url: width:700 }}\" alt=\"\">\r\n    </a>\r\n  </div>\r\n  <div class=\"col-md-5\">\r\n    <h3>{{ item | display_text }}</h3>\r\n    <p>{{ project.Description.Text }}</p>\r\n    <a class=\"btn btn-primary\" href=\"{{ item.Content.AutoroutePart.Path }}\">View Project\r\n      <span class=\"glyphicon glyphicon-chevron-right\"></span>\r\n    </a>\r\n  </div>\r\n</div>\r\n<hr>\r\n{% endfor %}\r\n\r\n{% assign previousText = \"← Newer Posts\" | t %}\r\n{% assign nextText = \"Older Posts →\" | t %}\r\n{% assign previousClass = \"previous\" | t %}\r\n{% assign nextClass = \"next\" | t %}\r\n{% assign itemClasses = \"page-item\" | split: \" \" %}\r\n\r\n{% shape_add_classes Model.Pager \"pagination\" %}\r\n{% shape_pager Model.Pager previous_text: previousText, next_text: nextText, previous_class: previousClass, next_class: nextClass, item_classes: itemClasses %}\r\n\r\n{{ Model.Pager | shape_render }}",
+          "Description": null
+        },
+        "CardList__ListPart": {
+          "Content": "<div class=\"row\">\r\n  {% for item in Model.ContentItems %}\r\n  {% assign content = item.Content[item.ContentType] %}\r\n  {% assign link = content.Link %}\r\n  <div class=\"col-lg-4 mb-4\">\r\n    <div class=\"card h-100\">\r\n      <h4 class=\"card-header\">{{ item | display_text }}</h4>\r\n      <div class=\"card-body\">\r\n        <p class=\"card-text\">{{ content.Description.Text }}</p>\r\n      </div>\r\n      <div class=\"card-footer\">\r\n        <a href=\"{{ link.Url }}\" class=\"btn btn-primary\">{{ link.Text }}</a>\r\n      </div>\r\n    </div>\r\n  </div>\r\n  {% endfor %}\r\n</div>",
+          "Description": null
+        },
+        "Content__Project": {
+          "Content": "<h1>{{ Model.ContentItem | display_text }}</h1>\r\n<ol class=\"breadcrumb\">\r\n  <li class=\"breadcrumb-item\">\r\n    <a href=\"/\">Home</a>\r\n  </li>\r\n  <li class=\"breadcrumb-item active\">{{ Model.ContentItem | display_text }}</li>\r\n</ol>\r\n{% assign content = Model.ContentItem.Content[Model.ContentItem.ContentType] %}\r\n<div class=\"row\">\r\n<div class=\"col-md-8\">\r\n  <img class=\"img-fluid\" src=\"{{ content.Picture.Paths.first | asset_url | resize_url: width:930 }}\" alt=\"\">\r\n</div>\r\n\r\n<div class=\"col-md-4\">\r\n  <h3 class=\"my-3\">Project Description</h3>\r\n  <p>{{ content.Description.Text }}</p>\r\n  <h3 class=\"my-3\">Project Details</h3>\r\n  {{ Model.Content.HtmlBodyPart | shape_render }}\r\n</div>\r\n</div>\r\n\r\n<h3 class=\"my-4\">Related Projects</h3>\r\n{% assign projects = Queries.Contents | query: type: \"Project\", limit: 5 %}\r\n<div class=\"row\">\r\n{% for content in projects %}\r\n{% assign project = content.Content[content.ContentType] %}\r\n  <div class=\"col-md-3 col-sm-6 mb-4\">\r\n    <a href=\"{{ project.AutoroutePart.Path }}\">\r\n      <img class=\"img-fluid\" src=\"{{ project.Picture.Paths.first | asset_url | resize_url: width:500 }}\" alt=\"\">\r\n    </a>\r\n  </div>\r\n{% endfor %}\r\n</div>",
+          "Description": null
+        },
+        "Content__Portfolio": {
+          "Content": "<h1>{{ Model.ContentItem | display_text }}</h1>\r\n<ol class=\"breadcrumb\">\r\n  <li class=\"breadcrumb-item\">\r\n    <a href=\"/\">Home</a>\r\n  </li>\r\n  <li class=\"breadcrumb-item active\">{{ Model.ContentItem | display_text }}</li>\r\n</ol>\r\n{{ Model.Content | shape_render }}",
+          "Description": null
+        },
+        "Widget": {
+          "Content": "{{ Model.Content | shape_render }}",
+          "Description": null
+        },
+        "Widget__RawHtml": {
+          "Content": "{% assign fields = Model.ContentItem.Content[Model.ContentItem.ContentType] %}\r\n{{ fields.Content.Html | raw }}",
+          "Description": null
+        },
+        "Widget_Wrapper": {
+          "Content": "{{ Model.Content | shape_render }}",
+          "Description": null
+        },
+        "Pager_Next": {
+          "Content": "{% shape_clear_alternates Model %}\r\n{% shape_type Model \"Pager_Link\" %}\r\n{% shape_add_classes Model \"page-link\" %}\r\n{{ Model | shape_render }}",
+          "Description": null
+        },
+        "Pager_Previous": {
+          "Content": "{% shape_clear_alternates Model %}\r\n{% shape_type Model \"Pager_Link\" %}\r\n{% shape_add_classes Model \"page-link\" %}\r\n{{ Model | shape_render }}",
+          "Description": null
+        },
+        "Content__FAQ": {
+          "Content": "<h1>{{ Model.ContentItem | display_text }}</h1>\r\n{% for item in Model.ContentItem.Content.Items.ContentItems %}\r\n<div class=\"mb-4\" id=\"accordion\" role=\"tablist\" aria-multiselectable=\"true\">\r\n  <div class=\"card\">\r\n    <div class=\"card-header\" role=\"tab\" id=\"heading{{ forloop.index }}\">\r\n      <h5 class=\"mb-0\">\r\n        <a data-toggle=\"collapse\" data-parent=\"#accordion\" href=\"#collapse{{ forloop.index }}\" aria-expanded=\"true\" aria-controls=\"collapse{{ forloop.index }}\" class=\"\">{{ item.TitlePart.Title }}</a>\r\n      </h5>\r\n    </div>\r\n\r\n    <div id=\"collapse{{ forloop.index }}\" class=\"collapse{% if forloop.index == 1 %} show{% endif %}\" role=\"tabpanel\" aria-labelledby=\"heading{{ forloop.index }}\" style=\"\">\r\n      <div class=\"card-body\">\r\n        {{ item.HtmlBodyPart.Html | raw }}\r\n      </div>\r\n    </div>\r\n  </div>\r\n</div>\r\n{% endfor %}",
+          "Description": null
+        },
+        "Blog__ListPart": {
+          "Content": "{% zone \"AsideFirst\" %}\r\n{% for item in Model.ContentItems %}\r\n    {{ item | shape_build_display: \"Summary\" | shape_render }}\r\n{% endfor %}\r\n\r\n{% assign previousText = \"← Newer Posts\" | t %}\r\n{% assign nextText = \"Older Posts →\" | t %}\r\n{% assign previousClass = \"previous\" | t %}\r\n{% assign nextClass = \"next\" | t %}\r\n{% assign itemClasses = \"page-item\" | split: \" \" %}\r\n\r\n{% shape_add_classes Model.Pager \"pagination\" %}\r\n{% shape_pager Model.Pager previous_text: previousText, next_text: nextText, previous_class: previousClass, next_class: nextClass, item_classes: itemClasses %}\r\n\r\n{{ Model.Pager | shape_render }}\r\n{% endzone %}",
+          "Description": null
+        },
+        "Content_Summary__BlogPost2": {
+          "Content": "{% assign content = Model.ContentItem.Content[Model.ContentItem.ContentType] %}\r\n<div class=\"card mb-4\">\r\n  <img class=\"card-img-top\" src=\"{{ content.Picture.Paths.first | asset_url | resize_url: width:750 }}\" alt=\"Card image cap\">\r\n  <div class=\"card-body\">\r\n    <h2 class=\"card-title\">{{ Model.ContentItem.Content.TitlePart.Title }}</h2>\r\n    <p class=\"card-text\">{{ Model.Content.HtmlBodyPart | shape_render }}</p>\r\n    <a href=\"{{ Model.ContentItem.Content.AutoroutePart.Path }}\" class=\"btn btn-primary\">Read More →</a>\r\n  </div>\r\n  <div class=\"card-footer text-muted\">\r\n    {% assign format = \"dd MMMM yyyy\" | t %}\r\n    {% assign dateTime = \"DateTime\" | shape_new: utc: Model.ContentItem.CreatedUtc, format: format | shape_stringify %}\r\n    Posted on {{ \"{0}\" | t: dateTime | raw }} by\r\n    <a href=\"{{ Model.ContentItem.Content.AutoroutePart.Path }}\">Start Bootstrap</a>\r\n  </div>\r\n</div>",
+          "Description": null
+        },
+        "Content__BlogPost": {
+          "Content": "{% zone \"AsideFirst\" %}\r\n<h1>{{ Model.ContentItem | display_text }}</h1>\r\n<ol class=\"breadcrumb\">\r\n  <li class=\"breadcrumb-item\">\r\n    <a href=\"/\">Home</a>\r\n  </li>\r\n  <li class=\"breadcrumb-item active\">{{ Model.ContentItem | display_text }}</li>\r\n</ol>\r\n{% assign content = Model.ContentItem.Content[Model.ContentItem.ContentType] %}\r\n<div class=\"col-lg-12\">\r\n  <img class=\"img-fluid rounded\" src=\"{{ content.Picture.Paths.first | asset_url | resize_url: width:900 }}\" alt=\"\">\r\n  <hr>\r\n  {% assign format = \"dd MMMM yyyy HH:mm\" | t %}\r\n  {% assign dateTime = \"DateTime\" | shape_new: utc: Model.ContentItem.CreatedUtc, format: format | shape_stringify %}\r\n  <p>Posted on {{ \"{0}\" | t: dateTime | raw }}</p>\r\n  <hr>       \r\n{{ Model.Content.HtmlBodyPart | shape_render }}\r\n{{ Model.Content.DisqusPart | shape_render }}\r\n</div>\r\n{% endzone %}",
+          "Description": null
+        },
+        "Content_Summary__BlogPost": {
+          "Content": "{% assign content = Model.ContentItem.Content[Model.ContentItem.ContentType] %}\r\n<div class=\"card mb-4\">\r\n  <div class=\"card-body\">\r\n    <div class=\"row\">\r\n      <div class=\"col-lg-6\">\r\n        <a href=\"#\">\r\n          <img class=\"img-fluid rounded\" src=\"{{ content.Picture.Paths.first | asset_url | resize_url: width:750 }}\" alt=\"\">\r\n        </a>\r\n      </div>\r\n      <div class=\"col-lg-6\">\r\n        <h2 class=\"card-title\">{{ Model.ContentItem.Content.TitlePart.Title }}</h2>\r\n        <p class=\"card-text\">{{ Model.Content.HtmlBodyPart | shape_render }}</p>\r\n        <a href=\"{{ Model.ContentItem.Content.AutoroutePart.Path }}\" class=\"btn btn-primary\">Read More →</a>\r\n      </div>\r\n    </div>\r\n  </div>\r\n  <div class=\"card-footer text-muted\">\r\n    {% assign format = \"dd MMMM yyyy\" | t %}\r\n    {% assign dateTime = \"DateTime\" | shape_new: utc: Model.ContentItem.CreatedUtc, format: format | shape_stringify %}\r\n    Posted on {{ \"{0}\" | t: dateTime | raw }} by\r\n    <a href=\"{{ Model.ContentItem.Content.AutoroutePart.Path }}\">Start Bootstrap</a>\r\n  </div>\r\n</div>",
+          "Description": null
+        },
+        "Content_Summary__Card": {
+          "Content": "{% assign content = Model.ContentItem.Content[Model.ContentItem.ContentType] %}\r\n<div class=\"col-lg-4 mb-4\">\r\n  <div class=\"card h-100\">\r\n    <h4 class=\"card-header\">{{ Model.ContentItem.Content.TitlePart.Title }}</h4>\r\n    <div class=\"card-body\">\r\n      <p class=\"card-text\">{{ content.Description.Text }}</p>\r\n    </div>\r\n    <div class=\"card-footer\">\r\n      <a href=\"{{ Model.ContentItem.Content.AutoroutePart.Path }}\" class=\"btn btn-primary\">Learn More</a>\r\n    </div>\r\n  </div>\r\n</div>",
+          "Description": null
+        },
+        "Content_Summary__Project": {
+          "Content": "{% assign content = Model.ContentItem.Content[Model.ContentItem.ContentType] %}\r\n<div class=\"col-lg-4 col-sm-6 portfolio-item\">\r\n<div class=\"card h-100\">\r\n  <a href=\"{{ Model.ContentItem.Content.AutoroutePart.Path }}\"><img class=\"card-img-top\" src=\"{{ content.Picture.Paths.first | asset_url | resize_url: width:700, height:400, mode:resize }}\" alt=\"\"></a>\r\n  <div class=\"card-body\">\r\n\t<h4 class=\"card-title\">\r\n\t  <a href=\"{{ Model.ContentItem.Content.AutoroutePart.Path }}\">{{ Model.ContentItem.Content.TitlePart.Title }}</a>\r\n\t</h4>\r\n\t<p class=\"card-text\">{{ content.Description.Text }}</p>\r\n  </div>\r\n</div>\r\n</div>",
+          "Description": null
+        },
+        "Content": {
+          "Content": "{% zone \"Header\" %}\r\n<div class=\"jumbotron text-center mb-0\">\r\n\t  <h1>{{ Model.ContentItem.DisplayText }}</h1>\r\n</div>\r\n{% endzone %}\r\n{{ Model.Content | shape_render }}",
+          "Description": null
+        },
+        "Template": {
+          "Content": null,
+          "Description": null
+        }
+      }
+    }
+  ]
+}

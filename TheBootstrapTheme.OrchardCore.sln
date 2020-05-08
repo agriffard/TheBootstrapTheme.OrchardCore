@@ -17,7 +17,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		README.md = README.md
 	EndProjectSection
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TheBootstrapTheme.OrchardCore", "src\TheBootstrapTheme.OrchardCore\TheBootstrapTheme.OrchardCore.csproj", "{4D9D4342-67E8-4D73-ACB3-C84DF7B1F7F6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TheBootstrapTheme.OrchardCore", "src\TheBootstrapTheme\TheBootstrapTheme.csproj", "{4D9D4342-67E8-4D73-ACB3-C84DF7B1F7F6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
