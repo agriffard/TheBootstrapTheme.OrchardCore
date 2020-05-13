@@ -4,7 +4,7 @@
   "description": "Provides a Bootstrap theme.",
   "author": "Antoine Griffard",
   "website": "http://antoinegriffard.com",
-  "version": "1.0-rc2",
+  "version": "1.0-rc1",
   "issetuprecipe": true,
   "categories": [
     "default"
@@ -16,19 +16,18 @@
     {
       "name": "Feature",
       "enable": [
+        "Application.Default",
+        "Workshop.Web",
+        "OrchardCore.Settings",
         "OrchardCore.Admin",
         "OrchardCore.AdminMenu",
         "OrchardCore.Contents",
         "OrchardCore.Liquid",
-        "OrchardCore.Settings",
         "OrchardCore.Templates",
         "OrchardCore.ContentTypes",
         "OrchardCore.Alias",
-        "OrchardCore.Apis.GraphQL",
         "OrchardCore.Autoroute",
         "OrchardCore.ContentFields",
-        "OrchardCore.Localization",
-        "OrchardCore.ContentLocalization",
         "OrchardCore.ContentPreview",
         "OrchardCore.Contents.FileContentDefinition",
         "OrchardCore.CustomSettings",
@@ -54,9 +53,6 @@
         "OrchardCore.Title",
         "OrchardCore.Menu",
         "OrchardCore.Navigation",
-        "OrchardCore.OpenId",
-        "OrchardCore.OpenId.Management",
-        "OrchardCore.OpenId.Server",
         "OrchardCore.Queries",
         "OrchardCore.Queries.Sql",
         "OrchardCore.Users",
@@ -66,9 +62,11 @@
         "OrchardCore.Themes",
         "OrchardCore.Workflows",
         "OrchardCore.Workflows.Http",
-        "ThemeSettings",
-        "TBST",
-        "TheAdmin"
+        "Prism.OrchardCore",
+        "TheAdmin",
+        "TheAgencyTheme",
+        "TheBlogTheme",
+        "TheBootstrapTheme"
       ]
     },
     {
@@ -611,31 +609,6 @@
           }
         },
         {
-          "ContentItemId": "4h44aa08kqegq3z7br9qvq5dmc",
-          "ContentItemVersionId": "44q0k0z8216vf7hayxtw0rbm42",
-          "ContentType": "Blog",
-          "DisplayText": "Blog",
-          "Latest": true,
-          "Published": true,
-          "ModifiedUtc": "2019-04-23T15:40:06.9347593Z",
-          "PublishedUtc": "2019-04-23T15:40:06.9400425Z",
-          "CreatedUtc": "2019-04-23T15:40:06.9400425Z",
-          "Owner": "admin",
-          "Author": "admin",
-          "Blog": {},
-          "AutoroutePart": {
-            "Path": "blog",
-            "SetHomepage": false
-          },
-          "ListPart": {
-            "FeedProxyUrl": null,
-            "FeedItemsCount": 20
-          },
-          "TitlePart": {
-            "Title": "Blog"
-          }
-        },
-        {
           "ContentItemId": "4z117003sqdhz1ave6ynfex64e",
           "ContentItemVersionId": "477sezcgbf0v96587k01gnvs5z",
           "ContentType": "Project",
@@ -673,140 +646,6 @@
           }
         },
         {
-          "ContentItemId": "4nmzqrehq4dkc0p2thm29pm057",
-          "ContentItemVersionId": "4mzrmh4tebzfqvm3ws1tgfzj4q",
-          "ContentType": "Page",
-          "DisplayText": "About",
-          "Latest": true,
-          "Published": true,
-          "ModifiedUtc": "2019-05-01T15:03:33.9546776Z",
-          "PublishedUtc": "2019-05-01T15:03:33.9821991Z",
-          "CreatedUtc": "2019-04-23T12:53:44.7290613Z",
-          "Owner": "admin",
-          "Author": "admin",
-          "Page": {},
-          "AutoroutePart": {
-            "Path": "about",
-            "SetHomepage": false
-          },
-          "FlowPart": {
-            "Widgets": [
-              {
-                "ContentItemId": "437dpdkgs7wmy1jax3645vjvwa",
-                "ContentItemVersionId": null,
-                "ContentType": "RawHtml",
-                "DisplayText": null,
-                "Latest": false,
-                "Published": false,
-                "ModifiedUtc": "2019-05-01T15:03:33.9668326Z",
-                "PublishedUtc": null,
-                "CreatedUtc": null,
-                "Owner": null,
-                "Author": "admin",
-                "RawHtml": {
-                  "Content": {
-                    "Html": "<ol class=\"breadcrumb\">\r\n      <li class=\"breadcrumb-item\">\r\n        <a href=\"/\">Home</a>\r\n      </li>\r\n      <li class=\"breadcrumb-item active\">About</li>\r\n    </ol>"
-                  }
-                },
-                "FlowMetadata": {
-                  "Alignment": 3,
-                  "Size": 100
-                }
-              },
-              {
-                "ContentItemId": "4zm0s51n8pdv15b86fxm2amrmy",
-                "ContentItemVersionId": null,
-                "ContentType": "RawHtml",
-                "DisplayText": null,
-                "Latest": false,
-                "Published": false,
-                "ModifiedUtc": "2019-05-01T15:03:33.9681593Z",
-                "PublishedUtc": null,
-                "CreatedUtc": null,
-                "Owner": null,
-                "Author": "admin",
-                "RawHtml": {
-                  "Content": {
-                    "Html": "<img class=\"img-fluid rounded mb-4\" src=\"http://placehold.it/750x450\" alt=\"\">"
-                  }
-                },
-                "FlowMetadata": {
-                  "Alignment": 3,
-                  "Size": 50
-                }
-              },
-              {
-                "ContentItemId": "4kbcr5rf9zvq1r3abzdc9abhd7",
-                "ContentItemVersionId": null,
-                "ContentType": "RawHtml",
-                "DisplayText": null,
-                "Latest": false,
-                "Published": false,
-                "ModifiedUtc": "2019-05-01T15:03:33.9696799Z",
-                "PublishedUtc": null,
-                "CreatedUtc": null,
-                "Owner": null,
-                "Author": "admin",
-                "RawHtml": {
-                  "Content": {
-                    "Html": "<h2>About Modern Business</h2>\r\n<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed voluptate nihil eum consectetur similique? Consectetur, quod, incidunt, harum nisi dolores delectus reprehenderit voluptatem perferendis dicta dolorem non blanditiis ex fugiat.</p>"
-                  }
-                },
-                "FlowMetadata": {
-                  "Alignment": 3,
-                  "Size": 50
-                }
-              },
-              {
-                "ContentItemId": "45sc0bb6c87wxy0zddscrsa8d9",
-                "ContentItemVersionId": null,
-                "ContentType": "LiquidWidget",
-                "DisplayText": null,
-                "Latest": false,
-                "Published": false,
-                "ModifiedUtc": "2019-05-01T15:03:33.9720761Z",
-                "PublishedUtc": null,
-                "CreatedUtc": null,
-                "Owner": null,
-                "Author": "admin",
-                "LiquidWidget": {},
-                "LiquidPart": {
-                  "Liquid": "<h2>Our Team</h2>\r\n<div class=\"row\">\r\n{% assign teamMembers = Queries.Contents | query: type:'TeamMember' %}\r\n{% for item in teamMembers %}\r\n{% assign content = item.Content[item.ContentType] %}\r\n  <div class=\"col-lg-4 mb-4\">\r\n    <div class=\"card h-100 text-center\">\r\n      <img class=\"card-img-top\" src=\"{{ content.ImageUrl.Text }}\" alt=\"\">\r\n      <div class=\"card-body\">\r\n        <h4 class=\"card-title\">{{ item | display_text }}</h4>\r\n        <h6 class=\"card-subtitle mb-2 text-muted\">{{ content.Position.Text }}</h6>\r\n        <p class=\"card-text\">{{ content.Description.Text }}</p>\r\n      </div>\r\n      <div class=\"card-footer\">\r\n        <a href=\"{{ content.Email.Text }}\">{{ content.Email.Text }}</a>\r\n      </div>\r\n    </div>\r\n  </div>\r\n{% endfor %}\r\n</div>"
-                },
-                "FlowMetadata": {
-                  "Alignment": 3,
-                  "Size": 100
-                }
-              },
-              {
-                "ContentItemId": "4gkrzn5hkd0sr6wkpndy83ttw6",
-                "ContentItemVersionId": null,
-                "ContentType": "RawHtml",
-                "DisplayText": null,
-                "Latest": false,
-                "Published": false,
-                "ModifiedUtc": "2019-05-01T15:03:33.9744823Z",
-                "PublishedUtc": null,
-                "CreatedUtc": null,
-                "Owner": null,
-                "Author": "admin",
-                "RawHtml": {
-                  "Content": {
-                    "Html": "<h2>Our Customers</h2>\r\n<div class=\"row\">\r\n      <div class=\"col-lg-2 col-sm-4 mb-4\">\r\n        <img class=\"img-fluid\" src=\"http://placehold.it/500x300\" alt=\"\">\r\n      </div>\r\n      <div class=\"col-lg-2 col-sm-4 mb-4\">\r\n        <img class=\"img-fluid\" src=\"http://placehold.it/500x300\" alt=\"\">\r\n      </div>\r\n      <div class=\"col-lg-2 col-sm-4 mb-4\">\r\n        <img class=\"img-fluid\" src=\"http://placehold.it/500x300\" alt=\"\">\r\n      </div>\r\n      <div class=\"col-lg-2 col-sm-4 mb-4\">\r\n        <img class=\"img-fluid\" src=\"http://placehold.it/500x300\" alt=\"\">\r\n      </div>\r\n      <div class=\"col-lg-2 col-sm-4 mb-4\">\r\n        <img class=\"img-fluid\" src=\"http://placehold.it/500x300\" alt=\"\">\r\n      </div>\r\n      <div class=\"col-lg-2 col-sm-4 mb-4\">\r\n        <img class=\"img-fluid\" src=\"http://placehold.it/500x300\" alt=\"\">\r\n      </div>\r\n    </div>"
-                  }
-                },
-                "FlowMetadata": {
-                  "Alignment": 3,
-                  "Size": 100
-                }
-              }
-            ]
-          },
-          "TitlePart": {
-            "Title": "About"
-          }
-        },
-        {
           "ContentItemId": "4zmzzzaygxda814pp2x18gr3da",
           "ContentItemVersionId": "43hg5xvjn44hx5x8kd6js2jzny",
           "ContentType": "CardList",
@@ -832,207 +671,6 @@
           "AutoroutePart": {
             "Path": "services",
             "SetHomepage": false
-          }
-        },
-        {
-          "ContentItemId": "47vqp7d4etqp16ab85cvby43my",
-          "ContentItemVersionId": "4aq1thtrnx7a0x6xb5597dadxm",
-          "ContentType": "Menu",
-          "DisplayText": "Main Menu",
-          "Latest": true,
-          "Published": true,
-          "ModifiedUtc": "2019-05-01T15:24:22.5290731Z",
-          "PublishedUtc": "2019-05-01T15:24:22.5430078Z",
-          "CreatedUtc": "2017-08-16T00:32:59.1287452Z",
-          "Owner": "admin",
-          "Author": "admin",
-          "MenuPart": {},
-          "TitlePart": {
-            "Title": "Main Menu"
-          },
-          "MenuItemsListPart": {
-            "MenuItems": [
-              {
-                "ContentItemId": "4y4qrhfev2ce56wz6jz9cqyydw",
-                "ContentItemVersionId": null,
-                "ContentType": "LinkMenuItem",
-                "DisplayText": null,
-                "Latest": false,
-                "Published": false,
-                "ModifiedUtc": "2019-04-23T13:22:24.7221096Z",
-                "PublishedUtc": null,
-                "CreatedUtc": null,
-                "Owner": null,
-                "Author": "admin",
-                "LinkMenuItemPart": {
-                  "Name": "About",
-                  "Url": "~/about"
-                },
-                "LinkMenuItem": {}
-              },
-              {
-                "ContentItemId": "4dsbwd2txw02764vdmtw6h09wm",
-                "ContentItemVersionId": null,
-                "ContentType": "LinkMenuItem",
-                "DisplayText": null,
-                "Latest": false,
-                "Published": false,
-                "ModifiedUtc": "2019-04-23T13:51:59.5831357Z",
-                "PublishedUtc": null,
-                "CreatedUtc": null,
-                "Owner": null,
-                "Author": "admin",
-                "LinkMenuItemPart": {
-                  "Name": "Services",
-                  "Url": "~/services"
-                },
-                "LinkMenuItem": {}
-              },
-              {
-                "ContentItemId": "48ywd9hvtm8jt21j140430hzwz",
-                "ContentItemVersionId": null,
-                "ContentType": "LinkMenuItem",
-                "DisplayText": null,
-                "Latest": false,
-                "Published": false,
-                "ModifiedUtc": "2019-04-23T14:34:38.2889627Z",
-                "PublishedUtc": null,
-                "CreatedUtc": null,
-                "Owner": null,
-                "Author": "admin",
-                "LinkMenuItemPart": {
-                  "Name": "Portfolio",
-                  "Url": "~/portfolio-1"
-                },
-                "LinkMenuItem": {}
-              },
-              {
-                "ContentItemId": "4tpsnv94363ne6crggwf129rw6",
-                "ContentItemVersionId": null,
-                "ContentType": "LinkMenuItem",
-                "DisplayText": null,
-                "Latest": false,
-                "Published": false,
-                "ModifiedUtc": "2019-04-23T15:45:31.3939356Z",
-                "PublishedUtc": null,
-                "CreatedUtc": null,
-                "Owner": null,
-                "Author": "admin",
-                "LinkMenuItemPart": {
-                  "Name": "Blog",
-                  "Url": "~/blog"
-                },
-                "LinkMenuItem": {}
-              },
-              {
-                "ContentItemId": "46y2m2y3vb8dbzbpbj2144vdm5",
-                "ContentItemVersionId": null,
-                "ContentType": "LinkMenuItem",
-                "DisplayText": null,
-                "Latest": false,
-                "Published": false,
-                "ModifiedUtc": "2019-04-23T15:45:58.4141196Z",
-                "PublishedUtc": null,
-                "CreatedUtc": null,
-                "Owner": null,
-                "Author": "admin",
-                "LinkMenuItemPart": {
-                  "Name": "Pages",
-                  "Url": "#"
-                },
-                "LinkMenuItem": {},
-                "MenuItemsListPart": {
-                  "MenuItems": [
-                    {
-                      "ContentItemId": "4xmb5dh7m9weesry5rgx58y7w4",
-                      "ContentItemVersionId": null,
-                      "ContentType": "LinkMenuItem",
-                      "DisplayText": null,
-                      "Latest": false,
-                      "Published": false,
-                      "ModifiedUtc": "2019-04-23T15:31:41.8001809Z",
-                      "PublishedUtc": null,
-                      "CreatedUtc": null,
-                      "Owner": null,
-                      "Author": "admin",
-                      "LinkMenuItemPart": {
-                        "Name": "FAQ",
-                        "Url": "~/faq"
-                      },
-                      "LinkMenuItem": {}
-                    },
-                    {
-                      "ContentItemId": "44t1fnejmsnkd0vhcj37f4znch",
-                      "ContentItemVersionId": null,
-                      "ContentType": "LinkMenuItem",
-                      "DisplayText": null,
-                      "Latest": false,
-                      "Published": false,
-                      "ModifiedUtc": "2019-05-01T14:59:01.0854807Z",
-                      "PublishedUtc": null,
-                      "CreatedUtc": null,
-                      "Owner": null,
-                      "Author": "admin",
-                      "LinkMenuItemPart": {
-                        "Name": "Pricing",
-                        "Url": "~/pricing"
-                      },
-                      "LinkMenuItem": {}
-                    }
-                  ]
-                }
-              }
-            ]
-          },
-          "AliasPart": {
-            "Alias": "main-menu"
-          }
-        },
-        {
-          "ContentItemId": "4fcrkd3zh4kkg1n8xa75hysxmh",
-          "ContentItemVersionId": "4b68fqg98j95r7c32z0y93964y",
-          "ContentType": "Page",
-          "DisplayText": "Pricing",
-          "Latest": true,
-          "Published": true,
-          "ModifiedUtc": "2019-05-11T14:01:16.3826905Z",
-          "PublishedUtc": "2019-05-11T14:01:16.4029695Z",
-          "CreatedUtc": "2019-05-01T14:58:26.5248339Z",
-          "Owner": "admin",
-          "Author": "admin",
-          "Page": {},
-          "AutoroutePart": {
-            "Path": "pricing",
-            "SetHomepage": false
-          },
-          "FlowPart": {
-            "Widgets": [
-              {
-                "ContentItemId": "4374x46xtx5h87d86cahsdz7n9",
-                "ContentItemVersionId": null,
-                "ContentType": "RawHtml",
-                "DisplayText": null,
-                "Latest": false,
-                "Published": false,
-                "ModifiedUtc": "2019-05-11T14:01:16.396043Z",
-                "PublishedUtc": null,
-                "CreatedUtc": null,
-                "Owner": null,
-                "Author": "admin",
-                "RawHtml": {
-                  "Content": {
-                    "Html": "<ol class=\"breadcrumb\">\r\n      <li class=\"breadcrumb-item\">\r\n        <a href=\"/\">Home</a>\r\n      </li>\r\n      <li class=\"breadcrumb-item active\">Pricing</li>\r\n    </ol>\r\n<div class=\"row\">\r\n      <div class=\"col-lg-4 mb-4\">\r\n        <div class=\"card h-100\">\r\n          <h3 class=\"card-header\">Basic</h3>\r\n          <div class=\"card-body\">\r\n            <div class=\"display-4\">$19.99</div>\r\n            <div class=\"font-italic\">per month</div>\r\n          </div>\r\n          <ul class=\"list-group list-group-flush\">\r\n            <li class=\"list-group-item\">Cras justo odio</li>\r\n            <li class=\"list-group-item\">Dapibus ac facilisis in</li>\r\n            <li class=\"list-group-item\">Vestibulum at eros</li>\r\n            <li class=\"list-group-item\">\r\n              <a href=\"#\" class=\"btn btn-primary\">Sign Up!</a>\r\n            </li>\r\n          </ul>\r\n        </div>\r\n      </div>\r\n      <div class=\"col-lg-4 mb-4\">\r\n        <div class=\"card card-outline-primary h-100\">\r\n          <h3 class=\"card-header bg-primary text-white\">Plus</h3>\r\n          <div class=\"card-body\">\r\n            <div class=\"display-4\">$39.99</div>\r\n            <div class=\"font-italic\">per month</div>\r\n          </div>\r\n          <ul class=\"list-group list-group-flush\">\r\n            <li class=\"list-group-item\">Cras justo odio</li>\r\n            <li class=\"list-group-item\">Dapibus ac facilisis in</li>\r\n            <li class=\"list-group-item\">Vestibulum at eros</li>\r\n            <li class=\"list-group-item\">\r\n              <a href=\"#\" class=\"btn btn-primary\">Sign Up!</a>\r\n            </li>\r\n          </ul>\r\n        </div>\r\n      </div>\r\n      <div class=\"col-lg-4 mb-4\">\r\n        <div class=\"card h-100\">\r\n          <h3 class=\"card-header\">Ultra</h3>\r\n          <div class=\"card-body\">\r\n            <div class=\"display-4\">$159.99</div>\r\n            <div class=\"font-italic\">per month</div>\r\n          </div>\r\n          <ul class=\"list-group list-group-flush\">\r\n            <li class=\"list-group-item\">Cras justo odio</li>\r\n            <li class=\"list-group-item\">Dapibus ac facilisis in</li>\r\n            <li class=\"list-group-item\">Vestibulum at eros</li>\r\n            <li class=\"list-group-item\">\r\n              <a href=\"#\" class=\"btn btn-primary\">Sign Up!</a>\r\n            </li>\r\n          </ul>\r\n        </div>\r\n      </div>\r\n    </div>"
-                  }
-                },
-                "FlowMetadata": {
-                  "Alignment": 3,
-                  "Size": 100
-                }
-              }
-            ]
-          },
-          "TitlePart": {
-            "Title": "Pricing"
           }
         },
         {
@@ -1182,41 +820,6 @@
           }
         },
         {
-          "ContentItemId": "4t1r6p49631jys9kjdskfrz9wv",
-          "ContentItemVersionId": "43yemb8mmp3gfy3ewscp9ye44h",
-          "ContentType": "BlogPost",
-          "DisplayText": "Post Title 1",
-          "Latest": true,
-          "Published": true,
-          "ModifiedUtc": "2019-06-11T12:49:53.1668834Z",
-          "PublishedUtc": "2019-06-11T12:49:53.1841739Z",
-          "CreatedUtc": "2019-04-23T15:42:38.154Z",
-          "Owner": "admin",
-          "Author": "admin",
-          "BlogPost": {
-            "Picture": {
-              "Paths": [
-                "750x300.png"
-              ]
-            }
-          },
-          "AutoroutePart": {
-            "Path": "blog/post-title-1",
-            "SetHomepage": false
-          },
-          "HtmlBodyPart": {
-            "Html": "<p><span style=\"font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, Arial, &quot;Noto Sans&quot;, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;, &quot;Noto Color Emoji&quot;;\">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!</span></p>"
-          },
-          "TitlePart": {
-            "Title": "Post Title 1"
-          },
-          "ContainedPart": {
-            "ListContentItemId": "4h44aa08kqegq3z7br9qvq5dmc",
-            "Order": 0
-          },
-          "CommonPart": {}
-        },
-        {
           "ContentItemId": "4gk0c8dgyrt0zy58gc3azpvjnj",
           "ContentItemVersionId": "4vqpc9gkbp5j10r8spzk865pw9",
           "ContentType": "RawHtml",
@@ -1261,173 +864,6 @@
             "Zone": "Header",
             "Layer": "Never",
             "RenderTitle": false
-          }
-        },
-        {
-          "ContentItemId": "4f4y3r3dykqwbrza3n7awptjmq",
-          "ContentItemVersionId": "4a9q4bvqc377s4q3vnxfb3dnnz",
-          "ContentType": "Blog",
-          "DisplayText": "Blog",
-          "Latest": true,
-          "Published": true,
-          "ModifiedUtc": "2019-10-15T09:58:37.6017101Z",
-          "PublishedUtc": "2019-10-15T09:58:37.9042194Z",
-          "CreatedUtc": "2018-09-29T16:23:41.6943304Z",
-          "Owner": "admin",
-          "Author": "admin",
-          "TitlePart": {
-            "Title": "Blog"
-          },
-          "HtmlBodyPart": {
-            "Html": null
-          },
-          "AutoroutePart": {
-            "Path": "blog",
-            "SetHomepage": false
-          },
-          "ListPart": {
-            "FeedProxyUrl": "",
-            "FeedItemsCount": 20
-          },
-          "Blog": {}
-        },
-        {
-          "ContentItemId": "43bvpm7y0gkfczsch6dh10j4w7",
-          "ContentItemVersionId": "4vp7acnyb4c7zvqyyqw2gyfqxd",
-          "ContentType": "BlogPost",
-          "DisplayText": "Orchard Core Beta",
-          "Latest": true,
-          "Published": true,
-          "ModifiedUtc": "2019-03-21T18:17:01.2259891Z",
-          "PublishedUtc": "2019-03-21T18:17:01.2588879Z",
-          "CreatedUtc": "2017-11-21T21:16:17.668Z",
-          "Owner": "admin",
-          "Author": "admin",
-          "Number": 4,
-          "BlogPost": {
-            "Tags": {
-              "Text": "Orchard Core"
-            }
-          },
-          "AutoroutePart": {
-            "Path": "blog/orchard-core-beta",
-            "SetHomepage": false
-          },
-          "HtmlBodyPart": {
-            "Html": "<p>Today, we are really proud to announce that the first version of <strong>Orchard Core</strong> has been released in Beta.</p><p><span style=\"color: inherit; font-family: inherit; font-size: 2rem;\">What is Orchard Core and Orchard Core CMS?</span><br></p><br><p><strong>Orchard Core</strong> is a Modular and Extensible Application Framework developped on the .NET Core ecosystem.<br><span style=\"font-size: 1rem;\">It allows you to create Multi tenant SaaS applications and host multiple sites with only one instance.<br></span><span style=\"font-size: 1rem;\"><strong>Orchard Core CMS</strong> is a full featured Content Management System that provides many useful modules.<br></span><span style=\"font-size: 1rem;\">With it, you can easily enable existing features or add your own modules to extend your application.</span></p><p>{{ \"Orchard/OrchardCore-Logo.png\" | asset_url | img_tag }}</p><h2>What features are available?</h2><p>These features are available out of the box:</p><ul><li><strong style=\"font-size: 1rem;\">Nuget Packages</strong><span style=\"font-size: 1rem;\">: Add reference in your application to Orchard Core Nuget packages.</span><br></li><li><strong style=\"font-size: 1rem;\">Performance</strong><span style=\"font-size: 1rem;\">: Handle many requests per second by default and even more with Response Cache.</span><br></li><li><strong style=\"font-size: 1rem;\">Portable </strong><span style=\"font-size: 1rem;\">: You can develop and deploy on multiple platforms : Windows, Mac and Linux.</span><br></li><li><strong style=\"font-size: 1rem;\">Deployment</strong><span style=\"font-size: 1rem;\">: Import/Export the data and the structure of your site with deployment plans.</span><br></li><li><strong style=\"font-size: 1rem;\">Setup</strong><span style=\"font-size: 1rem;\">: Use different recipes to setup your site with initial features and content types using configurable steps and dynamic parameters.&nbsp;</span><br></li><li><strong style=\"font-size: 1rem;\">Storage</strong><span style=\"font-size: 1rem;\">: YesSQL allows you to store your contents in SQL Server, SQLite, MySQL or PostgreSQL as if it was a document database.</span><br></li></ul><p>Many other modules can allow you to create a CMS:</p><ul><li>Create your <strong>Content Types</strong> adding out of the box predefined Parts and Fields.<br></li><li>Customize your site using <strong>Themes </strong>with ASP.NET Razor or Liquid syntax files.<br></li><li>Define different <strong>Zones</strong> on the site and add <strong>Widgets </strong>anywhere in your pages.<br></li><li>Declare <strong>Templates </strong>in admin that overrides the rendering of your content types.<br></li><li>Edit your content with <strong>Wysiwyg </strong>or <strong>Mardown </strong>editors that can use <strong>Liquid filters</strong>.<br></li><li>Get a <strong>Live Preview</strong> of your content in separate window while editing it from the admin.<br></li><li>Manage the <strong>Users, Roles and Permissions</strong> to give access to the Admin dashboard pages.<br></li><li>Manage your Assets and Media folders, upload files and add link to dynamically resized pictures.<br></li><li>Organize your <strong>Contents </strong>and navigate in the site: Lists, Menus, Taxonomies, Urls, ...<br></li><li>Search: <strong>Index</strong> your data and <strong>Query </strong>them in <strong>Sql </strong>or <strong>Lucene </strong>using Liquid syntax.<br></li></ul><br><h2>What is the current Status?</h2><p>Orchard Core is currently in <strong>Beta</strong>. See the <a href=\"https://github.com/OrchardCMS/OrchardCore/wiki/Roadmap\" target=\"_blank\">Roadmap</a>&nbsp;for more details. <br><span style=\"font-size: 1rem;\">This is an <strong>Open Source</strong> project so everyone can contribute and help in many ways to make it grows.</span></p><br><h2>How do I get started?</h2><p>Create an application using Orchard Core is as easy as adding a Nuget package reference to your <strong>ASP.NET Core project</strong> and configure two lines in the startup.cs file.<br><span style=\"font-size: 1rem;\">You can have a running instance in less than 5 minutes following this <a href=\"http://www.ideliverable.com/blog/getting-started-with-orchard-core-as-a-nuget-package\" target=\"_blank\">tutorial</a>.</span></p><br><h2>Useful links:</h2><p>GitHub repository : <a href=\"https://github.com/OrchardCMS/OrchardCore\" target=\"_blank\">https://github.com/OrchardCMS/OrchardCore</a><br><span style=\"font-size: 1rem;\">Gitter chat room : </span><a href=\"https://gitter.im/OrchardCMS/OrchardCore\" target=\"_blank\" style=\"background-color: rgb(255, 255, 255); font-size: 1rem;\">https://gitter.im/OrchardCMS/OrchardCore</a><br><span style=\"font-size: 1rem;\">Orchard Project site : </span><a href=\"http://orchardproject.net/\" target=\"_blank\" style=\"background-color: rgb(255, 255, 255); font-size: 1rem;\">http://orchardproject.net</a><br><span style=\"font-size: 1rem;\">Orchard Core documentation : </span><a href=\"http://orchardcore.readthedocs.io\" target=\"_blank\" style=\"background-color: rgb(255, 255, 255); font-size: 1rem;\">http://orchardcore.readthedocs.io</a></p><br>"
-          },
-          "TitlePart": {
-            "Title": "Orchard Core Beta"
-          },
-          "ContainedPart": {
-            "ListContentItemId": "4f4y3r3dykqwbrza3n7awptjmq",
-            "Order": 0
-          },
-          "CommonPart": {}
-        },
-        {
-          "ContentItemId": "49x1pn2ypegxc36bxbe45bnc5c",
-          "ContentItemVersionId": "4r0qwb5a53x7yxckay5gdwp248",
-          "ContentType": "BlogPost",
-          "DisplayText": "Orchard Core Beta 2",
-          "Latest": true,
-          "Published": true,
-          "ModifiedUtc": "2019-06-26T18:17:26.4397538Z",
-          "PublishedUtc": "2019-06-26T18:17:26.4668634Z",
-          "CreatedUtc": "2019-06-26T13:01:32.604Z",
-          "Owner": "admin",
-          "Author": "admin",
-          "BlogPost": {
-            "Tags": {
-              "Text": "Orchard Core"
-            }
-          },
-          "AutoroutePart": {
-            "Path": "blog/orchard-core-beta-2",
-            "SetHomepage": false
-          },
-          "HtmlBodyPart": {
-            "Html": "<p>Orchard Core is available in Beta 2:&nbsp;<a href=\"https://github.com/OrchardCMS/OrchardCore/releases\">https://github.com/OrchardCMS/OrchardCore/releases</a>&nbsp;</p><p>   {{ \"Orchard/OrchardCore-Logo.png\" | asset_url | img_tag }}</p><p style=\"line-height: 24px; margin-right: 0px; margin-bottom: 24px; margin-left: 0px; color: rgb(64, 64, 64); font-family: Lato, proxima-nova, &quot;Helvetica Neue&quot;, Arial, sans-serif; background-color: rgb(252, 252, 252);\">Orchard Core consists of two different targets:&nbsp;</p><ul style=\"margin-right: 0px; margin-bottom: 24px; margin-left: 0px; padding: 0px; list-style-position: initial; list-style-image: initial; line-height: 24px; color: rgb(64, 64, 64); font-family: Lato, proxima-nova, &quot;Helvetica Neue&quot;, Arial, sans-serif; background-color: rgb(252, 252, 252);\"><li style=\"list-style: disc; margin-left: 24px;\"><strong style=\"font-weight: bold;\">Orchard Core Framework</strong>: An application framework for building&nbsp;<strong style=\"font-weight: bold;\">modular</strong>,&nbsp;<strong style=\"font-weight: bold;\">multi-tenant&nbsp;</strong>applications on ASP.NET Core.&nbsp;</li><li style=\"list-style: disc; margin-left: 24px;\"><strong style=\"font-weight: bold;\">Orchard Core CMS</strong>: A Web Content Management System (CMS) built on top of the Orchard Core Framework.&nbsp;</li></ul><p></p><p>Here is a list of the new features implemented in this release:&nbsp;</p><ul style=\"padding-left: 2em; color: rgb(36, 41, 46); font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; margin-bottom: 0px !important;\"><li>Update to ASP.NET Core 2.1&nbsp;<ul style=\"padding-left: 2em;\"><li>Precompiled Razor Views&nbsp;</li><li style=\"margin-top: 0.25em;\">Razor Pages&nbsp;</li></ul></li><li style=\"margin-top: 0.25em;\">Updated to Bootstrap 4.1&nbsp;</li><li style=\"margin-top: 0.25em;\">Admin responsive menu&nbsp;</li><li style=\"margin-top: 0.25em;\">Assets user interface improvements&nbsp;</li><li style=\"margin-top: 0.25em;\">Fragment caching&nbsp;</li><li style=\"margin-top: 0.25em;\">Content and Query tag helpers&nbsp;</li><li style=\"margin-top: 0.25em;\">Code based manifest files&nbsp;</li><li style=\"margin-top: 0.25em;\">Updated OpenId&nbsp;</li><li style=\"margin-top: 0.25em;\">Social login support&nbsp;</li><li style=\"margin-top: 0.25em;\">Email module&nbsp;</li><li style=\"margin-top: 0.25em;\">Password reset&nbsp;</li><li style=\"margin-top: 0.25em;\">Email confirmation&nbsp;</li><li style=\"margin-top: 0.25em;\">Site and User timezones&nbsp;</li><li style=\"margin-top: 0.25em;\">Date Time (with timezone), Date and Time fields&nbsp;</li><li style=\"margin-top: 0.25em;\">Workflows module&nbsp;</li><li style=\"margin-top: 0.25em;\">Forms module&nbsp;</li><li style=\"margin-top: 0.25em;\">Azure Blob Storage&nbsp;<ul style=\"padding-left: 2em;\"><li>Assets&nbsp;</li><li style=\"margin-top: 0.25em;\">Data Protection&nbsp;</li></ul></li><li style=\"margin-top: 0.25em;\"><code style=\"font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, Courier, monospace; font-size: 13.6px; padding: 0.2em 0.4em; margin: 0px; background-color: rgba(27, 31, 35, 0.05); border-radius: 3px;\">dotnet new</code>&nbsp;templates&nbsp;</li></ul><p></p>"
-          },
-          "TitlePart": {
-            "Title": "Orchard Core Beta 2"
-          },
-          "CommonPart": {},
-          "ContainedPart": {
-            "ListContentItemId": "4f4y3r3dykqwbrza3n7awptjmq",
-            "Order": 0
-          }
-        },
-        {
-          "ContentItemId": "461hnn716pnaxwwcgp73zq1ymj",
-          "ContentItemVersionId": "44fz9s7mkgzcbz6y6tqh3cmbmt",
-          "ContentType": "BlogPost",
-          "DisplayText": "Orchard Core Beta 3",
-          "Latest": true,
-          "Published": true,
-          "ModifiedUtc": "2019-04-04T09:36:10.8510515Z",
-          "PublishedUtc": "2019-04-04T09:36:10.9264083Z",
-          "CreatedUtc": "2019-04-04T09:31:19.744Z",
-          "Owner": "admin",
-          "Author": "admin",
-          "BlogPost": {
-            "Tags": {
-              "Text": "Orchard Core"
-            }
-          },
-          "AutoroutePart": {
-            "Path": "blog/orchard-core-beta-3",
-            "SetHomepage": false
-          },
-          "HtmlBodyPart": {
-            "Html": "<p>Orchard Core is available in Beta 3:&nbsp;<a href=\"https://github.com/OrchardCMS/OrchardCore/releases/tag/1.0.0-beta3\">https://github.com/OrchardCMS/OrchardCore/releases/tag/1.0.0-beta3</a> </p><h2>Open-source, modular, multi-tenant application framework and CMS for ASP.NET Core</h2><br><p>{{ \"Orchard/OrchardCore-Logo.png\" | asset_url | img_tag }}</p><h3>Flexible content management&nbsp;</h3><p>Define custom content types dynamically and reuse content fields. Define roles and permissions for all your users.&nbsp;<br><br></p><h3>Full, decoupled, or headless cms&nbsp;</h3><p>You can separate the content management from the front-end by using GraphQL, and create SPA applications or even static websites.&nbsp;</p><br><h3>Modular&nbsp;</h3><p>Every feature is a module which ships as a Nuget package, can be enabled, disabled or replaced. Create your own ecosystem of modules, or reuse existing ones to bootstrap your applications.</p><br><h3>Multi-tenant</h3><p>A single installation lets you manage multiple sites. The notion of Recipe lets you write reusable websites templates.&nbsp;</p><br><h3>Speed&nbsp;</h3><p>Between the fast performance of ASP.NET Core and the architectural choices of Orchard Core CMS, you get one of the fastest CMS solutions you have ever tried, on any OS (Windows, Linux, MacOS).&nbsp;</p><br><h3>Workflows&nbsp;</h3><p>Create content validation workflows, and define Web Hooks to trigger external processes or react to external events&nbsp;</p><br><h2 style=\"font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;, &quot;Noto Color Emoji&quot;; color: rgb(33, 37, 41);\">List of changes for this release</h2><ul><li>Update to ASP.NET Core 2.2</li><li style=\"margin-top: 0.25em;\">GraphQL for all Content</li><li style=\"margin-top: 0.25em;\">Facebook, Microsoft Account, Google and Twitter authentication</li><li style=\"margin-top: 0.25em;\">ASP.NET Configuration support</li><li style=\"margin-top: 0.25em;\">Decoupled and headless CMS support</li><li style=\"margin-top: 0.25em;\">Improved performance</li><li style=\"margin-top: 0.25em;\">Background tasks management</li><li style=\"margin-top: 0.25em;\">Taxonomies module</li><li style=\"margin-top: 0.25em;\">Custom navigation</li><li style=\"margin-top: 0.25em;\">ReCaptcha module</li><li style=\"margin-top: 0.25em;\">Mini Profiler module</li><li style=\"margin-top: 0.25em;\">Recipe migrations</li><li style=\"margin-top: 0.25em;\">File based Content Definition</li><li style=\"margin-top: 0.25em;\">The Coming Soon theme</li><li style=\"margin-top: 0.25em;\">Edit and Display modes</li></ul>"
-          },
-          "TitlePart": {
-            "Title": "Orchard Core Beta 3"
-          },
-          "CommonPart": {},
-          "ContainedPart": {
-            "ListContentItemId": "4f4y3r3dykqwbrza3n7awptjmq",
-            "Order": 0
-          }
-        },
-        {
-          "ContentItemId": "42yss79jxc8h32tvt1hzrdac51",
-          "ContentItemVersionId": "42zr50080cywxw1eask9hf7vd9",
-          "ContentType": "BlogPost",
-          "DisplayText": "Orchard Core RC 1",
-          "Latest": true,
-          "Published": true,
-          "ModifiedUtc": "2019-12-29T10:49:39.9970021Z",
-          "PublishedUtc": "2019-12-29T10:49:40.1242346Z",
-          "CreatedUtc": "2019-09-24T10:01:45.596Z",
-          "Owner": "admin",
-          "Author": "admin",
-          "BlogPost": {
-            "Tags": {
-              "Text": "Orchard Core"
-            },
-            "Picture": {
-              "Paths": []
-            }
-          },
-          "AutoroutePart": {
-            "Path": "blog/orchard-core-rc-1",
-            "SetHomepage": false
-          },
-          "HtmlBodyPart": {
-            "Html": "<p>Orchard Core is available in RC 1<span style=\"font-size: 1rem;\">:&nbsp;</span><a href=\"https://github.com/OrchardCMS/OrchardCore/releases/tag/1.0.0-rc1\">https://github.com/OrchardCMS/OrchardCore/releases/tag/1.0.0-rc1</a></p><h2>Open-source, modular, multi-tenant application framework and CMS for ASP.NET Core</h2><br><p>{{ \"Orchard/OrchardCore-Logo.png\" | asset_url | img_tag }}</p><h3>Flexible content management&nbsp;</h3><p>Define custom content types dynamically and reuse content fields. Define roles and permissions for all your users.&nbsp;<br><br></p><h3>Full, decoupled, or headless cms&nbsp;</h3><p>You can separate the content management from the front-end by using GraphQL, and create SPA applications or even static websites.&nbsp;</p><br><h3>Modular&nbsp;</h3><p>Every feature is a module which ships as a Nuget package, can be enabled, disabled or replaced. Create your own ecosystem of modules, or reuse existing ones to bootstrap your applications.</p><br><h3>Multi-tenant</h3><p>A single installation lets you manage multiple sites. The notion of Recipe lets you write reusable websites templates.&nbsp;</p><br><h3>Speed&nbsp;</h3><p>Between the fast performance of ASP.NET Core and the architectural choices of Orchard Core CMS, you get one of the fastest CMS solutions you have ever tried, on any OS (Windows, Linux, MacOS).&nbsp;</p><br><h3>Workflows&nbsp;</h3><p>Create content validation workflows, and define Web Hooks to trigger external processes or react to external events&nbsp;</p><br><h2 style=\"font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;, &quot;Noto Color Emoji&quot;; color: rgb(33, 37, 41);\">List of changes for this release</h2><ul style=\"padding-left: 2em; color: rgb(36, 41, 46); font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;; margin-bottom: 0px !important;\"><li>Update to ASP.NET Core 3.0</li><li style=\"margin-top: 0.25em;\">Content Localization</li><li style=\"margin-top: 0.25em;\">RTL admin theme</li><li style=\"margin-top: 0.25em;\">Resources CDN</li><li style=\"margin-top: 0.25em;\">Media CDN support</li><li style=\"margin-top: 0.25em;\">GitHub authentication</li><li style=\"margin-top: 0.25em;\">Facebook applications</li><li style=\"margin-top: 0.25em;\">.NET Core 3.0</li><li style=\"margin-top: 0.25em;\">Localization NuGet packages</li><li style=\"margin-top: 0.25em;\">Azure Media resizing</li><li style=\"margin-top: 0.25em;\">SQL fields indexing</li><li style=\"margin-top: 0.25em;\">Full Text aspect</li></ul>"
-          },
-          "TitlePart": {
-            "Title": "Orchard Core RC 1"
-          },
-          "CommonPart": {},
-          "ContainedPart": {
-            "ListContentItemId": "4f4y3r3dykqwbrza3n7awptjmq",
-            "Order": 0
-          },
-          "DisqusPart": {
-            "ShowComments": true
           }
         },
         {
@@ -1526,30 +962,6 @@
           }
         },
         {
-          "ContentItemId": "434f5hzrp807wspqtw5cypgq5e",
-          "ContentItemVersionId": "4ht1bnt58pwj55kdt8z2mrx9mz",
-          "ContentType": "RawHtml",
-          "DisplayText": "Search",
-          "Latest": true,
-          "Published": true,
-          "ModifiedUtc": "2020-04-23T14:04:55.367251Z",
-          "PublishedUtc": "2020-04-23T14:04:55.3945436Z",
-          "CreatedUtc": "2019-06-11T15:19:14.1459291Z",
-          "Owner": "admin",
-          "Author": "admin",
-          "RawHtml": {
-            "Content": {
-              "Html": "<form class=\"navbar-left navbar-form nav-search\" action=\"/search\">\r\n\t\t<div class=\"input-group\">\r\n\t\t\t<input type=\"text\" name=\"q\" placeholder=\"Search ...\" class=\"form-control\">\r\n\t\t\t<div class=\"input-group-append\">\r\n\t\t\t\t<span class=\"input-group-text\">\r\n\t\t\t\t\t<i class=\"fa fa-search search-icon\">Go</i>\r\n\t\t\t\t</span>\r\n\t\t\t</div>\r\n\t\t</div>\r\n\t</form>"
-            }
-          },
-          "LayerMetadata": {
-            "Position": 1.0,
-            "Zone": "Navbar",
-            "Layer": "Always",
-            "RenderTitle": false
-          }
-        },
-        {
           "ContentItemId": "4ke200mj3d0fnxmvk9xgxbpkwy",
           "ContentItemVersionId": "4z3ff8474r4bq4cwmmqw7w904n",
           "ContentType": "RichHtml",
@@ -1571,6 +983,1016 @@
             "Zone": "AsideSecond",
             "Layer": "Blog",
             "RenderTitle": false
+          }
+        },
+        {
+          "ContentItemId": "4t1r6p49631jys9kjdskfrz9wv",
+          "ContentItemVersionId": "43yemb8mmp3gfy3ewscp9ye44h",
+          "ContentType": "BlogPost",
+          "DisplayText": "Post Title 1",
+          "Latest": true,
+          "Published": true,
+          "ModifiedUtc": "2020-05-08T15:40:34.0484263Z",
+          "PublishedUtc": "2020-05-08T15:40:34.1490978Z",
+          "CreatedUtc": "2019-04-23T15:42:38.154Z",
+          "Owner": "admin",
+          "Author": "admin",
+          "BlogPost": {
+            "Picture": {
+              "Paths": [
+                "750x300.png"
+              ]
+            },
+            "Tags": {
+              "Text": null
+            }
+          },
+          "AutoroutePart": {
+            "Path": "blog/post-title-1",
+            "SetHomepage": false,
+            "Disabled": false,
+            "RouteContainedItems": false,
+            "Absolute": false
+          },
+          "HtmlBodyPart": {
+            "Html": "<p><span style=\"font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, Arial, &quot;Noto Sans&quot;, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;, &quot;Noto Color Emoji&quot;;\">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!</span></p>"
+          },
+          "TitlePart": {
+            "Title": "Post Title 1"
+          },
+          "ContainedPart": {
+            "ListContentItemId": "4h44aa08kqegq3z7br9qvq5dmc",
+            "Order": 0
+          },
+          "CommonPart": {},
+          "DisqusPart": {}
+        },
+        {
+          "ContentItemId": "42yss79jxc8h32tvt1hzrdac51",
+          "ContentItemVersionId": "42zr50080cywxw1eask9hf7vd9",
+          "ContentType": "BlogPost",
+          "DisplayText": "Orchard Core RC 1",
+          "Latest": true,
+          "Published": true,
+          "ModifiedUtc": "2020-05-08T15:41:26.542848Z",
+          "PublishedUtc": "2020-05-08T15:41:26.5545042Z",
+          "CreatedUtc": "2019-09-24T10:01:45.596Z",
+          "Owner": "admin",
+          "Author": "admin",
+          "BlogPost": {
+            "Tags": {
+              "Text": "Orchard Core"
+            },
+            "Picture": {
+              "Paths": [
+                "Orchard/OrchardCore-Logo.png"
+              ]
+            }
+          },
+          "AutoroutePart": {
+            "Path": "blog/orchard-core-rc-1",
+            "SetHomepage": false,
+            "Disabled": false,
+            "RouteContainedItems": false,
+            "Absolute": false
+          },
+          "HtmlBodyPart": {
+            "Html": "<p>Orchard Core is available in RC 1<span style=\"font-size: 1rem;\">:&nbsp;</span><a href=\"https://github.com/OrchardCMS/OrchardCore/releases/tag/1.0.0-rc1\">https://github.com/OrchardCMS/OrchardCore/releases/tag/1.0.0-rc1</a></p><h2>Open-source, modular, multi-tenant application framework and CMS for ASP.NET Core</h2><br><p>{{ \"Orchard/OrchardCore-Logo.png\" | asset_url | img_tag }}</p><h3>Flexible content management&nbsp;</h3><p>Define custom content types dynamically and reuse content fields. Define roles and permissions for all your users.&nbsp;<br><br></p><h3>Full, decoupled, or headless cms&nbsp;</h3><p>You can separate the content management from the front-end by using GraphQL, and create SPA applications or even static websites.&nbsp;</p><br><h3>Modular&nbsp;</h3><p>Every feature is a module which ships as a Nuget package, can be enabled, disabled or replaced. Create your own ecosystem of modules, or reuse existing ones to bootstrap your applications.</p><br><h3>Multi-tenant</h3><p>A single installation lets you manage multiple sites. The notion of Recipe lets you write reusable websites templates.&nbsp;</p><br><h3>Speed&nbsp;</h3><p>Between the fast performance of ASP.NET Core and the architectural choices of Orchard Core CMS, you get one of the fastest CMS solutions you have ever tried, on any OS (Windows, Linux, MacOS).&nbsp;</p><br><h3>Workflows&nbsp;</h3><p>Create content validation workflows, and define Web Hooks to trigger external processes or react to external events&nbsp;</p><br><h2 style=\"font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;, &quot;Noto Color Emoji&quot;; color: rgb(33, 37, 41);\">List of changes for this release</h2><ul style=\"padding-left: 2em; color: rgb(36, 41, 46); font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;; margin-bottom: 0px !important;\"><li>Update to ASP.NET Core 3.0</li><li style=\"margin-top: 0.25em;\">Content Localization</li><li style=\"margin-top: 0.25em;\">RTL admin theme</li><li style=\"margin-top: 0.25em;\">Resources CDN</li><li style=\"margin-top: 0.25em;\">Media CDN support</li><li style=\"margin-top: 0.25em;\">GitHub authentication</li><li style=\"margin-top: 0.25em;\">Facebook applications</li><li style=\"margin-top: 0.25em;\">.NET Core 3.0</li><li style=\"margin-top: 0.25em;\">Localization NuGet packages</li><li style=\"margin-top: 0.25em;\">Azure Media resizing</li><li style=\"margin-top: 0.25em;\">SQL fields indexing</li><li style=\"margin-top: 0.25em;\">Full Text aspect</li></ul>"
+          },
+          "TitlePart": {
+            "Title": "Orchard Core RC 1"
+          },
+          "CommonPart": {},
+          "ContainedPart": {
+            "ListContentItemId": "4f4y3r3dykqwbrza3n7awptjmq",
+            "Order": 0
+          },
+          "DisqusPart": {
+            "ShowComments": true
+          }
+        },
+        {
+          "ContentItemId": "49x1pn2ypegxc36bxbe45bnc5c",
+          "ContentItemVersionId": "4r0qwb5a53x7yxckay5gdwp248",
+          "ContentType": "BlogPost",
+          "DisplayText": "Orchard Core Beta 2",
+          "Latest": true,
+          "Published": true,
+          "ModifiedUtc": "2020-05-08T15:46:12.2788Z",
+          "PublishedUtc": "2020-05-08T15:46:12.2899779Z",
+          "CreatedUtc": "2019-06-26T13:01:32.604Z",
+          "Owner": "admin",
+          "Author": "admin",
+          "BlogPost": {
+            "Tags": {
+              "Text": "Orchard Core"
+            },
+            "Picture": {
+              "Paths": [
+                "Orchard/OrchardCore-Logo.png"
+              ]
+            }
+          },
+          "AutoroutePart": {
+            "Path": "blog/orchard-core-beta-2",
+            "SetHomepage": false,
+            "Disabled": false,
+            "RouteContainedItems": false,
+            "Absolute": false
+          },
+          "HtmlBodyPart": {
+            "Html": "<p>Orchard Core is available in Beta 2:&nbsp;<a href=\"https://github.com/OrchardCMS/OrchardCore/releases\">https://github.com/OrchardCMS/OrchardCore/releases</a>&nbsp;</p><p>   {{ \"Orchard/OrchardCore-Logo.png\" | asset_url | img_tag }}</p><p style=\"line-height: 24px; margin-right: 0px; margin-bottom: 24px; margin-left: 0px; color: rgb(64, 64, 64); font-family: Lato, proxima-nova, &quot;Helvetica Neue&quot;, Arial, sans-serif; background-color: rgb(252, 252, 252);\">Orchard Core consists of two different targets:&nbsp;</p><ul style=\"margin-right: 0px; margin-bottom: 24px; margin-left: 0px; padding: 0px; list-style-position: initial; list-style-image: initial; line-height: 24px; color: rgb(64, 64, 64); font-family: Lato, proxima-nova, &quot;Helvetica Neue&quot;, Arial, sans-serif; background-color: rgb(252, 252, 252);\"><li style=\"list-style: disc; margin-left: 24px;\"><strong style=\"font-weight: bold;\">Orchard Core Framework</strong>: An application framework for building&nbsp;<strong style=\"font-weight: bold;\">modular</strong>,&nbsp;<strong style=\"font-weight: bold;\">multi-tenant&nbsp;</strong>applications on ASP.NET Core.&nbsp;</li><li style=\"list-style: disc; margin-left: 24px;\"><strong style=\"font-weight: bold;\">Orchard Core CMS</strong>: A Web Content Management System (CMS) built on top of the Orchard Core Framework.&nbsp;</li></ul><p></p><p>Here is a list of the new features implemented in this release:&nbsp;</p><ul style=\"padding-left: 2em; color: rgb(36, 41, 46); font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; margin-bottom: 0px !important;\"><li>Update to ASP.NET Core 2.1&nbsp;<ul style=\"padding-left: 2em;\"><li>Precompiled Razor Views&nbsp;</li><li style=\"margin-top: 0.25em;\">Razor Pages&nbsp;</li></ul></li><li style=\"margin-top: 0.25em;\">Updated to Bootstrap 4.1&nbsp;</li><li style=\"margin-top: 0.25em;\">Admin responsive menu&nbsp;</li><li style=\"margin-top: 0.25em;\">Assets user interface improvements&nbsp;</li><li style=\"margin-top: 0.25em;\">Fragment caching&nbsp;</li><li style=\"margin-top: 0.25em;\">Content and Query tag helpers&nbsp;</li><li style=\"margin-top: 0.25em;\">Code based manifest files&nbsp;</li><li style=\"margin-top: 0.25em;\">Updated OpenId&nbsp;</li><li style=\"margin-top: 0.25em;\">Social login support&nbsp;</li><li style=\"margin-top: 0.25em;\">Email module&nbsp;</li><li style=\"margin-top: 0.25em;\">Password reset&nbsp;</li><li style=\"margin-top: 0.25em;\">Email confirmation&nbsp;</li><li style=\"margin-top: 0.25em;\">Site and User timezones&nbsp;</li><li style=\"margin-top: 0.25em;\">Date Time (with timezone), Date and Time fields&nbsp;</li><li style=\"margin-top: 0.25em;\">Workflows module&nbsp;</li><li style=\"margin-top: 0.25em;\">Forms module&nbsp;</li><li style=\"margin-top: 0.25em;\">Azure Blob Storage&nbsp;<ul style=\"padding-left: 2em;\"><li>Assets&nbsp;</li><li style=\"margin-top: 0.25em;\">Data Protection&nbsp;</li></ul></li><li style=\"margin-top: 0.25em;\"><code style=\"font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, Courier, monospace; font-size: 13.6px; padding: 0.2em 0.4em; margin: 0px; background-color: rgba(27, 31, 35, 0.05); border-radius: 3px;\">dotnet new</code>&nbsp;templates&nbsp;</li></ul><p></p>"
+          },
+          "TitlePart": {
+            "Title": "Orchard Core Beta 2"
+          },
+          "CommonPart": {},
+          "ContainedPart": {
+            "ListContentItemId": "4f4y3r3dykqwbrza3n7awptjmq",
+            "Order": 0
+          },
+          "DisqusPart": {}
+        },
+        {
+          "ContentItemId": "461hnn716pnaxwwcgp73zq1ymj",
+          "ContentItemVersionId": "44fz9s7mkgzcbz6y6tqh3cmbmt",
+          "ContentType": "BlogPost",
+          "DisplayText": "Orchard Core Beta 3",
+          "Latest": true,
+          "Published": true,
+          "ModifiedUtc": "2020-05-08T15:46:20.5983942Z",
+          "PublishedUtc": "2020-05-08T15:46:20.6071218Z",
+          "CreatedUtc": "2019-04-04T09:31:19.744Z",
+          "Owner": "admin",
+          "Author": "admin",
+          "BlogPost": {
+            "Tags": {
+              "Text": "Orchard Core"
+            },
+            "Picture": {
+              "Paths": [
+                "Orchard/OrchardCore-Logo.png"
+              ]
+            }
+          },
+          "AutoroutePart": {
+            "Path": "blog/orchard-core-beta-3",
+            "SetHomepage": false,
+            "Disabled": false,
+            "RouteContainedItems": false,
+            "Absolute": false
+          },
+          "HtmlBodyPart": {
+            "Html": "<p>Orchard Core is available in Beta 3:&nbsp;<a href=\"https://github.com/OrchardCMS/OrchardCore/releases/tag/1.0.0-beta3\">https://github.com/OrchardCMS/OrchardCore/releases/tag/1.0.0-beta3</a> </p><h2>Open-source, modular, multi-tenant application framework and CMS for ASP.NET Core</h2><br><p>{{ \"Orchard/OrchardCore-Logo.png\" | asset_url | img_tag }}</p><h3>Flexible content management&nbsp;</h3><p>Define custom content types dynamically and reuse content fields. Define roles and permissions for all your users.&nbsp;<br><br></p><h3>Full, decoupled, or headless cms&nbsp;</h3><p>You can separate the content management from the front-end by using GraphQL, and create SPA applications or even static websites.&nbsp;</p><br><h3>Modular&nbsp;</h3><p>Every feature is a module which ships as a Nuget package, can be enabled, disabled or replaced. Create your own ecosystem of modules, or reuse existing ones to bootstrap your applications.</p><br><h3>Multi-tenant</h3><p>A single installation lets you manage multiple sites. The notion of Recipe lets you write reusable websites templates.&nbsp;</p><br><h3>Speed&nbsp;</h3><p>Between the fast performance of ASP.NET Core and the architectural choices of Orchard Core CMS, you get one of the fastest CMS solutions you have ever tried, on any OS (Windows, Linux, MacOS).&nbsp;</p><br><h3>Workflows&nbsp;</h3><p>Create content validation workflows, and define Web Hooks to trigger external processes or react to external events&nbsp;</p><br><h2 style=\"font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;, &quot;Noto Color Emoji&quot;; color: rgb(33, 37, 41);\">List of changes for this release</h2><ul><li>Update to ASP.NET Core 2.2</li><li style=\"margin-top: 0.25em;\">GraphQL for all Content</li><li style=\"margin-top: 0.25em;\">Facebook, Microsoft Account, Google and Twitter authentication</li><li style=\"margin-top: 0.25em;\">ASP.NET Configuration support</li><li style=\"margin-top: 0.25em;\">Decoupled and headless CMS support</li><li style=\"margin-top: 0.25em;\">Improved performance</li><li style=\"margin-top: 0.25em;\">Background tasks management</li><li style=\"margin-top: 0.25em;\">Taxonomies module</li><li style=\"margin-top: 0.25em;\">Custom navigation</li><li style=\"margin-top: 0.25em;\">ReCaptcha module</li><li style=\"margin-top: 0.25em;\">Mini Profiler module</li><li style=\"margin-top: 0.25em;\">Recipe migrations</li><li style=\"margin-top: 0.25em;\">File based Content Definition</li><li style=\"margin-top: 0.25em;\">The Coming Soon theme</li><li style=\"margin-top: 0.25em;\">Edit and Display modes</li></ul>"
+          },
+          "TitlePart": {
+            "Title": "Orchard Core Beta 3"
+          },
+          "CommonPart": {},
+          "ContainedPart": {
+            "ListContentItemId": "4f4y3r3dykqwbrza3n7awptjmq",
+            "Order": 0
+          },
+          "DisqusPart": {}
+        },
+        {
+          "ContentItemId": "43bvpm7y0gkfczsch6dh10j4w7",
+          "ContentItemVersionId": "4vp7acnyb4c7zvqyyqw2gyfqxd",
+          "ContentType": "BlogPost",
+          "DisplayText": "Orchard Core Beta",
+          "Latest": true,
+          "Published": true,
+          "ModifiedUtc": "2020-05-08T15:46:27.9255789Z",
+          "PublishedUtc": "2020-05-08T15:46:27.9370095Z",
+          "CreatedUtc": "2017-11-21T21:16:17.668Z",
+          "Owner": "admin",
+          "Author": "admin",
+          "Number": 4,
+          "BlogPost": {
+            "Tags": {
+              "Text": "Orchard Core"
+            },
+            "Picture": {
+              "Paths": [
+                "Orchard/OrchardCore-Logo.png"
+              ]
+            }
+          },
+          "AutoroutePart": {
+            "Path": "blog/orchard-core-beta",
+            "SetHomepage": false,
+            "Disabled": false,
+            "RouteContainedItems": false,
+            "Absolute": false
+          },
+          "HtmlBodyPart": {
+            "Html": "<p>Today, we are really proud to announce that the first version of <strong>Orchard Core</strong> has been released in Beta.</p><p><span style=\"color: inherit; font-family: inherit; font-size: 2rem;\">What is Orchard Core and Orchard Core CMS?</span><br></p><br><p><strong>Orchard Core</strong> is a Modular and Extensible Application Framework developped on the .NET Core ecosystem.<br><span style=\"font-size: 1rem;\">It allows you to create Multi tenant SaaS applications and host multiple sites with only one instance.<br></span><span style=\"font-size: 1rem;\"><strong>Orchard Core CMS</strong> is a full featured Content Management System that provides many useful modules.<br></span><span style=\"font-size: 1rem;\">With it, you can easily enable existing features or add your own modules to extend your application.</span></p><p>{{ \"Orchard/OrchardCore-Logo.png\" | asset_url | img_tag }}</p><h2>What features are available?</h2><p>These features are available out of the box:</p><ul><li><strong style=\"font-size: 1rem;\">Nuget Packages</strong><span style=\"font-size: 1rem;\">: Add reference in your application to Orchard Core Nuget packages.</span><br></li><li><strong style=\"font-size: 1rem;\">Performance</strong><span style=\"font-size: 1rem;\">: Handle many requests per second by default and even more with Response Cache.</span><br></li><li><strong style=\"font-size: 1rem;\">Portable </strong><span style=\"font-size: 1rem;\">: You can develop and deploy on multiple platforms : Windows, Mac and Linux.</span><br></li><li><strong style=\"font-size: 1rem;\">Deployment</strong><span style=\"font-size: 1rem;\">: Import/Export the data and the structure of your site with deployment plans.</span><br></li><li><strong style=\"font-size: 1rem;\">Setup</strong><span style=\"font-size: 1rem;\">: Use different recipes to setup your site with initial features and content types using configurable steps and dynamic parameters.&nbsp;</span><br></li><li><strong style=\"font-size: 1rem;\">Storage</strong><span style=\"font-size: 1rem;\">: YesSQL allows you to store your contents in SQL Server, SQLite, MySQL or PostgreSQL as if it was a document database.</span><br></li></ul><p>Many other modules can allow you to create a CMS:</p><ul><li>Create your <strong>Content Types</strong> adding out of the box predefined Parts and Fields.<br></li><li>Customize your site using <strong>Themes </strong>with ASP.NET Razor or Liquid syntax files.<br></li><li>Define different <strong>Zones</strong> on the site and add <strong>Widgets </strong>anywhere in your pages.<br></li><li>Declare <strong>Templates </strong>in admin that overrides the rendering of your content types.<br></li><li>Edit your content with <strong>Wysiwyg </strong>or <strong>Mardown </strong>editors that can use <strong>Liquid filters</strong>.<br></li><li>Get a <strong>Live Preview</strong> of your content in separate window while editing it from the admin.<br></li><li>Manage the <strong>Users, Roles and Permissions</strong> to give access to the Admin dashboard pages.<br></li><li>Manage your Assets and Media folders, upload files and add link to dynamically resized pictures.<br></li><li>Organize your <strong>Contents </strong>and navigate in the site: Lists, Menus, Taxonomies, Urls, ...<br></li><li>Search: <strong>Index</strong> your data and <strong>Query </strong>them in <strong>Sql </strong>or <strong>Lucene </strong>using Liquid syntax.<br></li></ul><br><h2>What is the current Status?</h2><p>Orchard Core is currently in <strong>Beta</strong>. See the <a href=\"https://github.com/OrchardCMS/OrchardCore/wiki/Roadmap\" target=\"_blank\">Roadmap</a>&nbsp;for more details. <br><span style=\"font-size: 1rem;\">This is an <strong>Open Source</strong> project so everyone can contribute and help in many ways to make it grows.</span></p><br><h2>How do I get started?</h2><p>Create an application using Orchard Core is as easy as adding a Nuget package reference to your <strong>ASP.NET Core project</strong> and configure two lines in the startup.cs file.<br><span style=\"font-size: 1rem;\">You can have a running instance in less than 5 minutes following this <a href=\"http://www.ideliverable.com/blog/getting-started-with-orchard-core-as-a-nuget-package\" target=\"_blank\">tutorial</a>.</span></p><br><h2>Useful links:</h2><p>GitHub repository : <a href=\"https://github.com/OrchardCMS/OrchardCore\" target=\"_blank\">https://github.com/OrchardCMS/OrchardCore</a><br><span style=\"font-size: 1rem;\">Gitter chat room : </span><a href=\"https://gitter.im/OrchardCMS/OrchardCore\" target=\"_blank\" style=\"background-color: rgb(255, 255, 255); font-size: 1rem;\">https://gitter.im/OrchardCMS/OrchardCore</a><br><span style=\"font-size: 1rem;\">Orchard Project site : </span><a href=\"http://orchardproject.net/\" target=\"_blank\" style=\"background-color: rgb(255, 255, 255); font-size: 1rem;\">http://orchardproject.net</a><br><span style=\"font-size: 1rem;\">Orchard Core documentation : </span><a href=\"http://orchardcore.readthedocs.io\" target=\"_blank\" style=\"background-color: rgb(255, 255, 255); font-size: 1rem;\">http://orchardcore.readthedocs.io</a></p><br>"
+          },
+          "TitlePart": {
+            "Title": "Orchard Core Beta"
+          },
+          "ContainedPart": {
+            "ListContentItemId": "4f4y3r3dykqwbrza3n7awptjmq",
+            "Order": 0
+          },
+          "CommonPart": {},
+          "DisqusPart": {}
+        },
+        {
+          "ContentItemId": "4f4y3r3dykqwbrza3n7awptjmq",
+          "ContentItemVersionId": "4995sz6zq3qzf3ertzfyd69h57",
+          "ContentType": "Blog",
+          "DisplayText": "Blog",
+          "Latest": true,
+          "Published": true,
+          "ModifiedUtc": "2020-05-08T15:47:11.6765171Z",
+          "PublishedUtc": "2020-05-08T15:47:11.6908274Z",
+          "CreatedUtc": "2018-09-29T16:23:41.6943304Z",
+          "Owner": "admin",
+          "Author": "admin",
+          "TitlePart": {
+            "Title": "Blog"
+          },
+          "HtmlBodyPart": {
+            "Html": null
+          },
+          "AutoroutePart": {
+            "Path": "blog",
+            "SetHomepage": false,
+            "Disabled": false,
+            "RouteContainedItems": false,
+            "Absolute": false
+          },
+          "ListPart": {
+            "FeedProxyUrl": null,
+            "FeedItemsCount": 20
+          },
+          "Blog": {}
+        },
+        {
+          "ContentItemId": "434f5hzrp807wspqtw5cypgq5e",
+          "ContentItemVersionId": "4ht1bnt58pwj55kdt8z2mrx9mz",
+          "ContentType": "RawHtml",
+          "DisplayText": "Search",
+          "Latest": true,
+          "Published": true,
+          "ModifiedUtc": "2020-05-08T15:48:20.9622498Z",
+          "PublishedUtc": "2020-05-08T15:48:20.9752902Z",
+          "CreatedUtc": "2019-06-11T15:19:14.1459291Z",
+          "Owner": "admin",
+          "Author": "admin",
+          "RawHtml": {
+            "Content": {
+              "Html": "<form class=\"navbar-left navbar-form nav-search\" action=\"/search\">\r\n\t\t<div class=\"input-group\">\r\n\t\t\t<input type=\"text\" name=\"terms\" placeholder=\"Search ...\" class=\"form-control\">\r\n\t\t\t<div class=\"input-group-append\">\r\n\t\t\t\t<span class=\"input-group-text\">\r\n\t\t\t\t\t<i class=\"fa fa-search search-icon\">Go</i>\r\n\t\t\t\t</span>\r\n\t\t\t</div>\r\n\t\t</div>\r\n\t</form>"
+            }
+          },
+          "LayerMetadata": {
+            "Position": 1.0,
+            "Zone": "Navbar",
+            "Layer": "Always",
+            "RenderTitle": false
+          }
+        },
+        {
+          "ContentItemId": "4nmzqrehq4dkc0p2thm29pm057",
+          "ContentItemVersionId": "4mzrmh4tebzfqvm3ws1tgfzj4q",
+          "ContentType": "Page",
+          "DisplayText": "About",
+          "Latest": true,
+          "Published": true,
+          "ModifiedUtc": "2020-05-10T09:57:52.3895184Z",
+          "PublishedUtc": "2020-05-10T09:57:52.5143966Z",
+          "CreatedUtc": "2019-04-23T12:53:44.7290613Z",
+          "Owner": "admin",
+          "Author": "admin",
+          "Page": {},
+          "AutoroutePart": {
+            "Path": "about",
+            "SetHomepage": false,
+            "Disabled": false,
+            "RouteContainedItems": false,
+            "Absolute": false
+          },
+          "FlowPart": {
+            "Widgets": [
+              {
+                "ContentItemId": "437dpdkgs7wmy1jax3645vjvwa",
+                "ContentItemVersionId": null,
+                "ContentType": "RawHtml",
+                "DisplayText": null,
+                "Latest": false,
+                "Published": false,
+                "ModifiedUtc": "2020-05-10T09:57:52.4853149Z",
+                "PublishedUtc": null,
+                "CreatedUtc": null,
+                "Owner": null,
+                "Author": "admin",
+                "RawHtml": {
+                  "Content": {
+                    "Html": "<ol class=\"breadcrumb\">\r\n      <li class=\"breadcrumb-item\">\r\n        <a href=\"/\">Home</a>\r\n      </li>\r\n      <li class=\"breadcrumb-item active\">About</li>\r\n    </ol>"
+                  }
+                },
+                "FlowMetadata": {
+                  "Alignment": 3,
+                  "Size": 100
+                }
+              },
+              {
+                "ContentItemId": "4zm0s51n8pdv15b86fxm2amrmy",
+                "ContentItemVersionId": null,
+                "ContentType": "RawHtml",
+                "DisplayText": null,
+                "Latest": false,
+                "Published": false,
+                "ModifiedUtc": "2020-05-10T09:57:52.4971478Z",
+                "PublishedUtc": null,
+                "CreatedUtc": null,
+                "Owner": null,
+                "Author": "admin",
+                "RawHtml": {
+                  "Content": {
+                    "Html": "<div class=\"row\">\r\n      <div class=\"col-lg-6\">\r\n        <img class=\"img-fluid rounded mb-4\" src=\"http://placehold.it/750x450\" alt=\"\">\r\n      </div>\r\n      <div class=\"col-lg-6\">\r\n        <h2>About Modern Business</h2>\r\n        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed voluptate nihil eum consectetur similique? Consectetur, quod, incidunt, harum nisi dolores delectus reprehenderit voluptatem perferendis dicta dolorem non blanditiis ex fugiat.</p>\r\n        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, magni, aperiam vitae illum voluptatum aut sequi impedit non velit ab ea pariatur sint quidem corporis eveniet. Odit, temporibus reprehenderit dolorum!</p>\r\n        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, consequuntur, modi mollitia corporis ipsa voluptate corrupti eum ratione ex ea praesentium quibusdam? Aut, in eum facere corrupti necessitatibus perspiciatis quis?</p>\r\n      </div>\r\n    </div>\r\n"
+                  }
+                },
+                "FlowMetadata": {
+                  "Alignment": 3,
+                  "Size": 100
+                }
+              },
+              {
+                "ContentItemId": "45sc0bb6c87wxy0zddscrsa8d9",
+                "ContentItemVersionId": null,
+                "ContentType": "LiquidWidget",
+                "DisplayText": null,
+                "Latest": false,
+                "Published": false,
+                "ModifiedUtc": "2020-05-10T09:57:52.4989927Z",
+                "PublishedUtc": null,
+                "CreatedUtc": null,
+                "Owner": null,
+                "Author": "admin",
+                "LiquidWidget": {},
+                "LiquidPart": {
+                  "Liquid": "<h2>Our Team</h2>\r\n<div class=\"row\">\r\n{% assign teamMembers = Queries.Contents | query: type:'TeamMember' %}\r\n{% for item in teamMembers %}\r\n{% assign content = item.Content[item.ContentType] %}\r\n  <div class=\"col-lg-4 mb-4\">\r\n    <div class=\"card h-100 text-center\">\r\n      <img class=\"card-img-top\" src=\"{{ content.ImageUrl.Text }}\" alt=\"\">\r\n      <div class=\"card-body\">\r\n        <h4 class=\"card-title\">{{ item | display_text }}</h4>\r\n        <h6 class=\"card-subtitle mb-2 text-muted\">{{ content.Position.Text }}</h6>\r\n        <p class=\"card-text\">{{ content.Description.Text }}</p>\r\n      </div>\r\n      <div class=\"card-footer\">\r\n        <a href=\"{{ content.Email.Text }}\">{{ content.Email.Text }}</a>\r\n      </div>\r\n    </div>\r\n  </div>\r\n{% endfor %}\r\n</div>"
+                },
+                "FlowMetadata": {
+                  "Alignment": 3,
+                  "Size": 100
+                }
+              },
+              {
+                "ContentItemId": "4gkrzn5hkd0sr6wkpndy83ttw6",
+                "ContentItemVersionId": null,
+                "ContentType": "RawHtml",
+                "DisplayText": null,
+                "Latest": false,
+                "Published": false,
+                "ModifiedUtc": "2020-05-10T09:57:52.502552Z",
+                "PublishedUtc": null,
+                "CreatedUtc": null,
+                "Owner": null,
+                "Author": "admin",
+                "RawHtml": {
+                  "Content": {
+                    "Html": "<h2>Our Customers</h2>\r\n<div class=\"row\">\r\n      <div class=\"col-lg-2 col-sm-4 mb-4\">\r\n        <img class=\"img-fluid\" src=\"http://placehold.it/500x300\" alt=\"\">\r\n      </div>\r\n      <div class=\"col-lg-2 col-sm-4 mb-4\">\r\n        <img class=\"img-fluid\" src=\"http://placehold.it/500x300\" alt=\"\">\r\n      </div>\r\n      <div class=\"col-lg-2 col-sm-4 mb-4\">\r\n        <img class=\"img-fluid\" src=\"http://placehold.it/500x300\" alt=\"\">\r\n      </div>\r\n      <div class=\"col-lg-2 col-sm-4 mb-4\">\r\n        <img class=\"img-fluid\" src=\"http://placehold.it/500x300\" alt=\"\">\r\n      </div>\r\n      <div class=\"col-lg-2 col-sm-4 mb-4\">\r\n        <img class=\"img-fluid\" src=\"http://placehold.it/500x300\" alt=\"\">\r\n      </div>\r\n      <div class=\"col-lg-2 col-sm-4 mb-4\">\r\n        <img class=\"img-fluid\" src=\"http://placehold.it/500x300\" alt=\"\">\r\n      </div>\r\n    </div>"
+                  }
+                },
+                "FlowMetadata": {
+                  "Alignment": 3,
+                  "Size": 100
+                }
+              }
+            ]
+          },
+          "TitlePart": {
+            "Title": "About"
+          }
+        },
+        {
+          "ContentItemId": "47vqp7d4etqp16ab85cvby43my",
+          "ContentItemVersionId": "4mm2qa019pxqdrtw042gj4cwd7",
+          "ContentType": "Menu",
+          "DisplayText": "Main Menu",
+          "Latest": true,
+          "Published": true,
+          "ModifiedUtc": "2020-05-10T10:10:20.3864384Z",
+          "PublishedUtc": "2020-05-10T10:10:20.4025756Z",
+          "CreatedUtc": "2017-08-16T00:32:59.1287452Z",
+          "Owner": "admin",
+          "Author": "admin",
+          "MenuPart": {},
+          "TitlePart": {
+            "Title": "Main Menu"
+          },
+          "MenuItemsListPart": {
+            "MenuItems": [
+              {
+                "ContentItemId": "4y4qrhfev2ce56wz6jz9cqyydw",
+                "ContentItemVersionId": null,
+                "ContentType": "LinkMenuItem",
+                "DisplayText": null,
+                "Latest": false,
+                "Published": false,
+                "ModifiedUtc": "2019-04-23T13:22:24.7221096Z",
+                "PublishedUtc": null,
+                "CreatedUtc": null,
+                "Owner": null,
+                "Author": "admin",
+                "LinkMenuItemPart": {
+                  "Name": "About",
+                  "Url": "~/about"
+                },
+                "LinkMenuItem": {}
+              },
+              {
+                "ContentItemId": "4dsbwd2txw02764vdmtw6h09wm",
+                "ContentItemVersionId": null,
+                "ContentType": "LinkMenuItem",
+                "DisplayText": null,
+                "Latest": false,
+                "Published": false,
+                "ModifiedUtc": "2019-04-23T13:51:59.5831357Z",
+                "PublishedUtc": null,
+                "CreatedUtc": null,
+                "Owner": null,
+                "Author": "admin",
+                "LinkMenuItemPart": {
+                  "Name": "Services",
+                  "Url": "~/services"
+                },
+                "LinkMenuItem": {}
+              },
+              {
+                "ContentItemId": "4btkjgaj146w93ezjdzg96g4wv",
+                "ContentItemVersionId": null,
+                "ContentType": "LinkMenuItem",
+                "DisplayText": null,
+                "Latest": false,
+                "Published": false,
+                "ModifiedUtc": "2020-05-10T10:10:11.814647Z",
+                "PublishedUtc": null,
+                "CreatedUtc": null,
+                "Owner": null,
+                "Author": "admin",
+                "LinkMenuItemPart": {
+                  "Name": "Contact",
+                  "Url": "~/contact"
+                },
+                "LinkMenuItem": {}
+              },
+              {
+                "ContentItemId": "48ywd9hvtm8jt21j140430hzwz",
+                "ContentItemVersionId": null,
+                "ContentType": "LinkMenuItem",
+                "DisplayText": null,
+                "Latest": false,
+                "Published": false,
+                "ModifiedUtc": "2019-04-23T14:34:38.2889627Z",
+                "PublishedUtc": null,
+                "CreatedUtc": null,
+                "Owner": null,
+                "Author": "admin",
+                "LinkMenuItemPart": {
+                  "Name": "Portfolio",
+                  "Url": "~/portfolio-1"
+                },
+                "LinkMenuItem": {}
+              },
+              {
+                "ContentItemId": "4tpsnv94363ne6crggwf129rw6",
+                "ContentItemVersionId": null,
+                "ContentType": "LinkMenuItem",
+                "DisplayText": null,
+                "Latest": false,
+                "Published": false,
+                "ModifiedUtc": "2019-04-23T15:45:31.3939356Z",
+                "PublishedUtc": null,
+                "CreatedUtc": null,
+                "Owner": null,
+                "Author": "admin",
+                "LinkMenuItemPart": {
+                  "Name": "Blog",
+                  "Url": "~/blog"
+                },
+                "LinkMenuItem": {}
+              },
+              {
+                "ContentItemId": "46y2m2y3vb8dbzbpbj2144vdm5",
+                "ContentItemVersionId": null,
+                "ContentType": "LinkMenuItem",
+                "DisplayText": null,
+                "Latest": false,
+                "Published": false,
+                "ModifiedUtc": "2019-04-23T15:45:58.4141196Z",
+                "PublishedUtc": null,
+                "CreatedUtc": null,
+                "Owner": null,
+                "Author": "admin",
+                "LinkMenuItemPart": {
+                  "Name": "Pages",
+                  "Url": "#"
+                },
+                "LinkMenuItem": {},
+                "MenuItemsListPart": {
+                  "MenuItems": [
+                    {
+                      "ContentItemId": "4xmb5dh7m9weesry5rgx58y7w4",
+                      "ContentItemVersionId": null,
+                      "ContentType": "LinkMenuItem",
+                      "DisplayText": null,
+                      "Latest": false,
+                      "Published": false,
+                      "ModifiedUtc": "2019-04-23T15:31:41.8001809Z",
+                      "PublishedUtc": null,
+                      "CreatedUtc": null,
+                      "Owner": null,
+                      "Author": "admin",
+                      "LinkMenuItemPart": {
+                        "Name": "FAQ",
+                        "Url": "~/faq"
+                      },
+                      "LinkMenuItem": {}
+                    },
+                    {
+                      "ContentItemId": "4d6127dcx4dkxsxt6ge3a5mg5z",
+                      "ContentItemVersionId": null,
+                      "ContentType": "LinkMenuItem",
+                      "DisplayText": null,
+                      "Latest": false,
+                      "Published": false,
+                      "ModifiedUtc": "2020-04-26T13:59:33.1298014Z",
+                      "PublishedUtc": null,
+                      "CreatedUtc": null,
+                      "Owner": null,
+                      "Author": "admin",
+                      "LinkMenuItemPart": {
+                        "Name": "404",
+                        "Url": "~/404"
+                      },
+                      "LinkMenuItem": {}
+                    },
+                    {
+                      "ContentItemId": "44t1fnejmsnkd0vhcj37f4znch",
+                      "ContentItemVersionId": null,
+                      "ContentType": "LinkMenuItem",
+                      "DisplayText": null,
+                      "Latest": false,
+                      "Published": false,
+                      "ModifiedUtc": "2019-05-01T14:59:01.0854807Z",
+                      "PublishedUtc": null,
+                      "CreatedUtc": null,
+                      "Owner": null,
+                      "Author": "admin",
+                      "LinkMenuItemPart": {
+                        "Name": "Pricing",
+                        "Url": "~/pricing"
+                      },
+                      "LinkMenuItem": {}
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          "AliasPart": {
+            "Alias": "main-menu"
+          }
+        },
+        {
+          "ContentItemId": "4svtma635hxr85ndej6hqph14s",
+          "ContentItemVersionId": "4tgrhpgmej0n3sp2rav12x4jcq",
+          "ContentType": "ContactList",
+          "DisplayText": "Contacts",
+          "Latest": true,
+          "Published": true,
+          "ModifiedUtc": "2020-05-10T10:17:37.1607813Z",
+          "PublishedUtc": "2020-05-10T10:17:37.164093Z",
+          "CreatedUtc": "2020-05-10T10:17:37.1607813Z",
+          "Owner": "admin",
+          "Author": "admin",
+          "ContactList": {},
+          "ListPart": {
+            "FeedProxyUrl": null,
+            "FeedItemsCount": 20
+          },
+          "TitlePart": {
+            "Title": "Contacts"
+          }
+        },
+        {
+          "ContentItemId": "4v1wzc13mhkdcv33baayw5vpw7",
+          "ContentItemVersionId": "4z36yhtvh0pphrmyd0syhk7jwm",
+          "ContentType": "Page",
+          "DisplayText": "Contact",
+          "Latest": true,
+          "Published": true,
+          "ModifiedUtc": "2020-05-10T10:30:15.2662808Z",
+          "PublishedUtc": "2020-05-10T10:30:15.3089693Z",
+          "CreatedUtc": "2020-05-10T10:04:23.1612151Z",
+          "Owner": "admin",
+          "Author": "admin",
+          "Page": {},
+          "AutoroutePart": {
+            "Path": "Contact",
+            "SetHomepage": false,
+            "Disabled": false,
+            "RouteContainedItems": false,
+            "Absolute": false
+          },
+          "FlowPart": {
+            "Widgets": [
+              {
+                "ContentItemId": "4b2axng53hmbprrpvp1wd9npnr",
+                "ContentItemVersionId": null,
+                "ContentType": "RawHtml",
+                "DisplayText": null,
+                "Latest": false,
+                "Published": false,
+                "ModifiedUtc": "2020-05-10T10:30:15.2733351Z",
+                "PublishedUtc": null,
+                "CreatedUtc": null,
+                "Owner": null,
+                "Author": "admin",
+                "RawHtml": {
+                  "Content": {
+                    "Html": "<div class=\"row\">\r\n      <!-- Map Column -->\r\n      <div class=\"col-lg-8 mb-4\">\r\n        <!-- Embedded Google Map -->\r\n        <iframe width=\"100%\" height=\"400px\" frameborder=\"0\" scrolling=\"no\" marginheight=\"0\" marginwidth=\"0\" src=\"http://maps.google.com/maps?hl=en&amp;ie=UTF8&amp;ll=37.0625,-95.677068&amp;spn=56.506174,79.013672&amp;t=m&amp;z=4&amp;output=embed\"></iframe>\r\n      </div>\r\n      <!-- Contact Details Column -->\r\n      <div class=\"col-lg-4 mb-4\">\r\n        <h3>Contact Details</h3>\r\n        <p>\r\n          3481 Melrose Place\r\n          <br>Beverly Hills, CA 90210\r\n          <br>\r\n        </p>\r\n        <p>\r\n          <abbr title=\"Phone\">P</abbr>: (123) 456-7890\r\n        </p>\r\n        <p>\r\n          <abbr title=\"Email\">E</abbr>:\r\n          <a href=\"mailto:name@example.com\">name@example.com\r\n          </a>\r\n        </p>\r\n        <p>\r\n          <abbr title=\"Hours\">H</abbr>: Monday - Friday: 9:00 AM to 5:00 PM\r\n        </p>\r\n      </div>\r\n    </div>"
+                  }
+                },
+                "FlowMetadata": {
+                  "Alignment": 3,
+                  "Size": 100
+                }
+              },
+              {
+                "ContentItemId": "4253254jqt73y495fx5s0bmecp",
+                "ContentItemVersionId": null,
+                "ContentType": "Form",
+                "DisplayText": "Send us a Message",
+                "Latest": false,
+                "Published": false,
+                "ModifiedUtc": "2020-05-10T10:30:15.2764993Z",
+                "PublishedUtc": null,
+                "CreatedUtc": null,
+                "Owner": null,
+                "Author": "admin",
+                "TitlePart": {
+                  "Title": "Send us a Message"
+                },
+                "FormPart": {
+                  "EnableAntiForgeryToken": true,
+                  "Action": "/workflows/Invoke?token=CfDJ8LMHDOdGVVxLn62Ho5DYo3m6AM2onhR79YsI634yUSo3-wzWR_czcAeUnoxzvNMJOqU-zVRWo1W6BOVqT76jhzh_8vGn7pEXjhY0JTL8oHzQ1amsYcJk2dJt3NvM4tZpHGJKCVUwICR64YQoDprQA8k4eTOsa0INXBrGQ0puqFXlxw0M2lKC20X5Us2o25juEtXi8hjjHO5SxSnIr3lSU1JkveOmvpd1_GAM0sVUdySp",
+                  "Method": "POST",
+                  "WorkflowTypeId": null,
+                  "EncType": "application/x-www-form-urlencoded"
+                },
+                "FlowPart": {
+                  "Widgets": [
+                    {
+                      "ContentItemId": "4zq5x1xwjxhkcss8v6ygnc2845",
+                      "ContentItemVersionId": null,
+                      "ContentType": "Label",
+                      "DisplayText": "Full Name:",
+                      "Latest": false,
+                      "Published": false,
+                      "ModifiedUtc": "2020-05-10T10:30:15.2785038Z",
+                      "PublishedUtc": null,
+                      "CreatedUtc": null,
+                      "Owner": null,
+                      "Author": "admin",
+                      "TitlePart": {
+                        "Title": "Full Name:"
+                      },
+                      "FormElementPart": {
+                        "Id": null
+                      },
+                      "LabelPart": {
+                        "For": "FullName"
+                      },
+                      "FlowMetadata": {
+                        "Alignment": 3,
+                        "Size": 100
+                      }
+                    },
+                    {
+                      "ContentItemId": "4jhvhzzqeacfb7tj6vqk73ncwv",
+                      "ContentItemVersionId": null,
+                      "ContentType": "Input",
+                      "DisplayText": "FullName",
+                      "Latest": false,
+                      "Published": false,
+                      "ModifiedUtc": "2020-05-10T10:30:15.281248Z",
+                      "PublishedUtc": null,
+                      "CreatedUtc": null,
+                      "Owner": null,
+                      "Author": "admin",
+                      "FormInputElementPart": {
+                        "Name": "FullName"
+                      },
+                      "FormElementPart": {
+                        "Id": null
+                      },
+                      "InputPart": {
+                        "Type": "text",
+                        "DefaultValue": null,
+                        "Placeholder": null
+                      },
+                      "FlowMetadata": {
+                        "Alignment": 3,
+                        "Size": 100
+                      }
+                    },
+                    {
+                      "ContentItemId": "4dzpr2583fjmz6kk4nfw93fp5w",
+                      "ContentItemVersionId": null,
+                      "ContentType": "Label",
+                      "DisplayText": "Phone Number:",
+                      "Latest": false,
+                      "Published": false,
+                      "ModifiedUtc": "2020-05-10T10:30:15.2837075Z",
+                      "PublishedUtc": null,
+                      "CreatedUtc": null,
+                      "Owner": null,
+                      "Author": "admin",
+                      "TitlePart": {
+                        "Title": "Phone Number:"
+                      },
+                      "FormElementPart": {
+                        "Id": null
+                      },
+                      "LabelPart": {
+                        "For": "Phone"
+                      },
+                      "FlowMetadata": {
+                        "Alignment": 3,
+                        "Size": 100
+                      }
+                    },
+                    {
+                      "ContentItemId": "49d6dy20natmt0ex8zzfftfj41",
+                      "ContentItemVersionId": null,
+                      "ContentType": "Input",
+                      "DisplayText": "Phone",
+                      "Latest": false,
+                      "Published": false,
+                      "ModifiedUtc": "2020-05-10T10:30:15.28717Z",
+                      "PublishedUtc": null,
+                      "CreatedUtc": null,
+                      "Owner": null,
+                      "Author": "admin",
+                      "FormInputElementPart": {
+                        "Name": "Phone"
+                      },
+                      "FormElementPart": {
+                        "Id": null
+                      },
+                      "InputPart": {
+                        "Type": "tel",
+                        "DefaultValue": null,
+                        "Placeholder": null
+                      },
+                      "FlowMetadata": {
+                        "Alignment": 3,
+                        "Size": 100
+                      }
+                    },
+                    {
+                      "ContentItemId": "4grmtz1535ns5sjtc5715kadc0",
+                      "ContentItemVersionId": null,
+                      "ContentType": "Label",
+                      "DisplayText": "Email Address:",
+                      "Latest": false,
+                      "Published": false,
+                      "ModifiedUtc": "2020-05-10T10:30:15.2908304Z",
+                      "PublishedUtc": null,
+                      "CreatedUtc": null,
+                      "Owner": null,
+                      "Author": "admin",
+                      "TitlePart": {
+                        "Title": "Email Address:"
+                      },
+                      "FormElementPart": {
+                        "Id": null
+                      },
+                      "LabelPart": {
+                        "For": "Email"
+                      },
+                      "FlowMetadata": {
+                        "Alignment": 3,
+                        "Size": 100
+                      }
+                    },
+                    {
+                      "ContentItemId": "4r21cvybc25p979me51rpxb4nx",
+                      "ContentItemVersionId": null,
+                      "ContentType": "Input",
+                      "DisplayText": "Email",
+                      "Latest": false,
+                      "Published": false,
+                      "ModifiedUtc": "2020-05-10T10:30:15.2934702Z",
+                      "PublishedUtc": null,
+                      "CreatedUtc": null,
+                      "Owner": null,
+                      "Author": "admin",
+                      "FormInputElementPart": {
+                        "Name": "Email"
+                      },
+                      "FormElementPart": {
+                        "Id": null
+                      },
+                      "InputPart": {
+                        "Type": "email",
+                        "DefaultValue": null,
+                        "Placeholder": null
+                      },
+                      "FlowMetadata": {
+                        "Alignment": 3,
+                        "Size": 100
+                      }
+                    },
+                    {
+                      "ContentItemId": "45129mh6p36rs3f63xpf938tnm",
+                      "ContentItemVersionId": null,
+                      "ContentType": "Label",
+                      "DisplayText": "Message:",
+                      "Latest": false,
+                      "Published": false,
+                      "ModifiedUtc": "2020-05-10T10:30:15.2956401Z",
+                      "PublishedUtc": null,
+                      "CreatedUtc": null,
+                      "Owner": null,
+                      "Author": "admin",
+                      "TitlePart": {
+                        "Title": "Message:"
+                      },
+                      "FormElementPart": {
+                        "Id": null
+                      },
+                      "LabelPart": {
+                        "For": "Message"
+                      },
+                      "FlowMetadata": {
+                        "Alignment": 3,
+                        "Size": 100
+                      }
+                    },
+                    {
+                      "ContentItemId": "4wr0sx5skejza4sq7bg2tcwp5x",
+                      "ContentItemVersionId": null,
+                      "ContentType": "TextArea",
+                      "DisplayText": "Message",
+                      "Latest": false,
+                      "Published": false,
+                      "ModifiedUtc": "2020-05-10T10:30:15.2984568Z",
+                      "PublishedUtc": null,
+                      "CreatedUtc": null,
+                      "Owner": null,
+                      "Author": "admin",
+                      "FormInputElementPart": {
+                        "Name": "Message"
+                      },
+                      "FormElementPart": {
+                        "Id": null
+                      },
+                      "TextAreaPart": {
+                        "DefaultValue": null,
+                        "Placeholder": null
+                      },
+                      "FlowMetadata": {
+                        "Alignment": 3,
+                        "Size": 100
+                      }
+                    },
+                    {
+                      "ContentItemId": "4swtkzf7rdzjx06mx4r0bh8d40",
+                      "ContentItemVersionId": null,
+                      "ContentType": "Button",
+                      "DisplayText": "submit",
+                      "Latest": false,
+                      "Published": false,
+                      "ModifiedUtc": "2020-05-10T10:30:15.3008599Z",
+                      "PublishedUtc": null,
+                      "CreatedUtc": null,
+                      "Owner": null,
+                      "Author": "admin",
+                      "FormInputElementPart": {
+                        "Name": "submit"
+                      },
+                      "FormElementPart": {
+                        "Id": null
+                      },
+                      "ButtonPart": {
+                        "Text": "Send Message",
+                        "Type": "submit"
+                      },
+                      "FlowMetadata": {
+                        "Alignment": 3,
+                        "Size": 100
+                      }
+                    }
+                  ]
+                },
+                "FlowMetadata": {
+                  "Alignment": 3,
+                  "Size": 50
+                }
+              }
+            ]
+          },
+          "TitlePart": {
+            "Title": "Contact"
+          }
+        },
+        {
+          "ContentItemId": "4nkr8gv2fbdkh10bj96wpsbfma",
+          "ContentItemVersionId": "4b5g70ggvskfxwbjm1q2dbeqnt",
+          "ContentType": "Contact",
+          "DisplayText": "Antoine Griffard",
+          "Latest": true,
+          "Published": true,
+          "ModifiedUtc": "2020-05-10T10:30:45.7180551Z",
+          "PublishedUtc": "2020-05-10T10:30:45.7215128Z",
+          "CreatedUtc": "2020-05-10T10:30:45.7180551Z",
+          "Owner": "admin",
+          "Author": "admin",
+          "Contact": {
+            "FullName": {
+              "Text": "Antoine Griffard"
+            },
+            "Phone": {
+              "Text": "0782786646"
+            },
+            "Email": {
+              "Text": "agriffard@hotmail.com"
+            },
+            "Message": {
+              "Text": "Message"
+            }
+          },
+          "TitlePart": {
+            "Title": "Antoine Griffard"
+          },
+          "ContainedPart": {
+            "ListContentItemId": "4svtma635hxr85ndej6hqph14s"
+          }
+        },
+        {
+          "ContentItemId": "4905jspxa8dch26wgqzmyhhvmt",
+          "ContentItemVersionId": "4q7xjqkgwrmndrya561jtmc55k",
+          "ContentType": "Contact",
+          "DisplayText": "Test",
+          "Latest": true,
+          "Published": true,
+          "ModifiedUtc": "2020-05-10T10:33:48.3859595Z",
+          "PublishedUtc": "2020-05-10T10:33:48.388811Z",
+          "CreatedUtc": "2020-05-10T10:33:48.3859595Z",
+          "Owner": "admin",
+          "Author": "admin",
+          "Contact": {
+            "FullName": {
+              "Text": "Test"
+            },
+            "Phone": {
+              "Text": "555 555 555"
+            },
+            "Email": {
+              "Text": "email@test.com"
+            },
+            "Message": {
+              "Text": "Message"
+            }
+          },
+          "TitlePart": {
+            "Title": "Test"
+          },
+          "ContainedPart": {
+            "ListContentItemId": "4svtma635hxr85ndej6hqph14s"
+          }
+        },
+        {
+          "ContentItemId": "4ax02wvww09k151chk2q96njwb",
+          "ContentItemVersionId": "4x1dyvw6whkzy06pssabkrt3m8",
+          "ContentType": "LiquidPage",
+          "DisplayText": "Pricing",
+          "Latest": true,
+          "Published": true,
+          "ModifiedUtc": "2020-05-13T10:04:33.2292203Z",
+          "PublishedUtc": "2020-05-13T10:04:33.2597087Z",
+          "CreatedUtc": "2020-05-13T10:04:33.2292203Z",
+          "Owner": "admin",
+          "Author": "admin",
+          "LiquidPage": {},
+          "AutoroutePart": {
+            "Path": "pricing",
+            "SetHomepage": false,
+            "Disabled": false,
+            "RouteContainedItems": false,
+            "Absolute": false
+          },
+          "LiquidPart": {
+            "Liquid": "<div class=\"row\">\r\n      <div class=\"col-lg-4 mb-4\">\r\n        <div class=\"card h-100\">\r\n          <h3 class=\"card-header\">Basic</h3>\r\n          <div class=\"card-body\">\r\n            <div class=\"display-4\">$19.99</div>\r\n            <div class=\"font-italic\">per month</div>\r\n          </div>\r\n          <ul class=\"list-group list-group-flush\">\r\n            <li class=\"list-group-item\">Cras justo odio</li>\r\n            <li class=\"list-group-item\">Dapibus ac facilisis in</li>\r\n            <li class=\"list-group-item\">Vestibulum at eros</li>\r\n            <li class=\"list-group-item\">\r\n              <a href=\"#\" class=\"btn btn-primary\">Sign Up!</a>\r\n            </li>\r\n          </ul>\r\n        </div>\r\n      </div>\r\n      <div class=\"col-lg-4 mb-4\">\r\n        <div class=\"card card-outline-primary h-100\">\r\n          <h3 class=\"card-header bg-primary text-white\">Plus</h3>\r\n          <div class=\"card-body\">\r\n            <div class=\"display-4\">$39.99</div>\r\n            <div class=\"font-italic\">per month</div>\r\n          </div>\r\n          <ul class=\"list-group list-group-flush\">\r\n            <li class=\"list-group-item\">Cras justo odio</li>\r\n            <li class=\"list-group-item\">Dapibus ac facilisis in</li>\r\n            <li class=\"list-group-item\">Vestibulum at eros</li>\r\n            <li class=\"list-group-item\">\r\n              <a href=\"#\" class=\"btn btn-primary\">Sign Up!</a>\r\n            </li>\r\n          </ul>\r\n        </div>\r\n      </div>\r\n      <div class=\"col-lg-4 mb-4\">\r\n        <div class=\"card h-100\">\r\n          <h3 class=\"card-header\">Ultra</h3>\r\n          <div class=\"card-body\">\r\n            <div class=\"display-4\">$159.99</div>\r\n            <div class=\"font-italic\">per month</div>\r\n          </div>\r\n          <ul class=\"list-group list-group-flush\">\r\n            <li class=\"list-group-item\">Cras justo odio</li>\r\n            <li class=\"list-group-item\">Dapibus ac facilisis in</li>\r\n            <li class=\"list-group-item\">Vestibulum at eros</li>\r\n            <li class=\"list-group-item\">\r\n              <a href=\"#\" class=\"btn btn-primary\">Sign Up!</a>\r\n            </li>\r\n          </ul>\r\n        </div>\r\n      </div>\r\n    </div>"
+          },
+          "TitlePart": {
+            "Title": "Pricing"
           }
         }
       ]
@@ -2218,7 +2640,8 @@
             "ContentTypeSettings": {
               "Draftable": true,
               "Securable": true
-            }
+            },
+            "FullTextAspectSettings": {}
           },
           "ContentTypePartDefinitionRecords": [
             {
@@ -2300,7 +2723,9 @@
               "PartName": "DisqusPart",
               "Name": "DisqusPart",
               "Settings": {
-                "ContentTypePartSettings": {},
+                "ContentTypePartSettings": {
+                  "Position": "4"
+                },
                 "DisqusPartSettings": {
                   "ShortName": "orchardcore"
                 },
@@ -2615,6 +3040,141 @@
               "PartName": "ValidationPart",
               "Name": "ValidationPart",
               "Settings": {}
+            }
+          ]
+        },
+        {
+          "Name": "TheBootstrapThemeSettings",
+          "DisplayName": "TheBootstrapTheme",
+          "Settings": {
+            "ContentTypeSettings": {
+              "Stereotype": "CustomSettings",
+              "Securable": true
+            },
+            "FullTextAspectSettings": {}
+          },
+          "ContentTypePartDefinitionRecords": [
+            {
+              "PartName": "TheBootstrapThemeSettings",
+              "Name": "TheBootstrapThemeSettings",
+              "Settings": {
+                "ContentTypePartSettings": {
+                  "Position": "0"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "Name": "ContentMenuItem",
+          "DisplayName": "Content Menu Item",
+          "Settings": {
+            "ContentTypeSettings": {
+              "Stereotype": "MenuItem"
+            },
+            "FullTextAspectSettings": {}
+          },
+          "ContentTypePartDefinitionRecords": [
+            {
+              "PartName": "ContentMenuItemPart",
+              "Name": "ContentMenuItemPart",
+              "Settings": {
+                "ContentTypePartSettings": {
+                  "Position": "0"
+                }
+              }
+            },
+            {
+              "PartName": "ContentMenuItem",
+              "Name": "ContentMenuItem",
+              "Settings": {
+                "ContentTypePartSettings": {
+                  "Position": "1"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "Name": "Contact",
+          "DisplayName": "Contact",
+          "Settings": {
+            "ContentTypeSettings": {
+              "Draftable": true,
+              "Versionable": true,
+              "Securable": true
+            },
+            "FullTextAspectSettings": {}
+          },
+          "ContentTypePartDefinitionRecords": [
+            {
+              "PartName": "Contact",
+              "Name": "Contact",
+              "Settings": {
+                "ContentTypePartSettings": {
+                  "Position": "1"
+                }
+              }
+            },
+            {
+              "PartName": "TitlePart",
+              "Name": "TitlePart",
+              "Settings": {
+                "ContentTypePartSettings": {
+                  "Position": "0"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "Name": "ContactList",
+          "DisplayName": "ContactList",
+          "Settings": {
+            "ContentTypeSettings": {
+              "Creatable": true,
+              "Listable": true,
+              "Draftable": true,
+              "Versionable": true,
+              "Securable": true
+            },
+            "FullTextAspectSettings": {}
+          },
+          "ContentTypePartDefinitionRecords": [
+            {
+              "PartName": "ContactList",
+              "Name": "ContactList",
+              "Settings": {
+                "ContentTypePartSettings": {
+                  "Position": "2"
+                }
+              }
+            },
+            {
+              "PartName": "ListPart",
+              "Name": "ListPart",
+              "Settings": {
+                "ContentTypePartSettings": {
+                  "Position": "1"
+                },
+                "GraphQLContentTypePartSettings": {},
+                "ListPartSettings": {
+                  "PageSize": 10,
+                  "ContainedContentTypes": [
+                    "Contact"
+                  ]
+                },
+                "ContentIndexSettings": {}
+              }
+            },
+            {
+              "PartName": "TitlePart",
+              "Name": "TitlePart",
+              "Settings": {
+                "ContentTypePartSettings": {
+                  "Position": "0"
+                }
+              }
             }
           ]
         }
@@ -2986,7 +3546,7 @@
               "Settings": {
                 "ContentPartFieldSettings": {
                   "DisplayName": "Tags",
-                  "Position": "0"
+                  "Position": "1"
                 }
               }
             }
@@ -3153,6 +3713,303 @@
             }
           },
           "ContentPartFieldDefinitionRecords": []
+        },
+        {
+          "Name": "TheBootstrapThemeSettings",
+          "Settings": {},
+          "ContentPartFieldDefinitionRecords": [
+            {
+              "FieldName": "TextField",
+              "Name": "Head",
+              "Settings": {
+                "ContentPartFieldSettings": {
+                  "DisplayName": "Head",
+                  "Editor": "CodeMirror",
+                  "Position": "0"
+                },
+                "TextFieldSettings": {
+                  "Hint": "Html Code used in the head of each page."
+                },
+                "ContentIndexSettings": {}
+              }
+            },
+            {
+              "FieldName": "TextField",
+              "Name": "Foot",
+              "Settings": {
+                "ContentPartFieldSettings": {
+                  "DisplayName": "Foot",
+                  "Editor": "CodeMirror",
+                  "Position": "1"
+                },
+                "TextFieldSettings": {
+                  "Hint": "Html Code used in the footer of each page."
+                },
+                "ContentIndexSettings": {}
+              }
+            },
+            {
+              "FieldName": "TextField",
+              "Name": "Background",
+              "Settings": {
+                "ContentPartFieldSettings": {
+                  "DisplayName": "Background",
+                  "Editor": "PredefinedList",
+                  "Position": "2"
+                },
+                "TextFieldSettings": {},
+                "TextFieldPredefinedListEditorSettings": {
+                  "Options": [
+                    {
+                      "name": "Dark",
+                      "value": "dark"
+                    },
+                    {
+                      "name": "Light",
+                      "value": "light"
+                    },
+                    {
+                      "name": "Primary",
+                      "value": "primary"
+                    }
+                  ],
+                  "Editor": 1,
+                  "DefaultValue": "dark"
+                },
+                "ContentIndexSettings": {}
+              }
+            },
+            {
+              "FieldName": "TextField",
+              "Name": "Navigation",
+              "Settings": {
+                "ContentPartFieldSettings": {
+                  "DisplayName": "Navigation",
+                  "Editor": "PredefinedList",
+                  "Position": "3"
+                },
+                "TextFieldSettings": {},
+                "TextFieldPredefinedListEditorSettings": {
+                  "Options": [
+                    {
+                      "name": "FixedTop",
+                      "value": "FixedTop"
+                    },
+                    {
+                      "name": "FixedBottom",
+                      "value": "FixedBottom"
+                    },
+                    {
+                      "name": "Fluid",
+                      "value": "Fluid"
+                    }
+                  ],
+                  "Editor": 1,
+                  "DefaultValue": "FixedTop"
+                },
+                "ContentIndexSettings": {}
+              }
+            },
+            {
+              "FieldName": "BooleanField",
+              "Name": "StickyFooter",
+              "Settings": {
+                "ContentPartFieldSettings": {
+                  "DisplayName": "StickyFooter",
+                  "Position": "4"
+                }
+              }
+            },
+            {
+              "FieldName": "TextField",
+              "Name": "Bootswatch",
+              "Settings": {
+                "ContentPartFieldSettings": {
+                  "DisplayName": "Bootswatch",
+                  "Editor": "PredefinedList",
+                  "Position": "5"
+                },
+                "TextFieldSettings": {},
+                "TextFieldPredefinedListEditorSettings": {
+                  "Options": [
+                    {
+                      "name": "Default",
+                      "value": ""
+                    },
+                    {
+                      "name": "Cerulean",
+                      "value": "cerulean"
+                    },
+                    {
+                      "name": "Cosmo",
+                      "value": "cosmo"
+                    },
+                    {
+                      "name": "Cyborg",
+                      "value": "cyborg"
+                    },
+                    {
+                      "name": "Darkly",
+                      "value": "darkly"
+                    },
+                    {
+                      "name": "Flatly",
+                      "value": "flatly"
+                    },
+                    {
+                      "name": "Journal",
+                      "value": "journal"
+                    },
+                    {
+                      "name": "Litera",
+                      "value": "litera"
+                    },
+                    {
+                      "name": "Lumen",
+                      "value": "lumen"
+                    },
+                    {
+                      "name": "Lux",
+                      "value": "lux"
+                    },
+                    {
+                      "name": "Materia",
+                      "value": "materia"
+                    },
+                    {
+                      "name": "Minty",
+                      "value": "minty"
+                    },
+                    {
+                      "name": "Pulse",
+                      "value": "pulse"
+                    },
+                    {
+                      "name": "Sandstone",
+                      "value": "sandstone"
+                    },
+                    {
+                      "name": "Simplex",
+                      "value": "simplex"
+                    },
+                    {
+                      "name": "Sketchy",
+                      "value": "sketchy"
+                    },
+                    {
+                      "name": "Slate",
+                      "value": "slate"
+                    },
+                    {
+                      "name": "Solar",
+                      "value": "solar"
+                    },
+                    {
+                      "name": "Spacelab",
+                      "value": "spacelab"
+                    },
+                    {
+                      "name": "Superhero",
+                      "value": "superhero"
+                    },
+                    {
+                      "name": "United",
+                      "value": "united"
+                    },
+                    {
+                      "name": "Yeti",
+                      "value": "yeti"
+                    }
+                  ],
+                  "Editor": 1
+                },
+                "ContentIndexSettings": {}
+              }
+            }
+          ]
+        },
+        {
+          "Name": "ContentMenuItemPart",
+          "Settings": {
+            "ContentPartSettings": {
+              "Attachable": true,
+              "DisplayName": "Content Menu Item",
+              "Description": "Provides a menu link behavior with the Content Picker for your content item."
+            }
+          },
+          "ContentPartFieldDefinitionRecords": [
+            {
+              "FieldName": "ContentPickerField",
+              "Name": "SelectedContentItem",
+              "Settings": {
+                "ContentPartFieldSettings": {
+                  "DisplayName": "Selected Content Item",
+                  "Position": "0"
+                },
+                "ContentPickerFieldSettings": {
+                  "Required": true,
+                  "DisplayAllContentTypes": true,
+                  "DisplayedContentTypes": []
+                },
+                "ContentIndexSettings": {}
+              }
+            }
+          ]
+        },
+        {
+          "Name": "Contact",
+          "Settings": {},
+          "ContentPartFieldDefinitionRecords": [
+            {
+              "FieldName": "TextField",
+              "Name": "FullName",
+              "Settings": {
+                "ContentPartFieldSettings": {
+                  "DisplayName": "FullName",
+                  "Position": "0"
+                }
+              }
+            },
+            {
+              "FieldName": "TextField",
+              "Name": "Phone",
+              "Settings": {
+                "ContentPartFieldSettings": {
+                  "DisplayName": "Phone",
+                  "Editor": "Tel",
+                  "Position": "1"
+                },
+                "TextFieldSettings": {},
+                "ContentIndexSettings": {}
+              }
+            },
+            {
+              "FieldName": "TextField",
+              "Name": "Email",
+              "Settings": {
+                "ContentPartFieldSettings": {
+                  "DisplayName": "Email",
+                  "Editor": "Email",
+                  "Position": "2"
+                },
+                "TextFieldSettings": {},
+                "ContentIndexSettings": {}
+              }
+            },
+            {
+              "FieldName": "TextField",
+              "Name": "Message",
+              "Settings": {
+                "ContentPartFieldSettings": {
+                  "DisplayName": "Message",
+                  "Editor": "TextArea",
+                  "Position": "3"
+                },
+                "TextFieldSettings": {},
+                "ContentIndexSettings": {}
+              }
+            }
+          ]
         }
       ]
     },
@@ -3243,7 +4100,7 @@
           "Description": null
         },
         "Content": {
-          "Content": "{% zone \"Header\" %}\r\n<div class=\"jumbotron text-center mb-0\">\r\n\t  <h1>{{ Model.ContentItem.DisplayText }}</h1>\r\n</div>\r\n{% endzone %}\r\n{{ Model.Content | shape_render }}",
+          "Content": "{% zone \"Header\" %}\r\n{% endzone %}\r\n<h1>{{ Model.ContentItem.DisplayText }}</h1>\r\n{{ Model.Content | shape_render }}",
           "Description": null
         },
         "Template": {
@@ -3251,6 +4108,31 @@
           "Description": null
         }
       }
+    },
+    {
+      "name": "media",
+      "Files": [
+        {
+          "SourcePath": "700x300.png",
+          "TargetPath": "700x300.png"
+        },
+        {
+          "SourcePath": "700x400.png",
+          "TargetPath": "700x400.png"
+        },
+        {
+          "SourcePath": "750x300.png",
+          "TargetPath": "750x300.png"
+        },
+        {
+          "SourcePath": "750x500.png",
+          "TargetPath": "750x500.png"
+        },
+        {
+          "SourcePath": "Orchard/OrchardCore-Logo.png",
+          "TargetPath": "Orchard/OrchardCore-Logo.png"
+        }
+      ]
     }
   ]
 }
